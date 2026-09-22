@@ -36,76 +36,41 @@ title: Garage Carroserie Autobolle
       </div>
     </div>
   </section>
-  <section class="section-steps">
-    <div class="container">
-      <h2 class="section-title">Comment ça fonctionne ?</h2>
-      <div class="grid-4">
-        <div class="step">
-          <h3>Contactez-nous</h3>
-          <p>
-            Appelez-nous, envoyez un email ou utilisez notre
-            formulaire pour une première estimation.
-          </p>
-        </div>
-        <div class="step">
-          <h3>Prenez rendez-vous</h3>
-          <p>
-            Passez dans notre garage pour une inspection rapide de
-            votre véhicule.
-          </p>
-        </div>
-        <div class="step">
-          <h3>Recevez votre offre</h3>
-          <p>
-            Nous vous proposons une offre personnalisée, un prix juste
-            et compétitif.
-          </p>
-        </div>
-        <div class="step">
-          <h3>Finalisez la vente</h3>
-          <p>
-            Acceptez l'offre, signez les documents nécessaires, et
-            recevez votre paiement immédiatement.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  {% if env !== 'liveTest' %}{% set urlPrefix = "" %}{% else %}{% set
+  urlPrefix = "/ab" %}{% endif %}
   <section class="section-pitch">
-    <div class="container">
-      <div class="grid-2">
-        <div class="pitch-content">
-          <p class="pitch-label">
-            Vous souhaitez vendre votre voiture ?
-          </p>
-          <h2>
-            Garage Auto Bolle propose une solution simple, rapide et
-            équitable.
-          </h2>
-          <p>
-            Grâce à notre expertise, nous garantissons une évaluation
-            transparente avec un paiement immédiat.
-          </p>
-          <ul class="text-list">
-            <li>Évaluation professionnelle</li>
-            <li>Processus rapide et sans stress</li>
-            <li>Reprise directe pour un nouvel achat</li>
-          </ul>
-          <a href="/contact" class="btn">En savoir plus</a>
-        </div>
-
-        <div class="review-achat-media hero-img">
-          {% themedImage "./src/assets/images/achat-client-light.png",
-          "./src/assets/images/achat-client-dark.png", "Reprise de
-          véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
-          calc((50vw - 3rem) * 0.78), 376px", "lazy",
-          "achat-client-img" %}
-        </div>
+    <div class="container grid-2 intro-grid">
+      <div>
+        <h2>L'automobile, c'est nous</h2>
+        <p>
+          Depuis 1994, Auto Bolle met sa passion de l'automobile au
+          service des habitants de la région. Entreprise familiale et
+          multimarque, nous réunissons sous un même toit tous les
+          métiers de la voiture.
+        </p>
       </div>
+
+      {% set services = [ { label: "Achat et Vente", url:
+      "/achat-vente/", icon: "achatVente" }, { label: "vehicules
+      d'occasion", url: "/vehicules-occasion/", icon:
+      "vehiculesOccasion" }, { label: "Atelier", url: "/atelier/",
+      icon: "atelier" }, { label: "Carrosserie", url: "/carrosserie/",
+      icon: "carrosserie" }, { label: "Location", url: "/location/",
+      icon: "location" }, { label: "Entretien", url: "/entretien/",
+      icon: "entretien" }, { label: "Racing", url: "/racing/", icon:
+      "racing" }, { label: "Shop", url: "/shop/", icon: "shop" } ] %}
+      <ul class="service-chips">
+        {% for s in services %}
+        <li>
+          <a class="contact-btn" href="{{ urlPrefix }}{{ s.url }}">
+            {{ svgs[s.icon].icon | safe }}
+            <span>{{ s.label }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
-
-  {# véhicules d'occasion #}
   <section class="home-occasions container">
     <h2>Nos véhicules d'occasion</h2>
     <div id="home-cars" class="cars-grid"></div>
@@ -115,14 +80,63 @@ title: Garage Carroserie Autobolle
       >Voir tout</a
     >
   </section>
+  <section class="section-pitch">
+    <div class="container newsletter-grid">
+      <div class="newsletter-home-intro">
+        <h2>
+          Profitez de nos offres dédiées grâce à la nouvelle
+          newsletter mensuelle
+        </h2>
+        <p>
+          Chaque mois, nos meilleures offres, nos dernières occasions
+          et nos conseils d'entretien, directement dans votre boîte
+          mail. Désinscription possible à tout moment.
+        </p>
+        <a href="{{ urlPrefix }}/newsletter" class="btn"
+          >Newsletter</a
+        >
+      </div>
 
-  <section>
-    <a
-      href="{% if env !== 'liveTest' %}/newsletter{% else %}/ab/newsletter{% endif %}"
-      class="btn"
-    >
-      Newsletter
-    </a>
+      <div class="newsletter-illu hero-img">
+        {% themedImage "./src/assets/images/newsletter-light.png",
+        "./src/assets/images/newsletter-dark.png", "Newsletter
+        mensuelle Auto Bolle", "(max-width: 54em) 90vw, 600px",
+        "lazy", "newsletter-img" %}
+      </div>
+    </div>
+  </section>
+  <section class="section-pitch section-partners">
+    <div class="container">
+      <h2>Nous soutenons</h2>
+
+      {% set partners = [ { src: "./src/assets/images/part-cnm.png",
+      alt: "Club Nautique Morgien" }, { src:
+      "./src/assets/images/part-gowakesurf.png", alt: "Go Wakesurf
+      Morges", multiply: true }, { src:
+      "./src/assets/images/part-tennisEtoy.png", alt: "Tennis Club
+      Etoy", multiply: true }, { src:
+      "./src/assets/images/part-FC-Tolo.png", alt: "FC Tolochenaz" },
+      { src: "./src/assets/images/part-SEP.png", alt: "Société suisse
+      de la sclérose en plaques" }, { src:
+      "./src/assets/images/part-zonePatouche.png", alt: "Zone
+      Patouch", multiply: true } ] %}
+
+      <div class="partners-marquee">
+        <ul class="partners-track">
+          {% for r in range(0, 2) %}{% for p in partners %} {% set cls
+          = "partner-logo partner-logo--multiply" if p.multiply else
+          "partner-logo" %}
+          <li>{% image p.src, p.alt, "120px", "lazy", cls %}</li>
+          {% endfor %}{% endfor %} {% for r in range(0, 2) %}{% for p
+          in partners %} {% set cls = "partner-logo
+          partner-logo--multiply" if p.multiply else "partner-logo" %}
+          <li aria-hidden="true">
+            {% image p.src, "", "120px", "lazy", cls %}
+          </li>
+          {% endfor %}{% endfor %}
+        </ul>
+      </div>
+    </div>
   </section>
 
   <script type="module">

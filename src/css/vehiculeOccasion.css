@@ -584,7 +584,7 @@ section.equip-col {
   color: var(--text-main);
 }
 .modal::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.94);
 }
 .modal h2 {
   margin: 0 0 1rem;

@@ -284,7 +284,7 @@ section.home {
 }
 
 section {
-  padding: 4rem 0;
+  padding-block: 4rem 4rem;
 }
 
 .section-hero-achat {
@@ -463,5 +463,95 @@ img {
   }
   .timeline-progress {
     left: 0.45em;
+  }
+}
+
+/* HomePage */
+.intro-grid {
+  align-items: start;
+}
+
+.service-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.service-chips .contact-btn {
+  padding: 0.1rem 1.1rem 0.1rem 0.8rem;
+}
+
+.service-chips .contact-btn svg {
+  width: 2em;
+  height: 2em;
+  flex: 0 0 auto;
+}
+.newsletter-home-intro h2 {
+  max-width: 30ch;
+  margin-bottom: 1.5rem;
+}
+.newsletter-home-intro p {
+  max-width: 44ch;
+  margin-bottom: 2rem;
+}
+
+/* Partenair Logo */
+.section-partners {
+  padding-bottom: 8rem;
+}
+
+.section-partners h2 {
+  margin-bottom: 2rem;
+}
+
+.partners-marquee {
+  overflow: hidden;
+  border-radius: 50vh;
+}
+
+.partner-logo--multiply {
+  mix-blend-mode: multiply;
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  background: var(--color-light-3);
+  padding-block: 2rem;
+
+  animation: partners-scroll 90s linear infinite;
+}
+
+.partners-marquee:hover .partners-track {
+  animation-play-state: paused;
+}
+
+.partners-track li {
+  flex: none;
+  padding-inline: 2.5rem;
+}
+
+.partner-logo {
+  display: block;
+  width: auto;
+  height: 4rem;
+  object-fit: contain;
+}
+
+@media (max-width: 48em) {
+  .partners-track li {
+    padding-inline: 1rem;
+  }
+  .partner-logo {
+    height: 3rem;
+  }
+}
+
+@keyframes partners-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
