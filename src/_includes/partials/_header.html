@@ -1,0 +1,70 @@
+{% if env !== 'liveTest' %}{% set urlPrefix = "" %}{% else %}{% set
+urlPrefix = "/ab" %}{% endif %}
+
+<header class="primary-header">
+  <div>
+    <a class="logo" href="{{ urlPrefix }}/">{% svg "logo" %}</a>
+  </div>
+
+  <nav>
+    <ul class="primary-navigation">
+      {% for item in header.menu %} {# comparaison avec page.url :
+      SANS préfixe #} {% set activeClass = "" %} {% if page.url ==
+      item.url %}{% set activeClass = "active" %}{% endif %} {% if
+      item.submenu %} {% for sub in item.submenu %} {% if sub.url !=
+      "/" and page.url == sub.url %} {% set activeClass = "active" %}
+      {% endif %} {% endfor %} {% endif %}
+
+      <li
+        class="menu-items {% if item.submenu %}has-dropdown{% endif %}"
+      >
+        {% if item.submenu %}
+        <button
+          class="dropdown-trigger menu-item {{ activeClass }}"
+          aria-expanded="false"
+        >
+          {{ item.title }}
+        </button>
+
+        <ul class="dropdown-menu">
+          {% for sub in item.submenu %}
+          <li
+            class="dropdown-link {% if page.url == sub.url %}active{% endif %}"
+          >
+            <a href="{{ urlPrefix }}{{ sub.url }}">
+              {% if sub.icon %}
+              <span class="dropdown-link-icon"
+                >{{ sub.icon | safe }}</span
+              >
+              {% endif %}
+              <span class="dropdown-link-text">
+                <span class="dropdown-link-title"
+                  >{{ sub.title }}</span
+                >
+                {% if sub.description %}
+                <span class="dropdown-link-desc"
+                  >{{ sub.description }}</span
+                >
+                {% endif %}
+              </span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <a
+          href="{{ urlPrefix }}{{ item.url }}"
+          class="{{ activeClass }} menu-item-link"
+        >
+          {{ item.title }}
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div>
+    <a class="button-small" href="{{ urlPrefix }}/">Rendez-vous</a>
+  </div>
+</header>

@@ -1,0 +1,63 @@
+---
+layout: layouts/_base
+title: Team
+---
+
+<main>
+  <section class="section-hero-equipe">
+    <div class="container grid-2">
+      <div>
+        <h1>
+          Une entreprise familiale entourée de passionnés de
+          l'automobile.
+        </h1>
+        <p>
+          Depuis notre commencement en 1994, notre PME s’adapte à
+          l’évolution constante du monde automobile. Nous nous
+          appuyons sur la formation continue afin de maîtriser
+          l’avenir et collaborons avec des partenaires leader du
+          marché automobile mondial.
+        </p>
+        <a href="#equipe" class="scroll-cue">
+          <span class="scroll-cue__circle" aria-hidden="true">
+            <span class="scroll-cue__arrow"></span>
+          </span>
+          Découvrez notre équipe
+        </a>
+      </div>
+      <div class="hero-equipe-illu hero-img">
+        {% image "./src/assets/images/team-light.png", "Le garage
+        Autobolle actif depuis 1994 ", "(max-width: 30em) 78vw,
+        (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px",
+        "team-img" %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-team" id="equipe">
+    <ul class="container grid-4 team-grid">
+      {% for member in team %}
+      <li class="team-card">
+        <div
+          class="team-card__img{% if not member.image %} is-placeholder{% endif %}"
+        >
+          {% if member.image %} {% image member.image, "",
+          "(min-width: 54em) 25vw, (min-width: 40em) 50vw, 100vw",
+          "lazy" %} {% else %} {% themedImage
+          "./src/assets/images/team/team-placeholder-dark.png",
+          "./src/assets/images/team/team-placeholder-dark.png", "",
+          "(min-width: 54em) 25vw, (min-width: 40em) 50vw, 100vw",
+          "lazy" %} {% endif %}
+          <p class="team-card__name">
+            {{ member.prenom }} {{ member.nom }}
+          </p>
+        </div>
+        <div class="team-card__body">
+          <p class="team-card__sector">{{ member.secteur }}</p>
+          <p class="team-card__role">{{ member.fonction }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>

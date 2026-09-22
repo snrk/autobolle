@@ -1,0 +1,73 @@
+---
+layout: layouts/_base
+title: Achat vente
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %}
+<main>
+
+  <div class="wrapper">
+   <section class="section-hero-achat">
+    <div class="container">
+      <div class="grid-2 hero-achat">
+        <div class="hero-achat-content">
+          <p class="pitch-label-hero">Achat-vente</p>
+          <h1>Nous rachetons votre voiture au&nbsp;meilleur&nbsp;prix</h1>
+          <p>Nous évaluons votre véhicule rapidement et en toute transparence.</p>
+          <a   href="{% if env !== 'liveTest' %}/contact{% else %}/ab/contact{% endif %}" class="btn">Contactez-nous</a>
+        </div>
+        <div class="hero-achat-media">
+          {% image "./src/assets/images/hero-achat-light.png", "Reprise de véhicule", "(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px", "hero-achat-img" %}
+          {# {% themedImage "./src/assets/images/hero-achat-light.png", "./src/assets/images/hero-achat-light.png",  "Reprise de véhicule", "(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px", "lazy", "hero-achat-img" %} #}
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <section class="section-steps">
+    <div class="container">
+      <h2 class="section-title">Comment ça fonctionne ?</h2>
+      <div class="grid-4">
+        <div class="step">
+          <h3>Contactez-nous</h3>
+          <p>Appelez-nous, envoyez un email ou utilisez notre formulaire pour une première estimation.</p>
+        </div>
+        <div class="step">
+          <h3>Prenez rendez-vous</h3>
+          <p>Passez dans notre garage pour une inspection rapide de votre véhicule.</p>
+        </div>
+        <div class="step">
+          <h3>Recevez votre offre</h3>
+          <p>Nous vous proposons une offre personnalisée, un prix juste et compétitif.</p>
+        </div>
+        <div class="step">
+          <h3>Finalisez la vente</h3>
+          <p>Acceptez l'offre, signez les documents nécessaires, et recevez votre paiement immédiatement.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<section class="section-pitch">
+  <div class="container">
+    <div class="grid-2">
+      <div class="pitch-content">
+        <p class="pitch-label">Vous souhaitez vendre votre voiture ?</p>
+        <h2>Le garage Auto Bolle vous propose une solution simple, rapide et équitable.</h2>
+        <p>Grâce à notre expertise, nous garantissons une évaluation transparente avec un paiement immédiat.</p>
+        <ul class="text-list">
+          <li>Évaluation professionnelle</li>
+          <li>Processus rapide et sans stress</li>
+          <li>Reprise directe pour un nouvel achat</li>
+        </ul>
+        <a href="/contact" class="btn">En savoir plus</a>
+      </div>
+
+       <div class="review-achat-media">
+          {% themedImage "./src/assets/images/achat-client-light.png", "./src/assets/images/achat-client-dark.png",  "Reprise de véhicule", "(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px", "lazy", "achat-client-img" %}
+        </div>
+    </div>
+  </div>
+</section>
+</main>

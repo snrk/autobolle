@@ -1,0 +1,83 @@
+---
+layout: layouts/_base.html
+title: Contact
+permalink: /contact/
+---
+<main>
+<section class="container contact-hero grid-2">
+  <div>
+    <h1>Proche, disponible, simple</h1>
+    <p>
+      Par téléphone ou directement au garage, nous nous ferons un
+      plaisir de répondre à votre demande.
+    </p>
+    {% include "partials/_contact-buttons.html" %}
+  </div>
+  <div class="contact-map hero-img">
+    {% themedImage
+       "./src/assets/images/map-dark.png",
+       "./src/assets/images/map-light.png",
+       "Plan d'accès au Garage Autobolle, route de Genève 14 à Tolochenaz",
+       "(max-width: 40em) 90vw, calc((min(1280px, 100vw - 4rem) - 2rem) / 2)",
+       "lazy" %}
+  </div>
+</section>
+
+<section class="container contact-infos grid-2">
+  <div>
+    <h2>Rendez-vous en ligne</h2>
+    <p>
+      Prenez votre rendez-vous directement en ligne et nous vous
+      enverrons une confirmation par email.
+    </p>
+    <a
+      href="{{ contact.rendezVous }}"
+      target="_blank"
+      rel="noopener"
+      class="btn"
+    >
+      Rendez-vous
+    </a>
+  </div>
+  <div>
+    <h2>Notre adresse</h2>
+    <address class="contact-adresse">
+      {{ svgs.pin.icon | safe }}
+      <span>
+        {{ contact.adresse.nom }}<br />
+        {{ contact.adresse.rue }}<br />
+        {{ contact.adresse.localite }}
+      </span>
+    </address>
+  </div>
+</section>
+
+<section class="container contact-horaires">
+  <h2>Horaires d'ouverture</h2>
+  <div class="grid-2 horaires-grid">
+    {% for h in contact.horaires %}
+      <article class="horaire-card">
+        <h3 class="horaire-card__titre">
+          {{ svgs[h.icone].icon | safe }}
+          <span>{{ h.titre }}</span>
+        </h3>
+        <dl class="horaire-card__plages">
+          {% for plage in h.plages %}
+            <dt>{{ plage.jours }}</dt>
+              <dd>
+                {% for heure in plage.heures %}
+                  <span>{{ heure }}</span>
+                {% endfor %}
+              </dd>
+          {% endfor %}
+        </dl>
+      </article>
+    {% endfor %}
+  </div>
+  {# <a
+      href="{% if env !== 'liveTest' %}/contact{% else %}/ab/contact{% endif %}"
+      class="btn"
+    >
+      Contact
+    </a> #}
+</main>

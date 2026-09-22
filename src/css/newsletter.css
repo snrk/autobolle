@@ -1,0 +1,98 @@
+/* ---- Page newsletter ---- */
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  padding-block: 2rem 4rem;
+}
+
+.newsletter-intro h1 {
+  max-width: 16ch;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-lead {
+  max-width: 38ch;
+}
+
+/* ⚠︎ contre la règle globale img { height: 100%; object-fit: cover } */
+.newsletter-illu img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ---- Formulaire ---- */
+.newsletter-form {
+  margin-top: 2.5rem;
+  max-width: 32rem;
+}
+
+.newsletter-form .inf-input {
+  margin-bottom: 1.2rem;
+}
+
+.newsletter-form input[type='text'],
+.newsletter-form input[type='email'] {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--text-main);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text-main);
+  font: inherit;
+  font-size: clamp(0.8125rem, calc(0.7708rem + 0.1852vw), 0.9375rem);
+}
+
+.newsletter-form input::placeholder {
+  color: var(--text-main);
+  opacity: 1;
+}
+
+.newsletter-form input:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.newsletter-required {
+  font-size: 0.75rem;
+  padding: 0.5rem 0 0;
+}
+
+.newsletter-form .inf-rgpd {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--text-shade);
+  max-width: 46ch;
+  margin: 1rem 0 1.5rem;
+}
+
+.newsletter-form .inf-submit input {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--text-main);
+  color: var(--bg-1);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.newsletter-form .inf-success {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: var(--brand-light);
+}
+
+@media (max-width: 54em) {
+  .newsletter-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .newsletter-intro h1,
+  .newsletter-lead {
+    max-width: none;
+  }
+}

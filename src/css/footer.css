@@ -1,0 +1,295 @@
+/* ---- Footer ---- */
+
+.primary-footer {
+  position: relative;
+  background: var(--color-dark-2);
+  margin-top: -3rem;
+  color: var(--text-main);
+}
+.primary-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  top: 5rem;
+  transform: translateX(-50%);
+  width: 100vw;
+  background: var(--color-dark-2);
+  z-index: -1;
+}
+
+/* Rangée 1 : logo à gauche, réseaux à droite */
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-top div {
+  padding-top: 0.6rem;
+}
+
+.footer-top > div svg {
+  height: 2.2rem;
+  width: auto;
+}
+.primary-footer nav {
+  display: flex;
+  gap: 1.6rem;
+  overflow: visible;
+}
+.primary-footer nav a {
+  display: inline-flex;
+}
+.primary-footer nav svg {
+  width: 3.4rem;
+  height: 3.4rem;
+  fill: currentColor;
+  transition: color 0.2s;
+}
+.primary-footer nav a:hover svg {
+  color: var(--brand);
+}
+
+/* Colonnes : titres + textes clairs */
+.primary-footer h3 {
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  margin: 2rem 0 1.4rem 0;
+  color: var(--color-light-1);
+  padding: 0.5rem 1rem 0 0;
+  font-size: clamp(0.875rem, calc(0.775rem + 0.25vw), 1rem);
+}
+.primary-footer p,
+.primary-footer address,
+.primary-footer a {
+  color: var(--color-light-3);
+}
+.primary-footer .footer-banner p {
+  color: var(--text-main);
+}
+
+.primary-footer p {
+  padding-top: 0;
+}
+.primary-footer address {
+  font-style: normal;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.primary-footer address svg {
+  flex: 0 0 auto; /* le pin ne rétrécit pas */
+  margin-top: 0.1rem; /* aligne le pin avec la 1re ligne */
+}
+
+/* Petits icônes inline (pin, téléphone) */
+.primary-footer address svg {
+  width: 2rem;
+  height: 2.2rem;
+  fill: currentColor;
+  vertical-align: -1.3em;
+  margin-left: -10px;
+}
+
+/* Boutons du footer : version contour sur fond sombre */
+.primary-footer .button-small {
+  background: transparent;
+  border: 1px solid var(--color-light-2);
+  display: inline-block;
+}
+
+/* Rangée 3 : trait + bas légal */
+.footer-legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-block: 1.5rem;
+  flex-direction: row-reverse;
+  border-top: 1px solid
+    color-mix(in srgb, var(--color-dark-4) 75%, transparent);
+}
+.footer-legal p,
+.footer-legal a {
+  padding: 0;
+  color: var(--color-dark-4);
+}
+
+@media (max-width: 40em) {
+  .footer-top {
+    /* flex-direction: column; */
+    align-items: stretch; /* pour que le nav puisse se caler à droite */
+  }
+
+  /* le nav passe au-dessus du logo */
+  .footer-top nav {
+    /* order: -1; */
+    justify-content: flex-end; /* icônes collées à droite */
+    margin-bottom: 1.5rem;
+    gap: 0;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---- Bandeau ---- */
+.footer-banner {
+  /* full-bleed : même principe que ton ::before, sans pseudo-élément */
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  background: var(--brand-light);
+  border-radius: 2.4rem 2.4rem 0 0;
+  padding: 2rem;
+  text-align: center;
+  outline: 0.15rem var(--brand-light) solid;
+}
+
+.footer-banner__inner {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  margin-inline: auto;
+}
+
+.footer-banner svg {
+  width: clamp(4rem, 6vw, 5.6rem);
+  height: auto;
+  color: var(--brand-alt);
+}
+
+.footer-banner h4 {
+  font-size: clamp(1.2rem, 3vw, 1.3rem);
+}
+
+/* La rangée logo/réseaux reprend l'espacement haut */
+.footer-top {
+  padding-top: 3rem;
+}
+
+@media (max-width: 40em) {
+  .footer-banner {
+    border-radius: 1.6rem 1.6rem 0 0;
+    padding: 3rem 1.5rem 2.5rem;
+  }
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid currentColor;
+  border-radius: var(--radius);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.contact-btn svg {
+  width: 1.15em;
+  height: 1.15em;
+  flex: 0 0 auto;
+}
+
+.contact-btn:hover {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+/* variante négative — footer */
+.primary-footer .contact-btn {
+  color: var(--color-light-1);
+}
+/* le plan : échappe au img { height:100%; object-fit:cover } global */
+.contact-map img {
+  height: auto;
+  object-fit: contain;
+}
+
+.contact-hero h1 {
+  padding: 0 0 1rem 0;
+}
+.contact-hero p {
+  padding: 1rem 0 2rem 0;
+}
+
+/* les 3 boutons passent en ligne ici (colonne dans le footer) */
+.contact-hero .contact-btns {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* .grid-2 est en align-items:center — on veut le haut ici */
+.contact-infos,
+div.horaires-grid {
+  align-items: stretch;
+  padding: 0;
+}
+
+.contact-adresse {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+.contact-adresse svg {
+  width: 2.4em;
+  height: 2.6em;
+  flex: 0 0 auto;
+}
+
+.horaire-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  border: 1px solid var(--text-main);
+  border-radius: var(--big-radius);
+}
+.horaire-card__titre {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.horaire-card__titre svg {
+  width: 1.6em;
+  height: 1.6em;
+  flex: 0 0 auto;
+}
+
+.horaire-card__plages {
+  margin: auto 0 0;
+  text-align: right;
+  line-height: 1.6;
+}
+.horaire-card__plages dd {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.75rem;
+}
+.horaire-card__plages dd:last-child {
+  margin-bottom: 0;
+}

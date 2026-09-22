@@ -1,0 +1,126 @@
+---
+layout: layouts/_base
+title: Newsletter
+---
+
+<main>
+  <section class="section-newsletter">
+    <div class="container newsletter-grid">
+      <div class="newsletter-intro">
+        <h1>Rejoignez notre newsletter mensuelle</h1>
+        <p class="newsletter-lead">
+          Profitez de nos offres dédiées, de conseils personnalisés et
+          de ventes en avant-première. Une fois par mois, pas plus.
+        </p>
+
+        <form
+          method="post"
+          action="https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/24977/submit"
+          class="inf-form newsletter-form"
+        >
+          <!-- honeypot anti-spam : doit rester en display:none -->
+          <input type="email" name="email" style="display: none" />
+          <input
+            type="hidden"
+            name="key"
+            value="eyJpdiI6IktROUtjRURKdEcxZ1Y5U0VRRUhIcVR1Y2lBQWtxMTRxUmVRQW5cL1ZOSkdnPSIsIm1hYyI6ImUwYmVjYjg4ZDRkYTk0ZDYwOGVmYjFlYTBlM2E1YjU5MzAzMDgwNzliMDZmNWFjZjczZGYxYWZkYmZlOGI0MmQiLCJ2YWx1ZSI6IjFjR1NvZmdQSWpab2pzeVQ1OHBmbkZ5cUc1ZVU5cU5LNm5QQ2sydTMrV0E9In0="
+          />
+          <input type="hidden" name="webform_id" value="24977" />
+
+          <div class="inf-main_0c114c9bb7c90c3ffbfb1ddd86ab9cda">
+            <div class="inf-success" style="display: none">
+              <h2>Inscription validée</h2>
+              <p>
+                Un mail de confirmation vous a été envoyé. Vérifiez
+                votre boîte mail.
+              </p>
+            </div>
+
+            <div class="inf-content">
+              <div class="inf-input inf-input-text">
+                <label class="sr-only" for="nl-lastname">Nom</label>
+                <input
+                  id="nl-lastname"
+                  type="text"
+                  name="inf[3]"
+                  data-inf-meta="3"
+                  data-inf-error=""
+                  required
+                  autocomplete="family-name"
+                  placeholder="Nom*"
+                />
+              </div>
+
+              <div class="inf-input inf-input-text">
+                <label class="sr-only" for="nl-firstname"
+                  >Prénom</label
+                >
+                <input
+                  id="nl-firstname"
+                  type="text"
+                  name="inf[2]"
+                  data-inf-meta="2"
+                  data-inf-error=""
+                  required
+                  autocomplete="given-name"
+                  placeholder="Prénom*"
+                />
+              </div>
+
+              <div class="inf-input inf-input-text">
+                <label class="sr-only" for="nl-email">Email</label>
+                <input
+                  id="nl-email"
+                  type="email"
+                  name="inf[1]"
+                  data-inf-meta="1"
+                  data-inf-error=""
+                  required
+                  autocomplete="email"
+                  placeholder="Email*"
+                />
+              </div>
+
+              <p class="newsletter-required">*Champ obligatoire</p>
+
+              <div class="inf-rgpd">
+                Votre adresse de messagerie est uniquement utilisée
+                pour vous envoyer notre lettre d'information ainsi que
+                des informations concernant nos activités. Vous pouvez
+                à tout moment utiliser le lien de désabonnement
+                intégré dans chacun de nos mails.
+              </div>
+
+              <script
+                src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v=1783346400"
+                type="module"
+              ></script>
+              <altcha-widget
+                hidelogo
+                hidefooter
+                floating
+                challengeurl="https://newsletter.infomaniak.com/v3/altcha-challenge"
+              ></altcha-widget>
+              <script
+                src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v=1783346400"
+                defer
+              ></script>
+              <script src="https://newsletter.infomaniak.com/v3/static/webform_index.js?v=1783346400"></script>
+
+              <div class="inf-submit">
+                <input type="submit" value="S'inscrire" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="newsletter-illu hero-img">
+        {% image "./src/assets/images/newsletter-light.png", "",
+        "(max-width: 40em) 90vw, (max-width: 54em) calc(100vw - 4rem),
+        (max-width: 84em) calc((100vw - 7rem) / 2), 616px",
+        "newsletter-img" %}
+      </div>
+    </div>
+  </section>
+</main>

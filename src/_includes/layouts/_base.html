@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    {% include "partials/_basehead.html" %} {% set metaImage =
+    site.metaImage %} {% set metaTitle = site.metaTitle %} {% set
+    metaDescription = site.metaDescription %} {% block head %} {%
+    endblock %}
+  </head>
+  <body>
+    {% include "partials/_header.html" %} {{content | safe}} {%
+    include "partials/_footer.html" %}
+  </body>
+</html>

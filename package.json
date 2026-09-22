@@ -1,0 +1,24 @@
+{
+  "name": "autobolle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && npx eleventy --serve",
+    "liveTest": "ELEVENTY_ENV=liveTest npx eleventy",
+    "build": "ELEVENTY_ENV=production npx eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [],
+  "author": "Gabriel Buser",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^5.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-vite": "^8.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

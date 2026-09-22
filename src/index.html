@@ -1,0 +1,138 @@
+---
+layout: layouts/_base
+title: Garage Carroserie Autobolle
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %}
+<main>
+  <section class="home wrapper">
+    <div class="hero-video">
+      <video autoplay muted loop playsinline>
+        <source
+          src="assets/videos/AB_Home-HD-v1.webm"
+          type="video/webm"
+        />
+        <source
+          src="assets/videos/AB_Home-HD-v1.mp4"
+          type="video/mp4"
+        />
+        <img
+          src="assets/videos/AB_Home-fallback.jpg"
+          alt="Garage Autobolle"
+        />
+      </video>
+      <div class="hero-content">
+        <h1>
+          Expert automobile&nbsp;<br />à&nbsp;votre service
+          depuis&nbsp;1994
+        </h1>
+
+        <a
+          href="{% if env !== 'liveTest' %}/vehicules-occasion{% else %}/ab/vehicules-occasion{% endif %}"
+          class="btn"
+          >Nos véhicules</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="section-steps">
+    <div class="container">
+      <h2 class="section-title">Comment ça fonctionne ?</h2>
+      <div class="grid-4">
+        <div class="step">
+          <h3>Contactez-nous</h3>
+          <p>
+            Appelez-nous, envoyez un email ou utilisez notre
+            formulaire pour une première estimation.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Prenez rendez-vous</h3>
+          <p>
+            Passez dans notre garage pour une inspection rapide de
+            votre véhicule.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Recevez votre offre</h3>
+          <p>
+            Nous vous proposons une offre personnalisée, un prix juste
+            et compétitif.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Finalisez la vente</h3>
+          <p>
+            Acceptez l'offre, signez les documents nécessaires, et
+            recevez votre paiement immédiatement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pitch">
+    <div class="container">
+      <div class="grid-2">
+        <div class="pitch-content">
+          <p class="pitch-label">
+            Vous souhaitez vendre votre voiture ?
+          </p>
+          <h2>
+            Garage Auto Bolle propose une solution simple, rapide et
+            équitable.
+          </h2>
+          <p>
+            Grâce à notre expertise, nous garantissons une évaluation
+            transparente avec un paiement immédiat.
+          </p>
+          <ul class="text-list">
+            <li>Évaluation professionnelle</li>
+            <li>Processus rapide et sans stress</li>
+            <li>Reprise directe pour un nouvel achat</li>
+          </ul>
+          <a href="/contact" class="btn">En savoir plus</a>
+        </div>
+
+        <div class="review-achat-media hero-img">
+          {% themedImage "./src/assets/images/achat-client-light.png",
+          "./src/assets/images/achat-client-dark.png", "Reprise de
+          véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
+          calc((50vw - 3rem) * 0.78), 376px", "lazy",
+          "achat-client-img" %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# véhicules d'occasion #}
+  <section class="home-occasions container">
+    <h2>Nos véhicules d'occasion</h2>
+    <div id="home-cars" class="cars-grid"></div>
+    <a
+      href="{% if env !== 'liveTest' %}/vehicules-occasion{% else %}/ab/vehicules-occasion{% endif %}"
+      class="btn"
+      >Voir tout</a
+    >
+  </section>
+
+  <section>
+    <a
+      href="{% if env !== 'liveTest' %}/newsletter{% else %}/ab/newsletter{% endif %}"
+      class="btn"
+    >
+      Newsletter
+    </a>
+  </section>
+
+  <script type="module">
+    import { renderCard, attachImageFallback } from '/js/car-card.js'
+
+    const wrap = document.getElementById('home-cars')
+    const cars = (await window.getCars())
+      .sort((a, b) => b.id - a.id)
+      .slice(0, 4)
+    wrap.innerHTML = cars.map(renderCard).join('')
+    attachImageFallback(wrap)
+  </script>
+</main>

@@ -1,0 +1,3795 @@
+{
+  "content": [
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1KA447",
+      "conditionType": "used",
+      "cubicCapacity": 1580,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "front",
+      "firstRegistrationDate": "2018-07-01",
+      "firstRegistrationYear": 2018,
+      "fuelType": "phev-petrol",
+      "id": 20462235,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1408972267.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/191959330.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/497938572.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1190404361.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1399372440.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1382322501.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/214660579.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1139499657.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1082071418.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/2143962241.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1542835854.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1492904470.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/102742586.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1254354411.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/553298725.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1322796145.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1493488607.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/840907824.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/2064665132.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1459218159.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1341390434.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/639650123.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/1033719563.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/235/20462235/650174771.jpg"
+        }
+      ],
+      "kiloWatts": 103,
+      "listPrice": 43950.00,
+      "live": true,
+      "makeKey": "kia",
+      "mileage": 205000,
+      "modelKey": "niro",
+      "price": 11900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Niro 1.6GDi Plug-in Hybrid DCT",
+      "versionId": 59813
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": "1xf914",
+      "conditionType": "used",
+      "cubicCapacity": 1991,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2015-02-01",
+      "firstRegistrationYear": 2015,
+      "fuelType": "petrol",
+      "id": 20462602,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/776931382.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/243539454.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1517803875.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/2063413095.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1809421415.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/2026997269.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/710567286.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/285427145.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1352472634.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1570281689.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1256353677.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/199376758.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/365307386.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1154463944.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1732663819.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1625654277.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1588510963.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/897048215.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1361142110.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1693259119.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/1770930993.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20462602/481465634.jpg"
+        }
+      ],
+      "kiloWatts": 155,
+      "listPrice": 57200.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 230000,
+      "modelKey": "a-250",
+      "price": 11500.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "A 250 AMG Line 4Matic 7G-DCT",
+      "versionId": 42969
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "estate",
+      "certificationNumber": "1bn102",
+      "conditionType": "used",
+      "cubicCapacity": 2998,
+      "cylinders": 6,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2019-07-01",
+      "firstRegistrationYear": 2019,
+      "fuelType": "petrol",
+      "id": 20463407,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/149086297.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1388049753.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1606833104.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/710822254.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/729764404.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/953493317.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/313358258.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1773382662.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/90143673.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1539880161.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1552441142.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/520113695.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/255297133.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/195510786.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/791167585.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/8226632.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/223316607.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1665646873.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1858632448.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/1136162721.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/781850226.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/958172243.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/727458972.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/558090414.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/407/20463407/2063097331.jpg"
+        }
+      ],
+      "kiloWatts": 240,
+      "listPrice": 92690.00,
+      "live": true,
+      "makeKey": "bmw",
+      "mileage": 110100,
+      "modelKey": "340",
+      "price": 32900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "340i xDrive Touring Edition M Sport Steptronic",
+      "versionId": 62929
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 2195,
+      "cylinders": null,
+      "doors": 5,
+      "driveType": "rear",
+      "firstRegistrationDate": "1957-12-01",
+      "firstRegistrationYear": 1957,
+      "fuelType": "petrol",
+      "id": 11588946,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1809656142.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1553187241.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1812455472.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/838871580.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/490810258.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/617040451.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/176728081.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1021593964.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1744104204.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1081348418.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/730140757.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/2100986445.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1817688383.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/383089630.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1046754278.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/849231946.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/106883598.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1605178724.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1787582132.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/698413924.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1923798569.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/307425335.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/2143604367.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/741371788.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/75714342.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/308037141.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1308820019.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1262407461.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1558882750.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1076356170.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/1770741606.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/946/11588946/2071631446.jpg"
+        }
+      ],
+      "kiloWatts": 47,
+      "listPrice": null,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 65000,
+      "modelKey": null,
+      "price": 29800.00,
+      "seats": 6,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "219",
+      "versionId": null
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": null,
+      "cylinders": null,
+      "doors": null,
+      "driveType": null,
+      "firstRegistrationDate": "1966-02-01",
+      "firstRegistrationYear": 1966,
+      "fuelType": null,
+      "id": 20078602,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1708600035.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/258504477.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/624039481.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/132318713.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/2095789856.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/322182961.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/502450457.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1649889279.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1495941268.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1743939160.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1352206831.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/429878797.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1068362033.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/830759981.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1885823878.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1194498932.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1282639609.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1850268417.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1825536572.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/268504131.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/901395325.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1372338083.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/348675483.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/772004255.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/2007657726.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1470157467.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/844384413.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/608296250.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1879102328.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/602/20078602/1495142211.jpg"
+        }
+      ],
+      "kiloWatts": null,
+      "listPrice": null,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 138000,
+      "modelKey": "230",
+      "price": 79800.00,
+      "seats": null,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "230 SL ROADSTER",
+      "versionId": null
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 999,
+      "cylinders": 3,
+      "doors": 5,
+      "driveType": "front",
+      "firstRegistrationDate": "2025-02-01",
+      "firstRegistrationYear": 2025,
+      "fuelType": "petrol",
+      "id": 20233271,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/98356661.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1669228053.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1410886488.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1418088016.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1927465931.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1608772331.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/856642066.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1912484987.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1139054157.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/273682184.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1943568238.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/260588718.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1167006446.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1260113956.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/279604839.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/499616213.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1893407778.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/1895139895.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/771658443.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/297997999.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/271/20233271/101266266.jpg"
+        }
+      ],
+      "kiloWatts": 85,
+      "listPrice": 37840.00,
+      "live": true,
+      "makeKey": "skoda",
+      "mileage": 5000,
+      "modelKey": "scala",
+      "price": 26600.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Scala 1.0 TSI Monte Carlo DSG",
+      "versionId": 124005
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 999,
+      "cylinders": 3,
+      "doors": 5,
+      "driveType": "front",
+      "firstRegistrationDate": "2025-02-01",
+      "firstRegistrationYear": 2025,
+      "fuelType": "petrol",
+      "id": 20233778,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1892879402.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1521447714.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/852773468.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/456873556.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/95557763.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1060366548.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1796685492.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/99061920.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1483546618.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/655841080.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1373060761.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/594328129.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/239299829.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1638621540.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/169303463.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/582045372.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1338935921.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/2059494032.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/932945644.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/1496622279.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/778/20233778/99627145.jpg"
+        }
+      ],
+      "kiloWatts": 85,
+      "listPrice": 38900.00,
+      "live": true,
+      "makeKey": "skoda",
+      "mileage": 5000,
+      "modelKey": "scala",
+      "price": 26600.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Scala 1.0 TSI Monte Carlo DSG",
+      "versionId": 124005
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": null,
+      "cylinders": null,
+      "doors": 2,
+      "driveType": "rear",
+      "firstRegistrationDate": "2011-06-01",
+      "firstRegistrationYear": 2011,
+      "fuelType": "electric",
+      "id": 11389123,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1123970090.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1899560862.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1453756460.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/206388151.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/227009693.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1940231177.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/770555575.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1577634911.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/254224420.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1038180773.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1819113919.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1290503774.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/432052009.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/26757562.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1788292239.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1937230045.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1498744893.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/960015071.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/2120302890.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/563395877.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1894226589.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1036170886.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1930390973.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1856975525.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/244238869.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/216555335.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1069531313.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/1102293307.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/123/11389123/530968497.jpg"
+        }
+      ],
+      "kiloWatts": 215,
+      "listPrice": null,
+      "live": true,
+      "makeKey": "tesla",
+      "mileage": 53700,
+      "modelKey": "roadster",
+      "price": 59900.00,
+      "seats": 2,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic-stepless",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Roadster with all new battery",
+      "versionId": 35302
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1AF334",
+      "conditionType": "used",
+      "cubicCapacity": 2995,
+      "cylinders": 6,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2018-07-01",
+      "firstRegistrationYear": 2018,
+      "fuelType": "petrol",
+      "id": 20274885,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1049655731.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1083132809.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1827293972.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/251130060.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1216383957.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/2111343621.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1882612469.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1836907949.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/403579892.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1542537597.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/72851400.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1919073765.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/606643098.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/169347129.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1965740317.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/766348208.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/295436918.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/2040510408.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1665552515.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/762016550.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/507994520.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/439237312.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/983941001.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1794276315.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1431081601.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/1512365265.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/613482836.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/804400055.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/885/20274885/823051861.jpg"
+        }
+      ],
+      "kiloWatts": 260,
+      "listPrice": 111680.00,
+      "live": true,
+      "makeKey": "audi",
+      "mileage": 123500,
+      "modelKey": "sq5",
+      "price": 31900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "SQ5 3.0 TFSI quattro S-tronic",
+      "versionId": 57557
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": "1AG615",
+      "conditionType": "used",
+      "cubicCapacity": 2995,
+      "cylinders": 6,
+      "doors": 2,
+      "driveType": "all",
+      "firstRegistrationDate": "2018-09-01",
+      "firstRegistrationYear": 2018,
+      "fuelType": "petrol",
+      "id": 20006740,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/631967497.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1737279823.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/676050873.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1939012667.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1385724820.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1138162838.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1097907919.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/110900234.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1716238578.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/2005312204.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1575219655.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1556032271.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/2133833157.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/482040442.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/770218369.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/78661875.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1133421337.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1525467955.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1540024642.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1987492474.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1180893437.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1170025791.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1098948548.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/823292893.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1876623277.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/972327320.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1169200992.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/849821839.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/1200187008.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/584766359.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/213509402.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/740/20006740/534950999.jpg"
+        }
+      ],
+      "kiloWatts": 260,
+      "listPrice": 91500.00,
+      "live": true,
+      "makeKey": "audi",
+      "mileage": 66500,
+      "modelKey": "s5",
+      "price": 36900.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "S5 Cabriolet 3.0 TFSI quattro tiptronic",
+      "versionId": 57108
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "small-car",
+      "certificationNumber": "1NA179",
+      "conditionType": "used",
+      "cubicCapacity": 1348,
+      "cylinders": 4,
+      "doors": 3,
+      "driveType": "front",
+      "firstRegistrationDate": "2002-12-01",
+      "firstRegistrationYear": 2002,
+      "fuelType": "petrol",
+      "id": 12869881,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/1766060076.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/255600348.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/890970536.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/707957697.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/492086452.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/1617066436.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/1743663970.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/1930046706.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/119322786.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/1097247230.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/689972687.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/964689982.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/1166289306.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/881/12869881/918234262.jpg"
+        }
+      ],
+      "kiloWatts": 60,
+      "listPrice": null,
+      "live": true,
+      "makeKey": "nissan",
+      "mileage": 29000,
+      "modelKey": "micra",
+      "price": 5900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Micra 1.4 Fresh",
+      "versionId": 15225
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "estate",
+      "certificationNumber": "1MC827",
+      "conditionType": "used",
+      "cubicCapacity": 2597,
+      "cylinders": 6,
+      "doors": 5,
+      "driveType": "rear",
+      "firstRegistrationDate": "2001-04-01",
+      "firstRegistrationYear": 2001,
+      "fuelType": "petrol",
+      "id": 12144264,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/264/12144264/666865760.JPG"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/264/12144264/779327781.JPG"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/264/12144264/251272098.JPG"
+        }
+      ],
+      "kiloWatts": 125,
+      "listPrice": 58005.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 144000,
+      "modelKey": "c-240",
+      "price": 900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "C 240 Avantgarde",
+      "versionId": 15209
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "motorhome",
+      "certificationNumber": "1vs442",
+      "conditionType": "used",
+      "cubicCapacity": 1968,
+      "cylinders": 4,
+      "doors": 4,
+      "driveType": "front",
+      "firstRegistrationDate": "2022-11-01",
+      "firstRegistrationYear": 2022,
+      "fuelType": "diesel",
+      "id": 20448384,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1849182078.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/587749964.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/7935312.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1354256141.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1775609388.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/2090569091.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/633185250.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/2105395591.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1613468128.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/739192086.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/714878054.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1958371619.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/415575582.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/274390519.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/695025190.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1444272057.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1994732437.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1689067927.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1169495919.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/784777662.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/849386514.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1774278497.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/728139444.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1081025411.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1197756830.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/140475798.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/2077405430.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/896375169.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/922356107.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1847907973.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1099074756.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/1493067554.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/961685462.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/445908839.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/829646261.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/270956680.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/384/20448384/296871549.jpg"
+        }
+      ],
+      "kiloWatts": 110,
+      "listPrice": 81500.00,
+      "live": true,
+      "makeKey": "vw",
+      "mileage": 21000,
+      "modelKey": "t61",
+      "price": 64900.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": null,
+      "tuned": false,
+      "vehicleCategory": "camper",
+      "versionFullName": "T6.1 California 2.0 TDI Ocean Liberty",
+      "versionId": 105188
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "bus",
+      "certificationNumber": "1ve869",
+      "conditionType": "used",
+      "cubicCapacity": 1968,
+      "cylinders": 4,
+      "doors": 4,
+      "driveType": "front",
+      "firstRegistrationDate": "2013-09-01",
+      "firstRegistrationYear": 2013,
+      "fuelType": "diesel",
+      "id": 20448511,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/363159452.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1678734093.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/303654698.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/605243352.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1760349523.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/33975674.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/738125210.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/133496559.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1412082295.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1398728077.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1823148752.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/780372917.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/468742528.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/833676812.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/765565547.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/2095227738.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1417942216.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1966137265.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/238623461.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1263001770.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/192079555.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1407433414.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/511/20448511/1430234098.jpg"
+        }
+      ],
+      "kiloWatts": 62,
+      "listPrice": 39890.00,
+      "live": true,
+      "makeKey": "vw",
+      "mileage": 198000,
+      "modelKey": "t5",
+      "price": 17700.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "T5 Multivan 2.0 TDI CR Startline",
+      "versionId": 88385
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1vp197",
+      "conditionType": "used",
+      "cubicCapacity": null,
+      "cylinders": null,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2021-12-01",
+      "firstRegistrationYear": 2021,
+      "fuelType": "electric",
+      "id": 20233959,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1510297408.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/699358556.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1621756427.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/2016482568.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/756738905.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1484755411.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/707597030.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1511680278.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/216685120.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1042979999.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1645602931.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/848989442.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1666381870.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1977887504.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1770248595.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/781659449.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/569830827.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/1652309931.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/254371309.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/133021058.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/959/20233959/921732303.jpg"
+        }
+      ],
+      "kiloWatts": 300,
+      "listPrice": 68270.00,
+      "live": true,
+      "makeKey": "volvo",
+      "mileage": 52000,
+      "modelKey": "c40",
+      "price": 24900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "C40 Recharge P8 Twin AWD Pure Electric Ultimate",
+      "versionId": 76244
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": "1BU761",
+      "conditionType": "used",
+      "cubicCapacity": 2998,
+      "cylinders": 6,
+      "doors": 2,
+      "driveType": "all",
+      "firstRegistrationDate": "2021-05-01",
+      "firstRegistrationYear": 2021,
+      "fuelType": "mhev-petrol",
+      "id": 12895682,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/927312490.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1447015151.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1639668652.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1571114409.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1410533036.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/954972276.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1937799738.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/2034602585.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/297059878.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/107960481.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/936972657.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/571899920.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1901862656.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1979648227.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1799009533.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/233979073.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1617030909.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/516127656.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1615401137.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1191090659.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1288676203.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/846160716.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/419686207.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1456804809.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/569298236.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1201883381.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1487838672.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1252528576.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1608765174.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/682/12895682/1506670294.jpg"
+        }
+      ],
+      "kiloWatts": 275,
+      "listPrice": 90600.00,
+      "live": true,
+      "makeKey": "bmw",
+      "mileage": 66000,
+      "modelKey": "m440",
+      "price": 39900.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "M440i xDrive 48V Cabriolet Steptronic",
+      "versionId": 71910
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1jb251",
+      "conditionType": "used",
+      "cubicCapacity": 2987,
+      "cylinders": 6,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2017-03-01",
+      "firstRegistrationYear": 2017,
+      "fuelType": "diesel",
+      "id": 20139404,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/676808112.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1091288636.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1581511448.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/104013415.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1793018899.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/802911615.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/380347080.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1212344222.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/411294093.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1609484497.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1278115532.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1622534382.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/877693050.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1867573417.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/921475674.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/284286.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/498021520.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1809355560.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1045113408.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/209999380.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1007711273.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/769181771.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/394657928.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20139404/1195293253.jpg"
+        }
+      ],
+      "kiloWatts": 184,
+      "listPrice": 73800.00,
+      "live": true,
+      "makeKey": "jeep",
+      "mileage": 102500,
+      "modelKey": "grand-cherokee",
+      "price": 22900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Grand Cherokee 3.0 CRD Trailhawk Automatic",
+      "versionId": 57284
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": "1sf302",
+      "conditionType": "used",
+      "cubicCapacity": null,
+      "cylinders": null,
+      "doors": 3,
+      "driveType": "rear",
+      "firstRegistrationDate": "2023-02-01",
+      "firstRegistrationYear": 2023,
+      "fuelType": "electric",
+      "id": 20139349,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/344375270.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1152461130.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/592994882.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/2048045776.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/462988975.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/2044252904.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/882332582.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1881026951.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/833972053.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/979249847.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1675549674.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/533224118.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/482703280.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/785083023.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/240557870.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1666354650.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1136431205.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1349127431.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/987513799.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/141800471.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/165742782.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1980943518.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/825352966.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/349/20139349/1008807374.jpg"
+        }
+      ],
+      "kiloWatts": 60,
+      "listPrice": 38600.00,
+      "live": true,
+      "makeKey": "smart",
+      "mileage": 8500,
+      "modelKey": "fortwo",
+      "price": 18700.00,
+      "seats": 2,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "fortwo EQ prime (incl. battery)",
+      "versionId": 61837
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 1796,
+      "cylinders": 4,
+      "doors": 2,
+      "driveType": "rear",
+      "firstRegistrationDate": "1997-06-01",
+      "firstRegistrationYear": 1997,
+      "fuelType": "petrol",
+      "id": 20508994,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1848551873.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1866405507.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1265748288.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/798571268.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1405792375.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1288958818.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/13691919.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1059941881.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1292850617.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1619861518.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1530787548.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/542664607.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/128355472.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1396097645.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/1168250646.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/90045334.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/2096433262.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/14914532.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/955470899.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/994/20508994/2008641615.jpg"
+        }
+      ],
+      "kiloWatts": 87,
+      "listPrice": 42960.00,
+      "live": true,
+      "makeKey": "bmw",
+      "mileage": 83500,
+      "modelKey": "z3",
+      "price": 13800.00,
+      "seats": 2,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Z3 1.8i Roadster",
+      "versionId": 1769
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 1998,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2025-03-01",
+      "firstRegistrationYear": 2025,
+      "fuelType": "mhev-petrol",
+      "id": 20509147,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/533358203.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1514383056.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1748402262.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1920536232.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1398010461.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1652345343.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/335002130.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/325368431.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/719065952.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/357286978.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1210835547.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1366779213.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/875959049.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1529940632.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/2095603209.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1542483693.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/468182570.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/406048357.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1727656413.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1096811860.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1922373312.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/65221177.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/699102003.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/552961373.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1538564277.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/188177082.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1175016118.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1314561569.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/147/20509147/1995325585.jpg"
+        }
+      ],
+      "kiloWatts": 150,
+      "listPrice": 79550.00,
+      "live": true,
+      "makeKey": "bmw",
+      "mileage": 7900,
+      "modelKey": "x1",
+      "price": 54900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "X1 xDrive 23i 48V M Sport Pro",
+      "versionId": 122845
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1xw101",
+      "conditionType": "used",
+      "cubicCapacity": 1969,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2021-01-01",
+      "firstRegistrationYear": 2021,
+      "fuelType": "phev-petrol",
+      "id": 20591404,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/1147835242.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/487084927.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/1982859123.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/2119421544.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/1916229878.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/2020924832.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/719270768.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/2034776488.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/1878541907.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/504389534.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/80258836.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/1082409613.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/91257148.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/201053229.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/1996906241.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/572645583.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/737391502.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/614443740.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/2017156622.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/340666739.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/404/20591404/2045788428.jpg"
+        }
+      ],
+      "kiloWatts": 288,
+      "listPrice": 92690.00,
+      "live": true,
+      "makeKey": "volvo",
+      "mileage": 88500,
+      "modelKey": "xc60",
+      "price": 36600.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "XC60 T8 eAWD R-Design Geartronic",
+      "versionId": 61784
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": "1td833",
+      "conditionType": "used",
+      "cubicCapacity": null,
+      "cylinders": null,
+      "doors": 4,
+      "driveType": "all",
+      "firstRegistrationDate": "2021-11-01",
+      "firstRegistrationYear": 2021,
+      "fuelType": "electric",
+      "id": 20499359,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/745885131.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1212558280.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1087735994.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/646118230.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/551606674.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1955401861.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/322171889.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/245099329.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1614981239.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1557253760.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1351261581.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/500809436.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/290921712.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/299726179.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1173845561.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1092437405.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1645106332.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/570131943.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/992532119.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/1448187081.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/946425105.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/359/20499359/889640456.jpg"
+        }
+      ],
+      "kiloWatts": 366,
+      "listPrice": 52690.00,
+      "live": true,
+      "makeKey": "tesla",
+      "mileage": 69890,
+      "modelKey": "model-3",
+      "price": 25800.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Model 3 Long Range Dual Motor AWD",
+      "versionId": 74397
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": "1fc640",
+      "conditionType": "used",
+      "cubicCapacity": 875,
+      "cylinders": 2,
+      "doors": 2,
+      "driveType": "front",
+      "firstRegistrationDate": "2019-06-01",
+      "firstRegistrationYear": 2019,
+      "fuelType": "petrol",
+      "id": 20478103,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1832728831.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/174748667.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1191728503.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1665468766.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1824989129.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1810157361.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1797101665.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/928434432.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/574692365.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1279147332.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/787364456.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/602614088.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/732088655.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1277260990.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/118913233.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1810353983.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/1453639534.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/32070183.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/2001111952.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/805495072.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/2065347364.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/103/20478103/2132753778.jpg"
+        }
+      ],
+      "kiloWatts": 59,
+      "listPrice": 23990.00,
+      "live": true,
+      "makeKey": "fiat",
+      "mileage": 81000,
+      "modelKey": "500",
+      "price": 9900.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "500C 0.9 Twinair Spiaggina",
+      "versionId": 63465
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": "1md913",
+      "conditionType": "used",
+      "cubicCapacity": 5461,
+      "cylinders": 8,
+      "doors": 4,
+      "driveType": "all",
+      "firstRegistrationDate": "2011-01-01",
+      "firstRegistrationYear": 2011,
+      "fuelType": "petrol",
+      "id": 20165397,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1674599777.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/217909751.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/520727922.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/486104175.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/330434204.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/234975408.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/876085108.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/94563716.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1256723219.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/955225321.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1790078427.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1442606997.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1498308800.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/96006809.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/876339006.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1644326188.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/953031757.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/36325714.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/273490504.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/501942009.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/333828161.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/397/20165397/1729651815.jpg"
+        }
+      ],
+      "kiloWatts": 285,
+      "listPrice": 134650.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 148900,
+      "modelKey": "e-500",
+      "price": 12900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "E 500 Elégance 4Matic 7G-Tronic",
+      "versionId": 30313
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "coupe",
+      "certificationNumber": "1MG731",
+      "conditionType": "used",
+      "cubicCapacity": 2996,
+      "cylinders": 6,
+      "doors": 2,
+      "driveType": "all",
+      "firstRegistrationDate": "2018-06-01",
+      "firstRegistrationYear": 2018,
+      "fuelType": "petrol",
+      "id": 20181239,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/740618179.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1796779249.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/2053942482.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/849144216.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1681273793.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1760687851.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/2105554178.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/562606751.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1076690416.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/595307865.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/847646907.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1698820667.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1327658948.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1425989196.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/2055762796.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1227320863.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/203273255.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/529397981.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/2080640075.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/1232101312.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/2012843395.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/140858386.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/491032233.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/239/20181239/347136754.jpg"
+        }
+      ],
+      "kiloWatts": 270,
+      "listPrice": 161800.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 145000,
+      "modelKey": "s-400",
+      "price": 39900.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "S 400 Coupé 4Matic 7G-Tronic",
+      "versionId": 53119
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1SL725",
+      "conditionType": "used",
+      "cubicCapacity": 1498,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "front",
+      "firstRegistrationDate": "2025-03-01",
+      "firstRegistrationYear": 2025,
+      "fuelType": "petrol",
+      "id": 12909211,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1432146947.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1525951535.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1521037119.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1072523853.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1669625408.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/548906406.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1196473954.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/966846626.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/638290964.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/164082516.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/929366499.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1942041402.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/976232585.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1778421520.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/646077655.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1711693395.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1408475187.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/731470756.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/240200014.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1728371900.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1304444070.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1351946464.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1449119050.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/71322025.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/627905027.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/31508289.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/792935198.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1953305944.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1084392124.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/1369489574.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/211/12909211/845121688.jpg"
+        }
+      ],
+      "kiloWatts": 110,
+      "listPrice": 45800.00,
+      "live": true,
+      "makeKey": "skoda",
+      "mileage": 5300,
+      "modelKey": "karoq",
+      "price": 34700.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Karoq 1.5 TSI SportLine DSG",
+      "versionId": 75673
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "estate",
+      "certificationNumber": "3LA241",
+      "conditionType": "used",
+      "cubicCapacity": 2198,
+      "cylinders": 4,
+      "doors": 3,
+      "driveType": "all",
+      "firstRegistrationDate": "2012-08-01",
+      "firstRegistrationYear": 2012,
+      "fuelType": "diesel",
+      "id": 20545620,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/857659321.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/532278277.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/383805770.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/718105911.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/421588496.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/1260314933.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/329338177.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/807424116.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/2044089129.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/2134511085.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/680630635.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/573709466.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/803874128.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/677303412.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/1082844464.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/721628622.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/1290646934.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/686803063.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/1204437307.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/2026454933.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/428963481.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/620/20545620/615894321.jpg"
+        }
+      ],
+      "kiloWatts": 90,
+      "listPrice": 41200.00,
+      "live": true,
+      "makeKey": "land-rover",
+      "mileage": 89900,
+      "modelKey": "defender",
+      "price": 39900.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Defender 90 2.2 TD4 Station Wagon",
+      "versionId": 90346
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 1991,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2024-03-01",
+      "firstRegistrationYear": 2024,
+      "fuelType": "mhev-petrol",
+      "id": 20450633,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/680661006.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1223045041.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/2112627164.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1859983025.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1187749306.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/2037555659.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/691173876.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/206531242.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/784052875.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1144150648.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/24040791.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1244879582.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/798414892.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/580089164.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/968699244.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1421386409.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/2048717897.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/929906210.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/1570497618.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/375973317.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/2131005348.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/663531372.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/555873328.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/633/20450633/25502261.jpg"
+        }
+      ],
+      "kiloWatts": 225,
+      "listPrice": 92970.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 19800,
+      "modelKey": "gla-35-amg",
+      "price": 58800.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "GLA AMG 35 4Matic 8G-DCT",
+      "versionId": 122954
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "estate",
+      "certificationNumber": null,
+      "conditionType": "used",
+      "cubicCapacity": 1598,
+      "cylinders": 4,
+      "doors": 4,
+      "driveType": "front",
+      "firstRegistrationDate": "2015-11-01",
+      "firstRegistrationYear": 2015,
+      "fuelType": "diesel",
+      "id": 20452213,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1181476470.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/517809168.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/653002319.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/689592832.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/795019677.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/510384879.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1410827972.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1693567666.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/932366151.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1628205067.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1569247461.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1189405856.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/931891771.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1689225662.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1624214238.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1248824027.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/457559614.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/826806863.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1856905642.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/467034788.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/213/20452213/1357086680.jpg"
+        }
+      ],
+      "kiloWatts": 92,
+      "listPrice": 45700.00,
+      "live": true,
+      "makeKey": "renault",
+      "mileage": 134000,
+      "modelKey": "trafic",
+      "price": 19900.00,
+      "seats": 9,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Trafic ENERGY dCi 125 Grand Passenger Authentique",
+      "versionId": 97081
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "coupe",
+      "certificationNumber": "1pf539",
+      "conditionType": "used",
+      "cubicCapacity": 3800,
+      "cylinders": 6,
+      "doors": 2,
+      "driveType": "all",
+      "firstRegistrationDate": "2013-09-01",
+      "firstRegistrationYear": 2013,
+      "fuelType": "petrol",
+      "id": 20529659,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/542827811.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/902440660.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/107113074.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1785622304.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/142426937.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/2105323864.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/112488102.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/191129519.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1978977795.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1951752145.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1854472380.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1138915030.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/343519686.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1133879133.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/2137385679.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/296627077.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/539315316.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1772620404.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/945511406.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1335143181.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1208974103.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1008155663.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1616261898.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/239518573.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/659/20529659/1011511340.jpg"
+        }
+      ],
+      "kiloWatts": 294,
+      "listPrice": 211170.00,
+      "live": true,
+      "makeKey": "porsche",
+      "mileage": 77500,
+      "modelKey": "911",
+      "price": 77700.00,
+      "seats": 4,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "911 Carrera 4S PDK",
+      "versionId": 40770
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "estate",
+      "certificationNumber": "1MW495",
+      "conditionType": "used",
+      "cubicCapacity": 1998,
+      "cylinders": 4,
+      "doors": 6,
+      "driveType": "all",
+      "firstRegistrationDate": "2020-06-01",
+      "firstRegistrationYear": 2020,
+      "fuelType": "petrol",
+      "id": 20075311,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1633057862.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/678791264.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1989148604.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/89804953.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/810178410.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/824156946.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1381990103.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1061248237.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/273204382.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/624458079.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1786796045.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/165731843.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1284524906.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1158178129.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1335042077.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/79538332.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/2017220552.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1066887266.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1811515173.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1866290723.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/720413873.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/2112224866.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1868241617.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/225991586.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1345891543.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1069940841.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/183245806.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/1726219000.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/311/20075311/918178758.jpg"
+        }
+      ],
+      "kiloWatts": 225,
+      "listPrice": 66990.00,
+      "live": true,
+      "makeKey": "mini",
+      "mileage": 105800,
+      "modelKey": "clubman",
+      "price": 24900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Clubman Cooper John Cooper Works ALL4 Steptronic",
+      "versionId": 67726
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1PF617",
+      "conditionType": "used",
+      "cubicCapacity": 3604,
+      "cylinders": 6,
+      "doors": 5,
+      "driveType": "all",
+      "firstRegistrationDate": "2015-11-01",
+      "firstRegistrationYear": 2015,
+      "fuelType": "petrol",
+      "id": 20017238,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1880982579.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/684898582.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1707845655.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1883515020.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1276211579.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1803736008.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/196079898.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1038019612.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/463802944.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/399886686.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/2713892.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1513347870.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1692499031.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1798050165.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/863341782.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1736697615.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/440086188.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/886265176.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/2144430047.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/2045269033.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/517340506.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1083820654.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/405436060.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/264121571.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/43844555.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/203099177.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/419217523.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/273387552.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/781621533.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/1336104878.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/485474896.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/238/20017238/854183372.jpg"
+        }
+      ],
+      "kiloWatts": 324,
+      "listPrice": 150100.00,
+      "live": true,
+      "makeKey": "porsche",
+      "mileage": 151000,
+      "modelKey": "cayenne",
+      "price": 28800.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Cayenne GTS",
+      "versionId": 48671
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "cabriolet",
+      "certificationNumber": "1bv287",
+      "conditionType": "used",
+      "cubicCapacity": 1998,
+      "cylinders": 4,
+      "doors": 2,
+      "driveType": "rear",
+      "firstRegistrationDate": "2021-03-01",
+      "firstRegistrationYear": 2021,
+      "fuelType": "petrol",
+      "id": 20471425,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1894945767.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1142793382.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/411714963.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/883148417.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/27956554.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1370626871.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/595156345.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/289620538.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1529581474.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1089304453.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/543581566.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/317494802.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1286876451.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/593940479.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/797145863.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1792126235.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/911266058.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1477404039.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/299019950.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1460696117.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/574488741.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/803208184.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/238790678.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/425/20471425/1734588703.jpg"
+        }
+      ],
+      "kiloWatts": 145,
+      "listPrice": 69200.00,
+      "live": true,
+      "makeKey": "bmw",
+      "mileage": 42000,
+      "modelKey": "z4",
+      "price": 34800.00,
+      "seats": 2,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Z4 sDrive 20i Sport Line Steptronic",
+      "versionId": 64242
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "platform",
+      "certificationNumber": "3mj769",
+      "conditionType": "used",
+      "cubicCapacity": 2143,
+      "cylinders": 4,
+      "doors": 2,
+      "driveType": "rear",
+      "firstRegistrationDate": "2015-05-01",
+      "firstRegistrationYear": 2015,
+      "fuelType": "diesel",
+      "id": 20491316,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/2091708580.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/690196074.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/648359286.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/921909225.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1137645228.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1168784531.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/849960627.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1758395054.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1248095492.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1494629783.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/235606932.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1341833117.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1206465205.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/153204730.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/512101567.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/67876697.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/1433793349.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/316/20491316/896740030.jpg"
+        }
+      ],
+      "kiloWatts": 95,
+      "listPrice": 57800.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 77000,
+      "modelKey": "sprinter",
+      "price": 22900.00,
+      "seats": 2,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "utility",
+      "versionFullName": "Sprinter 313 CDI Kompakt",
+      "versionId": 93173
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "suv",
+      "certificationNumber": "1DE211",
+      "conditionType": "used",
+      "cubicCapacity": 1499,
+      "cylinders": 4,
+      "doors": 5,
+      "driveType": "front",
+      "firstRegistrationDate": "2018-01-01",
+      "firstRegistrationYear": 2018,
+      "fuelType": "diesel",
+      "id": 20187751,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/481974637.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1209123017.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1899230405.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1124834018.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/147900598.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1976923656.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/41874713.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/744620578.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/430736083.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/97671244.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/135742103.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1789103902.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/789298566.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1191922228.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/283555202.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/836638624.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1200599782.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/385947892.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/1053686889.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/751/20187751/713605438.jpg"
+        }
+      ],
+      "kiloWatts": 96,
+      "listPrice": 38050.00,
+      "live": true,
+      "makeKey": "ds-automobiles",
+      "mileage": 53000,
+      "modelKey": "ds7",
+      "price": 17700.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "manual",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "DS 7 Crossback 1.5 BlueHDi Chic",
+      "versionId": 60897
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "saloon",
+      "certificationNumber": "1MJ251",
+      "conditionType": "used",
+      "cubicCapacity": 3982,
+      "cylinders": 8,
+      "doors": 4,
+      "driveType": "all",
+      "firstRegistrationDate": "2020-02-01",
+      "firstRegistrationYear": 2020,
+      "fuelType": "petrol",
+      "id": 12795084,
+      "images": [
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1576822331.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1752823229.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1359252988.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1884385743.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1841725192.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1298587945.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1417438515.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/770772190.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1749634509.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1151556436.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1960085558.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1632830648.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/527592617.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/327942852.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1787578454.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1432029105.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/2058431818.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/989732283.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/257476183.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1907725880.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/636350719.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/785991662.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/619869523.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/257914547.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1814260501.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1037342597.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1922875221.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1288880333.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1540741229.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/156218341.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/28265440.jpg"
+        },
+        {
+          "url": "https://listing-images.autoscout24.ch/listing/84/12795084/1061179762.jpg"
+        }
+      ],
+      "kiloWatts": 420,
+      "listPrice": 155171.00,
+      "live": true,
+      "makeKey": "mercedes-benz",
+      "mileage": 68200,
+      "modelKey": "e-63-amg",
+      "price": 66500.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "semi-automatic",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "E 63 AMG 4Matic+ Speedshift MCT",
+      "versionId": 66214
+    },
+    {
+      "availableForLeasing": null,
+      "bodyType": "small-car",
+      "certificationNumber": "1TB482",
+      "conditionType": "used",
+      "cubicCapacity": 1490,
+      "cylinders": 3,
+      "doors": 5,
+      "driveType": "front",
+      "firstRegistrationDate": "2022-11-01",
+      "firstRegistrationYear": 2022,
+      "fuelType": "hev-petrol",
+      "id": 20581043,
+      "images": [],
+      "kiloWatts": 85,
+      "listPrice": 25900.00,
+      "live": true,
+      "makeKey": "toyota",
+      "mileage": 66800,
+      "modelKey": "yaris",
+      "price": 17900.00,
+      "seats": 5,
+      "sellerId": 61524,
+      "status": "activated",
+      "transmissionType": "automatic-stepless",
+      "tuned": false,
+      "vehicleCategory": "car",
+      "versionFullName": "Yaris 1.5 Comfort e-CVT",
+      "versionId": 71225
+    }
+  ],
+  "number": 0,
+  "size": 100,
+  "totalElements": 85,
+  "empty": false,
+  "first": true,
+  "last": true,
+  "numberOfElements": 85,
+  "totalPages": 1
+}

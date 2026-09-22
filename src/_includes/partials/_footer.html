@@ -1,0 +1,97 @@
+<footer class="primary-footer">
+  <section
+    class="footer-banner"
+    aria-labelledby="footer-banner-titre"
+  >
+    <div class="footer-banner__inner">
+      {{ svgs.badge1994.icon | safe }}
+      <h4 id="footer-banner-titre">
+        Une famille, une passion depuis 1994
+      </h4>
+      <p>
+        Depuis plus de 30 ans, Garage Auto Bolle est un partenaire de
+        confiance pour l'achat, l'entretien et la reprise de véhicules
+        dans la région morgienne et ses environs.
+      </p>
+    </div>
+  </section>
+  <div>
+    <div class="footer-top">
+      <div>{% svg "logo-light" %}</div>
+      <nav aria-label="Réseaux sociaux">
+        <a
+          href="https://www.instagram.com/autobolle/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visiter la page Instagram d'Auto Bolle"
+        >
+          {% svg "instagram-ico" %}
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/autobolle/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visiter la page LinkedIn d'Auto Bolle"
+        >
+          {% svg "linkedin-ico" %}
+        </a>
+
+        <a
+          href="https://www.facebook.com/autobolle/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visiter la page Facebook d'Auto Bolle"
+        >
+          {% svg "facebook-ico" %}
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Rangée 2 : 4 colonnes -->
+  <div class="grid-4">
+    <div>
+      <h3>Nous sommes ici</h3>
+      <address>
+        {{ svgs.pin.icon | safe }} {{ contact.adresse.nom }}<br />
+        {{ contact.adresse.rue }}<br />
+        {{ contact.adresse.localite }}
+      </address>
+    </div>
+    <div>
+      <div>
+        <h3>Contact</h3>
+        {% include "partials/_contact-buttons.html" %}
+      </div>
+    </div>
+
+    <div>
+      <h3>Rendez-vous en ligne</h3>
+      <a
+        href="{{ contact.rendezVous }}"
+        target="_blank"
+        rel="noopener"
+        class="contact-btn"
+      >
+        Rendez-vous
+      </a>
+    </div>
+    {% for h in contact.horaires %} {% if h.icone == 'shop' %}
+    <div>
+      <h3>Horaires {{ h.titre | lower }}</h3>
+      {% for plage in h.plages %}
+      <p class="horaire-ligne">
+        {{ plage.jours }} &nbsp; {{ plage.heures | join(' / ') }}
+      </p>
+      {% endfor %}
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+
+  <!-- Rangée 3 : bas légal -->
+  <div class="footer-legal">
+    {# <a href="/cgu">Conditions Générales d'utilisation</a> #}
+    <p>© Auto Bolle <span id="annee">{{ site.annee }}</span></p>
+  </div>
+</footer>

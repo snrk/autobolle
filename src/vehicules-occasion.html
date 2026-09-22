@@ -1,0 +1,595 @@
+---
+layout: layouts/_base
+title: Voitures d'occasion
+---
+
+<main>
+  <section class="occasions-list">
+    <div class="container">
+      <h1>Nos véhicules</h1>
+      <div id="filter-bar"></div>
+      <div id="cars-grid" class="cars-grid" aria-busy="true"></div>
+    </div>
+  </section>
+
+  <section class="occasions-detail" hidden>
+    <div class="container">
+      <a
+        id="back-grid"
+        class="back-grid"
+        href="{% if env === 'liveTest' %}/ab{% endif %}/vehicules-occasion/"
+        >Retour</a
+      >
+      <div id="car-detail" class="car-detail"></div>
+
+      <template id="dealer-tpl">
+        <section class="dealer">
+          <h3>Services supplémentaires du revendeur</h3>
+          <div class="dealer-badge">
+            {% themedImage "./src/assets/images/VFAS-logo-dark.png",
+            "./src/assets/images/VFAS-logo-light.png", "VFAS", "96px",
+            "lazy", "vfas-logo" %}
+            <div>
+              <p class="dealer-badge__title">
+                Membre certifié de VFAS
+              </p>
+              <p class="dealer-badge__sub">
+                Association suisse du commerce automobile indépendant,
+                fondée en 1956
+              </p>
+            </div>
+          </div>
+          <ul class="dealer-points">
+            <li>Le meilleur rapport qualité-prix</li>
+            <li>Normes sévères de formation et de qualification</li>
+            <li>Reprises de véhicules équitables</li>
+            <li>
+              300 centres de service et dépannage dans toute la Suisse
+            </li>
+            <li>
+              Contrôlé par l'État, satisfait les directives pour les
+              cert. d'immat. collective
+            </li>
+            <li>Expérience et solvabilité vérifiées</li>
+          </ul>
+          <a
+            class="dealer-link"
+            href="https://www.vfas.ch/fr/home"
+            target="_blank"
+            rel="noopener"
+            >En savoir plus ↗</a
+          >
+        </section>
+      </template>
+    </div>
+  </section>
+</main>
+
+<script type="module">
+              import { renderCard, attachImageFallback } from '/js/car-card.js'
+              import {
+                renderFilterBar,
+                applyFilters,
+                initScrollIndicators,
+              } from '/js/filters.js'
+              import { ATTR_LABELS } from '/js/equipment-labels.js'
+              import { specItem } from '/js/svgRuntime.js'
+
+              if ('scrollRestoration' in history)
+                history.scrollRestoration = 'manual' // ← étape 1
+
+              const listSection = document.querySelector('.occasions-list')
+              const detailSection = document.querySelector('.occasions-detail')
+              const grid = document.getElementById('cars-grid')
+              const detail = document.getElementById('car-detail')
+              const sep = (n) =>
+                n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'")
+
+              const LEAD_URL = window.API_URL.replace(
+                'getCars.php',
+                'sendLead.php',
+              )
+              const DETAIL_URL = window.API_URL.includes('dummy-cars.json')
+                ? '/dummy-car-detail.json'
+                : window.API_URL.replace('getCars.php', 'getCarDetail.php')
+
+                function renderSpecStrip(d) {
+      const FUEL = { petrol: 'Essence', diesel: 'Diesel', electric: 'Électrique', 'phev-petrol': 'Hybride rechargeable', 'mhev-petrol': 'Micro-hybride essence', 'hev-petrol': 'Hybride essence', 'plug-in-hybrid': 'Hybride rechargeable', hybrid: 'Hybride' }
+      const BODY = { 'small-car': 'Petite voiture', saloon: 'Berline', estate: 'Break', suv: 'SUV', coupe: 'Coupé', cabriolet: 'Cabriolet', bus: 'Bus / Monospace', motorhome: 'Camping-car', platform: 'Pont / Plateau' }
+      const TRANS = { manual: 'Manuelle', automatic: 'Automatique', 'semi-automatic': 'Semi-automatique', 'automatic-stepless': 'Automatique (CVT)' }
+      const DRIVE = { front: 'Traction avant', rear: 'Propulsion', all: '4 roues motrices' }
+      const lbl = (m, k) => m[k] ?? (k ? k[0].toUpperCase() + k.slice(1) : '')
+      const my = (iso) => { if (!iso) return ''; const [y, m] = iso.split('-'); return `${m}.${y}` }
+      const conso = d.consumption?.combined != null
+        ? `${d.consumption.combined.toFixed(1)} l/100 km`
+        : d.powerConsumption != null ? `${d.powerConsumption.toFixed(1)} kWh/100 km` : ''
+      return [
+        specItem('year', d.firstRegistrationDate ? my(d.firstRegistrationDate) : d.firstRegistrationYear),
+        specItem('mileage', d.mileage != null ? `${sep(d.mileage)} km` : ''),
+        specItem('fuel', lbl(FUEL, d.fuelType)),
+        specItem('power', d.horsePower ? `${d.horsePower} ch (${d.kiloWatts} kW)` : d.kiloWatts ? `${d.kiloWatts} kW` : ''),
+        specItem('bodyType', lbl(BODY, d.bodyType)),
+        specItem('transmission', lbl(TRANS, d.transmissionType)),
+        specItem('drive', lbl(DRIVE, d.driveType)),
+        specItem('consumption', conso),
+      ].join('')
+    }
+
+              function renderDetail(car) {
+                const imgs = (car.images ?? []).map((i) => i.url)
+                const title = `${car.makeKey} ${car.versionFullName ?? car.modelKey}`
+                const hero = imgs.length
+                  ? `<img class="car-gallery__img" src="${imgs[0]}" alt="${title}" style="view-transition-name: car-${car.id}">
+                     ${
+                       imgs.length > 1
+                         ? `
+                       <div class="ctrl-car-gallery">
+                       <button class="car-gallery__prev" aria-label="Précédent"></button>
+                       <span class="car-gallery__count">1 / ${imgs.length}</span>
+                       <button class="car-gallery__next" aria-label="Suivant"></button>
+                       </div>`
+                         : ''
+                     }`
+                  : `<div class="car-card__placeholder" style="view-transition-name: car-${car.id}"></div>`
+                return `
+                  <div class="car-gallery">${hero}</div>
+                  <header class="detail-head">
+                    <div class="detail-head__titles">
+                      <h1>${title}</h1>
+                      <div id="car-teaser"></div>
+                    </div>
+                    <div class="detail-head__cta">
+                      <p class="car-detail__price">CHF ${sep(car.price)}.–</p>
+                      <button type="button" class="btn-contact" id="btn-contact">Contact</button>
+                    </div>
+                  </header>
+                  <div class="detail-white">
+                    <div class="detail-body" id="car-extra">
+                      <p class="loading-detail">Chargement des détails…</p>
+                    </div>
+
+                    <dialog id="specs-modal" class="modal">
+                      <button type="button" class="modal__close" aria-label="Fermer">✕</button>
+                      <h2>Caractéristiques</h2>
+                      <div class="modal__body" id="specs-full"></div>
+                    </dialog>
+
+                    <dialog id="desc-modal" class="modal">
+                      <button type="button" class="modal__close" aria-label="Fermer">✕</button>
+                      <h2>Description</h2>
+                      <div class="modal__body" id="desc-full"></div>
+                    </dialog>
+                    <dialog id="equip-modal" class="modal">
+                      <button type="button" class="modal__close" aria-label="Fermer">✕</button>
+                      <h2>Équipement standard</h2>
+                      <div class="modal__body" id="equip-full"></div>
+                    </dialog>
+                    <dialog id="equip-opt-modal" class="modal">
+                      <button type="button" class="modal__close" aria-label="Fermer">✕</button>
+                      <h2>Équipement en option</h2>
+                      <div class="modal__body" id="equip-opt-full"></div>
+                    </dialog>
+                    <div class="detail-foot">
+                      <div id="dealer-slot"></div>
+                      <form class="lead-form" novalidate>
+                        <h3 class="lead-title">Ce modèle vous intéresse ? Contactez-nous&nbsp;!</h3>
+                        <div class="lead-body">
+                          <div class="lead-row">
+                            <label class="lead-field">
+                              <input name="firstName" placeholder="Prénom*" required>
+                              <span class="lead-error"></span>
+                            </label>
+                            <label class="lead-field">
+                              <input name="lastName" placeholder="Nom*" required>
+                              <span class="lead-error"></span>
+                            </label>
+                          </div>
+                          <div class="lead-row">
+                            <label class="lead-field">
+                              <input name="email" type="email" placeholder="Email*" required>
+                              <span class="lead-error"></span>
+                            </label>
+                            <label class="lead-field">
+                              <input name="phone" type="tel" placeholder="Téléphone*" required pattern="[0-9+ ]{7,}">
+                              <span class="lead-error"></span>
+                            </label>
+                          </div>
+                          <label class="lead-field">
+                            <textarea name="message" placeholder="Message">Je suis intéressé-e par le modèle ${title}.</textarea>
+                            <span class="lead-error"></span>
+                          </label>
+                          <p class="lead-note">*Champ obligatoire</p>
+                          <p class="lead-note">Je reconnais <a target="_blank" rel="noopener" href="https://privacy.swissmarketplace.group/fr/">les dispositions sur la protection des données</a> de Swiss Marketplace Group AG (AutoScout24).</p>
+                          <button type="submit">Envoyer</button>
+                          <p class="lead-form__status" role="status"></p>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                `
+              }
+
+               // ← étape 2 + 3 : plus de gridScroll, saut instantané
+              function showDetail(car) {
+                detail.innerHTML = renderDetail(car)
+                listSection.hidden = true
+                detail.querySelector('#dealer-slot').replaceWith(
+                  document.getElementById('dealer-tpl').content.cloneNode(true)
+                )
+                detailSection.hidden = false
+                scrollTo({ top: 0, behavior: 'instant' })
+                initGallery(car)
+                initLeadForm(car)
+                loadDetail(car)
+              }
+
+              function showGrid() {
+                detailSection.hidden = true
+                listSection.hidden = false
+                scrollTo({ top: gridScroll, behavior: 'instant' })
+              }
+
+              function initGallery(car) {
+                const imgs = (car.images ?? []).map((i) => i.url)
+                if (imgs.length < 2) return
+                imgs.forEach((url) => { new Image().src = url })
+
+                const gallery = detail.querySelector('.car-gallery')
+                const img = detail.querySelector('.car-gallery__img')
+                const count = detail.querySelector('.car-gallery__count')
+                let i = 0
+                const show = (n) => {
+                  i = (n + imgs.length) % imgs.length
+                  img.src = imgs[i]
+                  count.textContent = `${i + 1} / ${imgs.length}`
+                }
+                detail.querySelector('.car-gallery__prev').onclick = () => show(i - 1)
+                detail.querySelector('.car-gallery__next').onclick = () => show(i + 1)
+
+                // --- molette : scroll horizontal = image précédente/suivante ---
+                let wheelLock = false
+                gallery.addEventListener('wheel', (e) => {
+                  if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) return // laisse le scroll vertical de page
+                  e.preventDefault()
+                  if (wheelLock) return
+                  wheelLock = true
+                  show(e.deltaX > 0 ? i + 1 : i - 1)
+                  setTimeout(() => (wheelLock = false), 250) // anti-rafale
+                }, { passive: false })
+
+                // --- doigt (swipe) + souris (drag), via Pointer Events ---
+                let startX = null
+                gallery.addEventListener('pointerdown', (e) => { startX = e.clientX })
+                gallery.addEventListener('pointerup', (e) => {
+                  if (startX === null) return
+                  const dx = e.clientX - startX
+                  startX = null
+                  if (Math.abs(dx) < 40) return       // seuil : ignore les micro-mouvements/clics
+                  show(dx < 0 ? i + 1 : i - 1)        // glisse vers la gauche = suivant
+                })
+                gallery.addEventListener('pointercancel', () => { startX = null })
+              }
+
+              function initLeadForm(car) {
+                const form = detail.querySelector('.lead-form')
+                const status = form.querySelector('.lead-form__status')
+
+                const messages = {
+                  valueMissing: 'Ce champ est requis.',
+                  typeMismatch: 'Format invalide.',
+                  patternMismatch: 'Format invalide.',
+                }
+                const showError = (input) => {
+                  const field = input.closest('.lead-field')
+                  const err = field.querySelector('.lead-error')
+                  if (input.validity.valid) {
+                    field.classList.remove('is-invalid')
+                    err.textContent = ''
+                    return true
+                  }
+                  field.classList.add('is-invalid')
+                  const key = Object.keys(messages).find((k) => input.validity[k])
+                  err.textContent = messages[key] ?? 'Champ invalide.'
+                  return false
+                }
+
+                // valide au blur, et efface l'erreur dès que l'utilisateur corrige
+                form.querySelectorAll('input, textarea').forEach((input) => {
+                  input.addEventListener('blur', () => showError(input))
+                  input.addEventListener('input', () => {
+                    if (input.closest('.lead-field').classList.contains('is-invalid')) showError(input)
+                  })
+                })
+
+                form.addEventListener('submit', async (e) => {
+                  e.preventDefault()
+                  // valide tous les champs
+                  const inputs = [...form.querySelectorAll('input, textarea')]
+                  const allValid = inputs.map(showError).every(Boolean)
+                  if (!allValid) {
+                    inputs.find((i) => !i.validity.valid)?.focus()
+                    return
+                  }
+
+                  const btn = form.querySelector('button')
+                  btn.disabled = true
+                  status.textContent = 'Envoi…'
+                  const body = Object.fromEntries(new FormData(form))
+                  try {
+                    const res = await fetch(`${LEAD_URL}?listingId=${car.id}`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify(body),
+                    })
+                    if (res.status === 201 || (await res.clone().json()).ok) {
+                      form.innerHTML = '<p>Message envoyé. Le vendeur vous recontactera.</p>'
+                    } else {
+                      status.textContent = 'Erreur — vérifiez vos informations et réessayez.'
+                      btn.disabled = false
+                    }
+                  } catch {
+                    status.textContent = 'Erreur réseau. Réessayez plus tard.'
+                    btn.disabled = false
+                  }
+                })
+              }
+
+              detail.addEventListener('click', (e) => {
+                const opener = e.target.closest('[data-modal]')
+                if (opener) {
+                  const dlg = detail.querySelector('#' + opener.dataset.modal)
+                  dlg?.showModal()
+                  dlg?.querySelector('.modal__close')?.focus({ preventScroll: true })
+                  return
+                }
+                if (e.target.closest('.modal__close')) { e.target.closest('dialog')?.close(); return }
+                if (e.target.matches('dialog.modal')) { e.target.close(); return }
+                if (e.target.closest('#btn-contact')) {
+                  detail.querySelector('.lead-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              })
+
+              grid.innerHTML = Array(6)
+                .fill('<div class="car-card car-card--skeleton"></div>')
+                .join('')
+              const cars = (await window.getCars()).sort((a, b) => b.id - a.id)
+
+              //filters
+              const filterBar = document.getElementById('filter-bar')
+              const active = {} // état des filtres
+
+              function renderGrid(list) {
+                grid.innerHTML = list.length
+                  ? list.map(renderCard).join('')
+                  : '<p>Aucun véhicule ne correspond à ces critères.</p>'
+                attachImageFallback(grid)
+              }
+
+              filterBar.innerHTML = renderFilterBar(cars)
+              initScrollIndicators(filterBar)
+
+              filterBar.addEventListener('click', (e) => {
+                const btn = e.target.closest('.filter-btn')
+                const reset = e.target.closest('.filter-reset')
+
+                if (reset) {
+                  for (const k in active) delete active[k]
+                  filterBar
+                    .querySelectorAll('.filter-btn')
+                    .forEach((b) => b.classList.remove('is-active'))
+                  renderGrid(cars)
+                  return
+                }
+                if (!btn) return
+
+                const { group, value } = btn.dataset
+                const isActive = btn.classList.contains('is-active')
+
+                // un seul actif par groupe (toggle)
+                filterBar
+                  .querySelectorAll(`.filter-btn[data-group="${group}"]`)
+                  .forEach((b) => b.classList.remove('is-active'))
+                if (isActive) {
+                  delete active[group]
+                } else {
+                  btn.classList.add('is-active')
+                  active[group] =
+                    group === 'make' || group === 'fuel' ? value : Number(value)
+                }
+
+                renderGrid(applyFilters(cars, active))
+              })
+
+              // premier rendu
+              renderGrid(cars)
+
+              grid.innerHTML = cars.map(renderCard).join('')
+              attachImageFallback(grid)
+              {# document.getElementById('cars-output').textContent = JSON.stringify(
+                cars,
+                null,
+                2,
+              ) #}
+              grid.setAttribute('aria-busy', 'false')
+
+              function route() {
+                const id = new URLSearchParams(location.search).get('id')
+                const car = id && cars.find((c) => c.id == id)
+                if (car) showDetail(car)
+                else showGrid()
+              }
+
+              let gridScroll = 0
+
+              grid.addEventListener('click', (e) => {
+                const link = e.target.closest('.car-card')
+                if (!link) return
+                e.preventDefault()
+                gridScroll = window.scrollY
+                const id = link.dataset.id
+                const car = cars.find((c) => c.id == id)
+                const cardImg = link.querySelector('img, .car-card__placeholder')
+                if (cardImg) cardImg.style.viewTransitionName = `car-${id}`
+                const cleanup = () => {
+                  if (cardImg) cardImg.style.viewTransitionName = ''
+                }
+                history.pushState(
+                  {},
+                  '',
+                  `${window.BASE_PATH}/vehicules-occasion/?id=${id}`,
+                )
+                if (document.startViewTransition) {
+                  document
+                    .startViewTransition(() => showDetail(car))
+                    .finished.finally(cleanup)
+                } else {
+                  showDetail(car)
+                  cleanup()
+                }
+              })
+
+              detailSection
+                .querySelector('#back-grid')
+                .addEventListener('click', (e) => {
+                  e.preventDefault()
+                  history.pushState(
+                    {},
+                    '',
+                    `${window.BASE_PATH}/vehicules-occasion/`,
+                  )
+                  document.startViewTransition
+                    ? document.startViewTransition(showGrid)
+                    : showGrid()
+                })
+
+              window.addEventListener('popstate', route)
+              route()
+
+            function specLine(label, val) {
+              return val != null && val !== '' ? `<div class="spec"><dt>${label}</dt><dd>${val}</dd></div>` : ''
+            }
+
+          function renderExtraSpecs(d) {
+            return `
+              <div class="spec-grid">
+                ${renderStripSpecs(d)}
+                ${specLine('Portes', d.doors)}
+                ${specLine('Places', d.seats)}
+                ${specLine('Cylindrée', d.cubicCapacity ? `${sep(d.cubicCapacity)} cm³` : '')}
+                ${specLine('CO₂', d.co2Emission ? `${d.co2Emission} g/km` : '')}
+                ${specLine('Étiquette énergie', d.energyLabel ? d.energyLabel.toUpperCase() : '')}
+                ${specLine('Autonomie élec.', d.range ? `${d.range} km` : '')}
+                ${specLine('Batterie', d.batteryCapacity ? `${d.batteryCapacity.toFixed(1)} kWh` : '')}
+                ${specLine('Prix neuf', d.listPrice ? `CHF ${sep(d.listPrice)}.–` : '')}
+                ${specLine('Couleur', d.bodyColor)}
+                ${specLine('Import direct', d.directImport ? 'Oui' : '')}
+                ${specLine('Contrôle technique', d.inspected ? (d.lastInspectionDate ?? 'Oui') : 'Non')}
+                ${specLine('Garantie', d.warranty?.type && d.warranty.type !== 'none' ? `${d.warranty.type}${d.warranty.duration ? ` — ${d.warranty.duration} mois` : ''}` : 'Non')}
+              </div>`
+          }
+
+          function equipItems(items) {
+            return (items ?? []).map((eq) => `
+              <li>${eq.name}${eq.packageItems?.length
+                ? `<ul>${eq.packageItems.map((p) => `<li>${p.name}</li>`).join('')}</ul>`
+                : ''}</li>`).join('')
+          }
+
+          function renderStripSpecs(d) {
+            const FUEL = { petrol: 'Essence', diesel: 'Diesel', electric: 'Électrique', 'phev-petrol': 'Hybride rechargeable', 'mhev-petrol': 'Micro-hybride essence', 'hev-petrol': 'Hybride essence', 'plug-in-hybrid': 'Hybride rechargeable', hybrid: 'Hybride' }
+            const BODY = { 'small-car': 'Petite voiture', saloon: 'Berline', estate: 'Break', suv: 'SUV', coupe: 'Coupé', cabriolet: 'Cabriolet', bus: 'Bus / Monospace', motorhome: 'Camping-car', platform: 'Pont / Plateau' }
+            const TRANS = { manual: 'Manuelle', automatic: 'Automatique', 'semi-automatic': 'Semi-automatique', 'automatic-stepless': 'Automatique (CVT)' }
+            const DRIVE = { front: 'Traction avant', rear: 'Propulsion', all: '4 roues motrices' }
+            const lbl = (m, k) => m[k] ?? (k ? k[0].toUpperCase() + k.slice(1) : '')
+            const my = (iso) => { if (!iso) return ''; const [y, m] = iso.split('-'); return `${m}.${y}` }
+            const conso = d.consumption?.combined != null
+              ? `${d.consumption.combined.toFixed(1)} l/100 km`
+              : d.powerConsumption != null ? `${d.powerConsumption.toFixed(1)} kWh/100 km` : ''
+            return [
+              specLine('Mise en circulation', d.firstRegistrationDate ? my(d.firstRegistrationDate) : d.firstRegistrationYear),
+              specLine('Kilométrage', d.mileage != null ? `${sep(d.mileage)} km` : ''),
+              specLine('Carburant', lbl(FUEL, d.fuelType)),
+              specLine('Puissance', d.horsePower ? `${d.horsePower} ch (${d.kiloWatts} kW)` : d.kiloWatts ? `${d.kiloWatts} kW` : ''),
+              specLine('Carrosserie', lbl(BODY, d.bodyType)),
+              specLine('Boîte', lbl(TRANS, d.transmissionType)),
+              specLine('Transmission', lbl(DRIVE, d.driveType)),
+              specLine('Conso. mixte', conso),
+            ].join('')
+          }
+
+          async function loadDetail(car) {
+        const zone = detail.querySelector('#car-extra')
+        const teaserZone = detail.querySelector('#car-teaser')
+        if (!zone) return
+
+        const cacheKey = `autobolle_detail_${car.id}`
+        const cached = localStorage.getItem(cacheKey)
+        let data
+
+        if (cached) {
+          const { timestamp, payload } = JSON.parse(cached)
+          if (Date.now() - timestamp < 24 * 60 * 60 * 1000) data = payload
+        }
+
+        if (!data) {
+          try {
+            const res = await fetch(`${DETAIL_URL}?id=${car.id}`)
+            data = await res.json()
+            localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), payload: data }))
+          } catch {
+            zone.innerHTML = '<p>Détails indisponibles pour le moment.</p>'
+            return
+          }
+        }
+
+         const { detail: d, equipment } = data
+
+         const optional = equipment?.optional ?? []
+          const standard = equipment?.standard ?? []
+          const warranty = d?.warranty?.type && d.warranty.type !== 'none'
+            ? `${d.warranty.type}${d.warranty.duration ? ` — ${d.warranty.duration} mois` : ''}`
+            : 'Non'
+          const mfkDate = d?.lastInspectionDate ? d.lastInspectionDate.split('-').reverse().join('.') : ''
+
+          if (teaserZone && d?.teaser) {
+            teaserZone.innerHTML = `<p class="car-teaser">${d.teaser}</p>`
+          }
+
+          zone.innerHTML = `
+            <div class="detail-specs">
+              <ul class="spec-strip">${d ? renderSpecStrip(d) : ''}</ul>
+              <button type="button" class="show-more" data-modal="specs-modal">Afficher plus</button>
+            </div>
+            <div class="detail-desc">
+              <h2>Description</h2>
+              <div class="detail-desc__text">${(d?.description ?? '').replace(/\n/g, '<br>')}</div>
+              <button type="button" class="show-more" data-modal="desc-modal">Afficher plus</button>
+            </div>
+            <div class="detail-equip">
+              <section class="equip-col">
+                <h3>Équipement en option</h3>
+                <ul class="equip-list">${equipItems(optional.slice(0, 3))}</ul>
+                ${optional.length > 3 ? `<button type="button" class="show-more" data-modal="equip-opt-modal">Afficher plus</button>` : ''}
+              </section>
+              <section class="equip-col">
+                <h3>Équipement standard</h3>
+                <ul class="equip-list">${equipItems(standard.slice(0, 3))}</ul>
+                ${standard.length > 3 ? `<button type="button" class="show-more" data-modal="equip-modal">Afficher plus</button>` : ''}
+              </section>
+              <section class="equip-col">
+                <h3>Garantie</h3>
+                <div class="spec-grid">${specLine('Garantie', warranty)}</div>
+                <h3>Contrôle technique (CT)</h3>
+                <div class="spec-grid">
+                  ${specLine('À partir de MFK', d?.inspected ? 'Oui' : 'Non')}
+                  ${specLine('Dernière date MFK le', mfkDate)}
+                </div>
+              </section>
+            </div>
+            `
+          detail.querySelector('#equip-full').innerHTML = `<ul class="equip-list">${equipItems(standard)}</ul>`
+          detail.querySelector('#equip-opt-full').innerHTML = `<ul class="equip-list">${equipItems(optional)}</ul>`
+          detail.querySelector('#specs-full').innerHTML = d ? renderExtraSpecs(d) : ''
+          detail.querySelector('#desc-full').innerHTML = (d?.description ?? '').replace(/\n/g, '<br>')
+  }
+</script>

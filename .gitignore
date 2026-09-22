@@ -1,0 +1,5 @@
+node_modules/
+_site/
+config.php
+src/assets/videos/
+.DS_Store

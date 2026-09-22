@@ -1,0 +1,73 @@
+<meta charset="UTF-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
+<title>{{ site.name }}</title>
+<meta name="description" content="{{ site.metaDescription  }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<link
+  rel="icon"
+  href="/assets/images/icon-dark.svg"
+  type="image/svg+xml"
+/>
+<!-- Light mode favicon -->
+<link
+  rel="icon"
+  href="/assets/images/icon-dark.svg"
+  type="image/svg+xml"
+  media="(prefers-color-scheme: light)"
+/>
+<!-- Dark mode favicon -->
+<link
+  rel="icon"
+  href="/assets/images/icon-light.svg"
+  type="image/svg+xml"
+  media="(prefers-color-scheme: dark)"
+/>
+<meta name="theme-color" content="#acd8cc" />
+<meta property="og:type" content="{{ site.type }}" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:title" content="{{ site.metaTitle }}" />
+<meta
+  property="og:description"
+  content="{{ site.metaDescription }}"
+/>
+{% if metaImage %}
+<meta
+  property="og:image"
+  content="{{ site.url }}{% shareImageUri metaImage | log %}"
+/>
+<meta property="og:image:width" content="600" />
+{% endif %}
+<link
+  rel="preload"
+  href="/assets/fonts/CitizenGrotesk-Regular.otf"
+  as="font"
+  type="font/otf"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/assets/fonts/CitizenGrotesk-Medium.otf"
+  as="font"
+  type="font/otf"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/assets/fonts/CitizenGrotesk-Semibold.otf"
+  as="font"
+  type="font/otf"
+  crossorigin
+/>
+<link rel="stylesheet" href="/css/global.css" />
+<script type="module" src="/js/cars.js" defer></script>
+<script type="module" src="/js/main.js" defer></script>
+
+<script>
+  window.API_URL = '{{ site.apiUrl }}'
+</script>
+<script>
+  window.BASE_PATH = "{% if env === 'liveTest' %}/ab{% endif %}"
+</script>

@@ -1,0 +1,25 @@
+<ul class="contact-btns">
+  <li>
+    <a class="contact-btn" href="mailto:{{ contact.email }}">
+      {{ svgs.mail.icon | safe }}
+      <span>{{ contact.email }}</span>
+    </a>
+  </li>
+  <li>
+    <a class="contact-btn" href="tel:{{ contact.telephone.lien }}">
+      {{ svgs.phone.icon | safe }}
+      <span>{{ contact.telephone.affichage }}</span>
+    </a>
+  </li>
+  <li>
+    <a
+      class="contact-btn"
+      href="{{ contact.whatsapp }}"
+      target="_blank"
+      rel="noopener"
+    >
+      {{ svgs.whatsapp.icon | safe }}
+      <span>WhatsApp</span>
+    </a>
+  </li>
+</ul>
