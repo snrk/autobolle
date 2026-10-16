@@ -506,6 +506,7 @@ img {
 .partners-marquee {
   overflow: hidden;
   border-radius: 50vh;
+  border: 1px solid currentColor;
 }
 
 .partner-logo--multiply {
@@ -519,7 +520,7 @@ img {
   background: var(--color-light-3);
   padding-block: 2rem;
 
-  animation: partners-scroll 90s linear infinite;
+  animation: partners-scroll 150s linear infinite;
 }
 
 .partners-marquee:hover .partners-track {
@@ -538,7 +539,7 @@ img {
   object-fit: contain;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 54em) {
   .partners-track li {
     padding-inline: 1rem;
   }
@@ -549,9 +550,13 @@ img {
 
 @keyframes partners-scroll {
   from {
-    transform: translateX(0);
-  }
-  to {
     transform: translateX(-50%);
   }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cest-nous {
+  padding-block: 6rem 4rem;
 }
