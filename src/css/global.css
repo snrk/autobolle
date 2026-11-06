@@ -581,6 +581,16 @@ img {
   padding-inline: 2.5rem;
 }
 
+.partners-track a {
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.partners-track a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.5rem;
+}
+
 .partner-logo {
   display: block;
   width: auto;

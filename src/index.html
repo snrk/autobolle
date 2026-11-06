@@ -99,28 +99,43 @@ title: Garage Carroserie Autobolle
       <h2>Nous soutenons</h2>
 
       {% set partners = [ { src: "./src/assets/images/part-cnm.png",
-      alt: "Club Nautique Morgien" }, { src:
-      "./src/assets/images/part-gowakesurf.png", alt: "Go Wakesurf
-      Morges", multiply: true }, { src:
-      "./src/assets/images/part-tennisEtoy.png", alt: "Tennis Club
-      Etoy", multiply: true }, { src:
-      "./src/assets/images/part-FC-Tolo.png", alt: "FC Tolochenaz" },
-      { src: "./src/assets/images/part-SEP.png", alt: "Société suisse
-      de la sclérose en plaques" }, { src:
-      "./src/assets/images/part-zonePatouche.png", alt: "Zone
-      Patouch", multiply: true } ] %}
+      alt: "Club Nautique Morgien", url: "https://cnmorges.ch/" }, {
+      src: "./src/assets/images/part-SauvetageMorges.png", alt:
+      "Sauvetage de Morges", url: "https://www.sauvetage-morges.ch/"
+      }, { src: "./src/assets/images/part-GymMorges.jpg", alt: "Gym
+      Morges", url: "https://www.gymmorges.ch/", multiply: true }, {
+      src: "./src/assets/images/part-tennisEtoy.png", alt: "Tennis
+      Club Etoy", url: "https://www.tcetoy.ch/", multiply: true }, {
+      src: "./src/assets/images/part-FC-Tolo.png", alt: "FC
+      Tolochenaz", url: "https://www.fctolochenaz.ch/" }, { src:
+      "./src/assets/images/part-SEP.png", alt: "Société suisse de la
+      sclérose en plaques", url: "https://www.multiplesklerose.ch/fr/"
+      }, { src: "./src/assets/images/part-zonePatouche.png", alt:
+      "Zone Patouch", url: "https://patouch.ch/", multiply: true } ]
+      %}
 
       <div class="partners-marquee">
         <ul class="partners-track">
           {% for r in range(0, 2) %}{% for p in partners %} {% set cls
           = "partner-logo partner-logo--multiply" if p.multiply else
           "partner-logo" %}
-          <li>{% image p.src, p.alt, "120px", "lazy", cls %}</li>
+          <li>
+            <a href="{{ p.url }}" target="_blank" rel="noopener">
+              {% image p.src, p.alt, "120px", "lazy", cls %}
+            </a>
+          </li>
           {% endfor %}{% endfor %} {% for r in range(0, 2) %}{% for p
           in partners %} {% set cls = "partner-logo
           partner-logo--multiply" if p.multiply else "partner-logo" %}
           <li aria-hidden="true">
-            {% image p.src, "", "120px", "lazy", cls %}
+            <a
+              href="{{ p.url }}"
+              target="_blank"
+              rel="noopener"
+              tabindex="-1"
+            >
+              {% image p.src, "", "120px", "lazy", cls %}
+            </a>
           </li>
           {% endfor %}{% endfor %}
         </ul>
