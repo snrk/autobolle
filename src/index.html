@@ -8,20 +8,9 @@ title: Garage Carroserie Autobolle
 <main>
   <section class="home wrapper">
     <div class="hero-video">
-      <video autoplay muted loop playsinline>
-        <source
-          src="assets/videos/AB_Home-HD-v1.webm"
-          type="video/webm"
-        />
-        <source
-          src="assets/videos/AB_Home-HD-v1.mp4"
-          type="video/mp4"
-        />
-        <img
-          src="assets/videos/AB_Home-fallback.jpg"
-          alt="Garage Autobolle"
-        />
-      </video>
+      {% image "./src/assets/images/hero-home.jpg", "Garage Autobolle
+      à Tolochenaz", "(max-width: 90em) 100vw, 1440px", "eager",
+      "hero-img-home" %}
       <div class="hero-content">
         <h1>
           Expert automobile&nbsp;<br />à&nbsp;votre service
