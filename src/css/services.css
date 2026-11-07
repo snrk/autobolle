@@ -1,0 +1,174 @@
+/* ---------- Pages services : composants communs ---------- */
+
+.grid-4.feature-grid {
+  align-items: start;
+  padding: 0;
+}
+.feature-grid__title {
+  font-size: clamp(1.2rem, 1rem + 0.6vw, 1.5rem);
+  margin: 0;
+}
+.feature-grid p {
+  padding-top: 0.75rem;
+}
+/* liste à coche avec items en texte simple (Location, …) */
+.check-list--plain li {
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+  line-height: 1.3;
+}
+
+/* grille d'arguments dans la zone grise du hero */
+.section-features {
+  padding-top: 0;
+}
+
+/* logos de pneus — statique sur desktop, défilant sur smartphone */
+.tire-brands {
+  margin-top: 4rem;
+  overflow: hidden;
+  border: 1px solid var(--text-main);
+  border-radius: 50vh;
+  background: var(--color-light-3);
+}
+.tire-brands__track {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+.tire-brands__track li {
+  flex: 1 1 0;
+  min-width: 0;
+  padding-inline: 0.75rem;
+}
+.tire-brands__dup {
+  display: none;
+}
+.tire-brands__logo {
+  display: block;
+  width: 100%;
+  max-width: 7rem;
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (max-width: 55em) {
+  .tire-brands__track {
+    width: max-content;
+    justify-content: flex-start;
+    padding: 1.25rem 0;
+    animation: partners-scroll 40s linear infinite;
+  }
+  .tire-brands__track li {
+    flex: none;
+    padding-inline: 1rem;
+  }
+  .tire-brands__dup {
+    display: block;
+  }
+  .tire-brands__logo {
+    width: 5.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tire-brands__track {
+    animation: none;
+  }
+}
+
+/* formules de lavage */
+.grid-4.wash-cards {
+  align-items: stretch;
+  margin-top: 2rem;
+  padding: 0;
+}
+.wash-card {
+  background: var(--bg-2);
+  border-radius: var(--big-radius);
+  padding: 1.5rem;
+}
+.wash-card h3 {
+  margin: 0;
+}
+.wash-card__prix {
+  padding: 0.25rem 0 0;
+}
+.wash-card h4 {
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+.wash-card .text-list {
+  padding-left: 1.5rem;
+}
+.wash-card .text-list li {
+  margin-top: 0.3rem;
+}
+.wash-card__duree {
+  padding-top: 1.25rem;
+}
+
+/* CTA rendez-vous */
+.cta-rdv .btn {
+  margin: 0;
+}
+
+/* liste à coche sur deux colonnes (remplissage colonne par colonne) */
+.check-list--cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(var(--rows, 3), auto);
+  grid-auto-flow: column;
+  column-gap: var(--gap);
+}
+@media (max-width: 40em) {
+  .check-list--cols {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+}
+.check-list--cols li {
+  break-inside: avoid;
+}
+@media (max-width: 40em) {
+  .check-list--cols {
+    columns: 1;
+  }
+}
+.check-list small {
+  font-size: 0.65em;
+}
+
+/* deux lignes texte/image dans la même section */
+.av-row + .av-row {
+  margin-top: 6rem;
+}
+
+/* Racing */
+.race-cars {
+  padding: 0 0 0.5rem;
+}
+.race-cars li {
+  font-weight: 300;
+  margin-top: 0.3rem;
+}
+.race-services {
+  margin-top: 4rem;
+}
+
+/* Shop */
+.shop-infos {
+  margin-top: 6rem;
+}
+.shop-infos h2 a {
+  color: inherit;
+}
+
+/* 404 : image plus large que les autres heros */
+.section-404 .av-media {
+  max-width: 38rem;
+}
+.section-404 {
+  padding-block: 8rem;
+}

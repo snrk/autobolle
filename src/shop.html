@@ -1,0 +1,140 @@
+---
+layout: layouts/_base
+title: Shop
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %} {% set mediaSizes
+= "(max-width: 40em) 90vw, 448px" %}
+
+<main>
+  <div class="wrapper">
+    <section class="section-hero-achat">
+      <div class="container">
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">Station service</p>
+            <h1>Bien plus qu'un simple plein</h1>
+            <p>
+              Notre station-service vous accueille chaque jour pour le
+              carburant, une pause gourmande et tout ce dont vous avez
+              besoin au quotidien. Une équipe souriante et toujours à
+              votre service, dans une ambiance conviviale où l'on se
+              sent comme chez soi.
+            </p>
+            <a href="tel:{{ contact.telephone.lien }}" class="btn"
+              >{{ contact.telephone.affichage }}</a
+            >
+          </div>
+          <div class="av-media">
+            {% themedImage "./src/assets/images/shop-hero-light.png",
+            "./src/assets/images/shop-hero-dark.png", "Station-service
+            Eni d'Auto Bolle à Tolochenaz", mediaSizes, "eager",
+            "av-img" %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {# Shop & produits frais — fond blanc, image à gauche #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row av-row--media-left">
+      <div class="av-media">
+        {% themedImage "./src/assets/images/shop-1-light.png",
+        "./src/assets/images/shop-1-dark.png", "Rayons du shop de la
+        station-service", mediaSizes, "lazy", "av-img" %}
+      </div>
+      <div class="av-content">
+        <h2>Shop &amp; produits frais</h2>
+        <p>
+          Découvrez un large choix de produits frais et de qualité
+          pour tous les moments de la journée. Pain cuit sur place
+          chaque jour, sandwichs, viennoiseries, salades, snacks,
+          boissons fraîches et bien plus encore.
+        </p>
+        <ul class="text-list">
+          <li>Carburant de qualité</li>
+          <li>Pain cuit chaque jour</li>
+          <li>Tout pour le dépannage</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {# Dépannage — fond gris, liste à droite #}
+  <section>
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <h2>Dépannage &amp; essentiels</h2>
+        <p>
+          Un large choix de produits pour le quotidien, les imprévus
+          et vos trajets&nbsp;: boissons, snacks, produits
+          d'entretien, accessoires auto et bien plus encore.
+        </p>
+      </div>
+      <ul class="check-list check-list--plain">
+        <li>Essentiels pour la route</li>
+        <li>Produits de saison</li>
+        <li>Articles du quotidien</li>
+      </ul>
+    </div>
+  </section>
+
+  {# Terrasse + horaires — fond blanc #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <h2>Une pause conviviale en terrasse</h2>
+        <p>
+          Profitez d'un café, d'un en-cas ou d'un moment de détente
+          sur notre terrasse. Notre équipe vous accueille toujours
+          avec le sourire&nbsp;!
+        </p>
+        <ul class="text-list">
+          <li>Sandwichs et snacks frais</li>
+          <li>
+            Café Nespresso&nbsp;: à déguster sur place ou à l'emporter
+          </li>
+          <li>
+            Produits de la région&nbsp;: que nous favorisons, avec une
+            touche italienne
+          </li>
+        </ul>
+      </div>
+      <div class="av-media">
+        {% themedImage "./src/assets/images/shop-2-light.png",
+        "./src/assets/images/shop-2-dark.png", "Client se servant un
+        café Nespresso au shop", mediaSizes, "lazy", "av-img" %}
+      </div>
+    </div>
+
+    <div class="container grid-2 av-duo shop-infos">
+      <div>
+        <h2>Horaires de la station service</h2>
+        {% for h in contact.horaires %} {% if h.icone == 'shop' %}
+        <dl class="horaire-card__plages">
+          {% for plage in h.plages %}
+          <dt>{{ plage.jours }}</dt>
+          <dd>
+            {% for heure in plage.heures %}<span>{{ heure }}</span>{%
+            endfor %}
+          </dd>
+          {% endfor %}
+        </dl>
+        {% endif %} {% endfor %}
+      </div>
+      <div>
+        <h2>
+          <a href="tel:{{ contact.telephone.lien }}"
+            >{{ contact.telephone.affichage }}</a
+          >
+        </h2>
+        <p>
+          Notre équipe se tient à votre disposition pour toute
+          question.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>

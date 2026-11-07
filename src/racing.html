@@ -1,0 +1,161 @@
+---
+layout: layouts/_base
+title: Racing
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %} {% set mediaSizes
+= "(max-width: 40em) 90vw, 448px" %}
+
+<main>
+  <div class="wrapper">
+    <section class="section-hero-achat">
+      <div class="container">
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">Racing</p>
+            <h1>
+              Vivez le sport automobile avec&nbsp;Auto&nbsp;Bolle
+            </h1>
+            <p>
+              Que ce soit pour une sortie loisir ou une compétition,
+              nous préparons votre véhicule pour la piste et
+              organisons vos journées circuit de A à Z. Profitez d'une
+              expérience unique, en toute sécurité, avec des solutions
+              adaptées à vos envies et à votre niveau.
+            </p>
+            <a href="{{ base }}/contact/?demande=racing" class="btn"
+              >Demandez un devis</a
+            >
+          </div>
+          <div class="av-media">
+            {% themedImage
+            "./src/assets/images/racing-hero-light.png",
+            "./src/assets/images/racing-hero-dark.png", "Voiture de
+            sport noire en piste sur un circuit", mediaSizes, "eager",
+            "av-img" %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {# Préparation — fond blanc #}
+  <section class="section-pitch">
+    <div class="container">
+      <h2>Préparation de votre voiture pour le circuit</h2>
+      <p>
+        Nous préparons votre véhicule pour qu'il soit performant,
+        fiable et sécurisé sur circuit.
+      </p>
+      <ul class="check-list check-list--plain check-list--cols">
+        <li>Freins&nbsp;: contrôle et optimisation</li>
+        <li>Fluides&nbsp;: niveaux et remplacement</li>
+        <li>Pneus&nbsp;: montage et réglages</li>
+        <li>Suspension&nbsp;: contrôle et réglages</li>
+        <li>Géométrie&nbsp;: réglage précis pour la piste</li>
+      </ul>
+    </div>
+  </section>
+
+  {# Voitures de course — fond gris, image à droite + services #}
+  <section>
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <h2>Des voitures de course pour tous les niveaux</h2>
+        <p>
+          Nous vous proposons des sorties circuit dans de véritables
+          voitures de course, adaptées à votre niveau et à vos envies.
+        </p>
+        <ul class="race-cars">
+          <li>
+            <strong>Nova NP02</strong>&nbsp;: proto de compétition
+          </li>
+          <li><strong>JS2R</strong>&nbsp;: GT haute performance</li>
+          <li>
+            <strong>Midget</strong>&nbsp;: idéal pour la découverte
+          </li>
+        </ul>
+        <a
+          href="{{ base }}/contact/?demande=location-piste"
+          class="btn"
+          >Demandez un devis</a
+        >
+      </div>
+      <div class="av-media">
+        {% themedImage "./src/assets/images/racing-1-light.png",
+        "./src/assets/images/racing-1-dark.png", "Prototypes de course
+        alignés dans un box", mediaSizes, "lazy", "av-img" %}
+      </div>
+    </div>
+
+    <ul
+      class="container check-list check-list--plain check-list--cols race-services"
+    >
+      <li>Préparation avant circuit</li>
+      <li>Transport du véhicule</li>
+      <li>
+        Organisation sur place <small>(catering si souhaité)</small>
+      </li>
+      <li>Proposition de dates de sorties circuit</li>
+      <li>Assistance et encadrement</li>
+      <li>Contrôle sur circuit</li>
+      <li>Contrôle après circuit</li>
+      <li>Nettoyage complet</li>
+      <li>Rapatriement du véhicule</li>
+    </ul>
+  </section>
+
+  {# Coaching + Team building — fond blanc #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row av-row--media-left">
+      <div class="av-media">
+        {% themedImage "./src/assets/images/racing-3-light.png",
+        "./src/assets/images/racing-3-dark.png", "Pilote professionnel
+        en combinaison de course", mediaSizes, "lazy", "av-img" %}
+      </div>
+      <div class="av-content">
+        <h2>Coaching professionnel</h2>
+        <p>
+          Nous pouvons vous attribuer un coach pendant vos sorties
+          circuit. Nos coachs sont des pilotes reconnus, souvent
+          plusieurs fois titrés. Leur passion, leur talent et leur
+          métier&nbsp;: le coaching. Progressez en toute sécurité et
+          découvrez tout le potentiel de votre véhicule.
+        </p>
+        <ul class="check-list check-list--plain">
+          <li>Encadrement par des pilotes reconnus</li>
+          <li>Conseils personnalisés et progression rapide</li>
+          <li>Amélioration de vos trajectoires</li>
+          <li>Adapté à tous les niveaux</li>
+        </ul>
+        <a href="{{ base }}/contact/?demande=coaching" class="btn"
+          >Demandez un devis</a
+        >
+      </div>
+    </div>
+
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <h2>Sorties d'entreprise &amp; Team building</h2>
+        <p>
+          Offrez à vos collaborateurs une expérience inoubliable sur
+          circuit grâce aux Midget. Nous organisons des journées sur
+          mesure, encadrées par des professionnels, idéales pour
+          renforcer la cohésion d'équipe et vivre des moments uniques.
+        </p>
+        <a
+          href="{{ base }}/contact/?demande=team-building"
+          class="btn"
+          >Demandez un devis</a
+        >
+      </div>
+      <div class="av-media">
+        {% themedImage "./src/assets/images/racing-2-light.png",
+        "./src/assets/images/racing-2-dark.png", "Équipe en
+        combinaisons rouges célébrant sur un circuit de Midget",
+        mediaSizes, "lazy", "av-img" %}
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,222 @@
+---
+layout: layouts/_base
+title: Entretien
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %} {% set mediaSizes
+= "(max-width: 40em) 90vw, 448px" %} {% set arguments = [ { titre:
+"Entretien selon les constructeurs", texte: "Nous respectons les
+prescriptions des marques." }, { titre: "Garantie préservée", texte:
+"Vos conditions de garantie restent valables." }, { titre: "Outils de
+diagnostic", texte: "Inscription des services à la marque (selon accès
+du constructeur)." }, { titre: "Toutes marques", texte: "Essence,
+diesel, hybrides et électriques." } ] %} {% set pneus = [ { src:
+"tire-Bridgestone-Logo.png", alt: "Bridgestone" }, { src:
+"tire-Michelin-Logo.png", alt: "Michelin" }, { src:
+"tire-continental-logo-black.png", alt: "Continental" }, { src:
+"tire-pirelli-logo-black-and-white.png", alt: "Pirelli" }, { src:
+"tire-dunlop-logo-2200x500.png", alt: "Dunlop" }, { src:
+"tire-Hankooktire_CI.png", alt: "Hankook" }, { src:
+"tire-yokohama-logo.png", alt: "Yokohama" } ] %} {% macro rdvBtn() %}
+<a
+  href="{{ contact.rendezVous }}"
+  target="_blank"
+  rel="noopener"
+  class="btn btn--outline"
+  >Prendre rendez-vous</a
+>
+{% endmacro %}
+
+<main>
+  <div class="wrapper">
+    <section class="section-hero-achat">
+      <div class="container">
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">Entretien multimarque</p>
+            <h1>
+              L'entretien de votre voiture
+              en&nbsp;toute&nbsp;confiance
+            </h1>
+            <p>
+              Nous prenons soin de votre véhicule, toutes marques,
+              selon les recommandations des constructeurs et dans le
+              respect des conditions de garantie.
+            </p>
+            <div class="btn-group">
+              <a
+                href="{{ base }}/contact/?demande=entretien"
+                class="btn"
+                >Demandez un devis</a
+              >
+              {{ rdvBtn() }}
+            </div>
+          </div>
+          <div class="av-media">
+            {% themedImage
+            "./src/assets/images/entretien-hero-light.png",
+            "./src/assets/images/entretien-hero-dark.png", "Atelier
+            avec des voitures sur ponts élévateurs", mediaSizes,
+            "eager", "av-img" %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-features">
+      <ul class="container grid-4 feature-grid">
+        {% for a in arguments %}
+        <li>
+          <h2 class="feature-grid__title">{{ a.titre }}</h2>
+          <p>{{ a.texte }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+
+  {# Service constructeur — fond blanc, image à gauche #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row av-row--media-left">
+      <div class="av-media">
+        {% themedImage "./src/assets/images/entretien-1-light.png",
+        "./src/assets/images/entretien-1-dark.png", "Mécanicien
+        remplaçant un filtre dans un compartiment moteur", mediaSizes,
+        "lazy", "av-img" %}
+      </div>
+      <div class="av-content">
+        <h2>Entretien et service constructeur</h2>
+        <p>
+          Vidange, filtres, contrôles périodiques, pièces d'usure,
+          courroies et embrayage. Nous gérons les services gratuits et
+          les inscriptions dans les systèmes constructeurs lorsque
+          disponible.
+        </p>
+        <div class="btn-group">
+          <a
+            href="{{ base }}/contact/?demande=service-constructeur"
+            class="btn"
+            >Demandez un devis</a
+          >
+          {{ rdvBtn() }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Pneus & jantes — fond gris, image à droite + logos #}
+  <section>
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <p class="pitch-label">Pneus &amp; jantes</p>
+        <h2>Pneus et jantes au meilleur prix</h2>
+        <p>
+          Pneus neufs et d'occasion, été, hiver et toutes saisons.
+          Vente, montage, équilibrage, géométrie, réparation et
+          stockage.
+        </p>
+        <h3>Hôtel à pneus</h3>
+        <p>
+          Nous stockons vos pneus dans les meilleures conditions pour
+          la saison suivante.
+        </p>
+        <div class="btn-group">
+          <a href="{{ base }}/contact/?demande=pneus" class="btn"
+            >Demandez un devis</a
+          >
+          {{ rdvBtn() }}
+        </div>
+      </div>
+      <div class="av-media">
+        {% themedImage "./src/assets/images/entretien-2-light.png",
+        "./src/assets/images/entretien-2-dark.png", "Mécanicien
+        montant une roue et pneus stockés sur des étagères",
+        mediaSizes, "lazy", "av-img" %}
+      </div>
+    </div>
+
+    <div class="container tire-brands">
+      <ul class="tire-brands__track" aria-label="Marques de pneus">
+        {% for p in pneus %}
+        <li>
+          {% image "./src/assets/images/" + p.src, p.alt, "112px",
+          "lazy", "tire-brands__logo" %}
+        </li>
+        {% endfor %} {% for p in pneus %}
+        <li class="tire-brands__dup" aria-hidden="true">
+          {% image "./src/assets/images/" + p.src, "", "112px",
+          "lazy", "tire-brands__logo" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  {# Expertise / climatisation — fond blanc #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-duo">
+      <div>
+        <h2>Préparation et présentation à l'expertise</h2>
+        <p>
+          Contrôle complet, remise en état des points nécessaires et
+          présentation du véhicule à l'expertise cantonale. Nous nous
+          occupons des démarches.
+        </p>
+      </div>
+      <div>
+        <h2>Climatisation, freins et sécurité</h2>
+        <p>
+          Contrôle, entretien et recharge de la climatisation,
+          remplacement des freins et des liquides. Nous vérifions tous
+          les éléments de sécurité et les pièces d'usure pour votre
+          tranquillité.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {# Lavage — fond gris #}
+  <section>
+    <div class="container">
+      <p class="pitch-label-hero">Lavage automobile</p>
+      <h2>Quatre formules pour un véhicule impeccable</h2>
+      <ul class="grid-4 wash-cards">
+        {% for f in lavage %}
+        <li class="wash-card">
+          <h3>{{ f.nom }}</h3>
+          <p class="wash-card__prix">{{ f.prix }}</p>
+          {% if f.exterieur %}
+          <h4>Extérieur</h4>
+          <ul class="text-list">
+            {% for i in f.exterieur %}
+            <li>{{ i }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %} {% if f.interieur %}
+          <h4>Intérieur</h4>
+          <ul class="text-list">
+            {% for i in f.interieur %}
+            <li>{{ i }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %} {% if f.duree %}
+          <p class="wash-card__duree">Durée&nbsp;: {{ f.duree }}</p>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  {# CTA rendez-vous — fond blanc #}
+  <section class="section-pitch">
+    <div class="container grid-2 cta-rdv">
+      <div>
+        <h2>Un rendez-vous pour l'entretien&nbsp;?</h2>
+        <p>Planifiez votre passage en quelques clics.</p>
+      </div>
+      <div>{{ rdvBtn() }}</div>
+    </div>
+  </section>
+</main>

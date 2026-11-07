@@ -242,9 +242,9 @@
 }
 
 /* .grid-2 est en align-items:center — on veut le haut ici */
-.contact-infos,
+.contact-infos.grid-2,
 div.horaires-grid {
-  align-items: stretch;
+  align-items: start;
   padding: 0;
 }
 

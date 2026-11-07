@@ -1,0 +1,21 @@
+/* ---------- Atelier ---------- */
+
+.grid-2.service-cards {
+  align-items: start;
+  gap: 4rem 2rem;
+  padding: 0;
+}
+.service-card picture {
+  display: block;
+}
+.service-card__img {
+  height: auto;
+  object-fit: contain;
+}
+.service-card__title {
+  font-size: clamp(1.2rem, 1rem + 0.6vw, 1.5rem);
+  margin: 1.5rem 0 0;
+}
+.service-card p {
+  padding-top: 0.75rem;
+}

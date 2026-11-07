@@ -1,0 +1,36 @@
+---
+layout: layouts/_base
+title: Page introuvable
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %}
+
+<main>
+  <div class="wrapper">
+    <section class="section-hero-achat section-404">
+      <div class="container">
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">Page 404</p>
+            <h1>Vous êtes arrivé sur la page&nbsp;404</h1>
+            <a href="{{ base }}/" class="scroll-cue scroll-cue--back">
+              <span class="scroll-cue__circle" aria-hidden="true">
+                <span class="scroll-cue__arrow"></span>
+              </span>
+              Retourner chez Auto Bolle
+            </a>
+          </div>
+          <div class="av-media">
+            {% themedImage "./src/assets/images/404-light.png",
+            "./src/assets/images/404-dark.png", "Lac de montagne
+            entouré de forêt", "(max-width: 40em) 90vw, 600px",
+            "eager", "av-img" %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

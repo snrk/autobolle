@@ -33,6 +33,7 @@
 
 /* étapes numérotées */
 .grid-4.av-steps {
+  list-style: none;
   padding: 0;
   align-items: start;
 }

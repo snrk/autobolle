@@ -49,18 +49,18 @@ export default {
             'Vidanges, contrôles et maintenance selon les normes constructeur. Préservez la valeur de votre véhicule.',
         },
         {
-          title: 'Shop',
-          url: '/shop/',
-          icon: icons['shop'].icon,
-          description:
-            "Fruits, légumes, viande, pain frais cuit sur place et carburant. Tout ce qu'il faut, juste à côté de vous.",
-        },
-        {
           title: 'Racing',
           url: '/racing/',
           icon: icons['racing'].icon,
           description:
             'Préparation circuit, transport et mécanicien. Un service complet pour piloter sans vous soucier du reste.',
+        },
+        {
+          title: 'Shop',
+          url: '/shop/',
+          icon: icons['shop'].icon,
+          description:
+            "Fruits, légumes, viande, pain frais cuit sur place et carburant. Tout ce qu'il faut, juste à côté de vous.",
         },
       ],
     },

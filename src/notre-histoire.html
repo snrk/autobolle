@@ -1,157 +1,108 @@
 ---
 layout: layouts/_base
-title: Achat vente
+title: Notre histoire
 ---
 
 {% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
-%} {% set metaDescription = site.metaDescription %}
+%} {% set metaDescription = site.metaDescription %} {% set mediaSizes
+= "(max-width: 40em) 90vw, 448px" %} {% set timelineSizes =
+"(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78),
+376px" %} {% set etapes = [ { date: "Septembre 1994", img:
+"histoire-1", alt: "Logos Chrysler, Jeep, Subaru et Agip, avec un
+portrait de Pascal Bolle", textes: ["Pascal Bolle fonde Auto Bolle SA
+et ouvre les portes de son garage, représentant les marques Chrysler,
+Jeep et Subaru, complété par une station-service Agip. Professionnel
+de l'automobile depuis 1988, il pose les fondations d'une entreprise
+familiale placée sous le signe de la proximité et du service."] }, {
+date: "Mai 2006", img: "histoire-2", alt: "Logos Hyundai, Garage plus
+et Carrosserie plus", textes: ["L'entreprise grandit et devient Auto
+Bolle Partner SA. Nous accueillons la marque Hyundai et rejoignons les
+réseaux Garage plus et Carrosserie plus, élargissant notre expertise
+multimarque aussi bien à l'entretien qu'à la carrosserie."] }, { date:
+"Juin 2016", img: "histoire-3", alt: "Logos du Centre 4x4 Auto Bolle
+et d'Eni", textes: ["Naissance du Centre 4x4 Auto Bolle SA, dédié aux
+véhicules tout-terrain et à leur mécanique spécifique. Notre nouvelle
+station-service Eni vient compléter l'offre du site."] }, { date:
+"Mars 2019", img: "histoire-4", alt: "Portrait de David Bolle et logos
+des marques automobiles entretenues", textes: ["David Bolle rejoint
+l'aventure familiale comme administrateur et apporte un nouvel élan à
+l'entreprise. Nous ouvrons notre atelier à l'ensemble des marques du
+marché : grâce au partage des données avec nos fournisseurs, nous
+réparons et entretenons désormais 90 % des modèles automobiles
+représentés en Suisse."] }, { date: "Juin 2024", img: "histoire-5",
+alt: "Logos Auto Bolle, Garage plus et AXA", textes: [ "Garage Bolle
+SA est né avec l'ambition d'améliorer l'importation de véhicules neufs
+et d'occasion. Grâce au partenariat avec des importateurs européens
+renommés, nous pouvons désormais représenter plusieurs marques et vous
+proposer un large choix de véhicules aux meilleures conditions.",
+"Notre atelier mécanique reste Garage plus, le plus grand réseau
+d'ateliers indépendants en Suisse. Cette affiliation nous permet de
+vous garantir un service de qualité, des pièces d'origine et un
+savoir-faire reconnu à l'échelle nationale. Nous avons également signé
+un partenariat avec AXA pour vous offrir des solutions d'assurance
+adaptées et un accompagnement simple et efficace en cas de sinistre."
+] } ] %}
+
 <main>
   <div class="wrapper">
     <section class="timeline-heading">
       <div class="container">
-        <div class="padding-Y-XL">
-          <div class="timeline-main_heading-wrapper grid-2">
-            <div class="margin-end-M">
-              <h1>À votre service depuis plus de 30 ans</h1>
-            </div>
-            <p class="paragraph-L-2">
-              En tant qu’entreprise familiale, nous donnons priorité
-              aux relation humaines dans toutes nos activités. Nos
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">Histoire</p>
+            <h1>À votre service depuis plus de&nbsp;30&nbsp;ans</h1>
+            <p>
+              En tant qu'entreprise familiale, nous donnons priorité
+              aux relations humaines dans toutes nos activités. Nos
               experts automobiles sont passionnés et ont à cœur de
               faciliter la vie de nos clients grâce à une étroite
-              collaboration, tant à l’interne qu’à l’externe.
+              collaboration, tant à l'interne qu'à l'externe.
             </p>
+            <a href="#timeline" class="scroll-cue">
+              <span class="scroll-cue__circle" aria-hidden="true">
+                <span class="scroll-cue__arrow"></span>
+              </span>
+              Découvrez notre histoire
+            </a>
+          </div>
+          <div class="av-media">
+            {% themedImage
+            "./src/assets/images/histoire-hero-light.png",
+            "./src/assets/images/histoire-hero-dark.png", "La
+            station-service et le garage Auto Bolle, hier et
+            aujourd'hui", mediaSizes, "eager", "av-img" %}
           </div>
         </div>
       </div>
     </section>
-    <section class="section-timeline">
+
+    <section class="section-timeline" id="timeline">
       <div class="container">
         <div class="timeline-component">
           <div class="timeline-progress">
             <div class="timeline-progress-bar"></div>
           </div>
+          {% for e in etapes %}
           <div class="timeline-item">
             <div class="timeline-left">
-              <div class="timeline-date-text">Février 1994</div>
+              <div class="timeline-date-text">{{ e.date }}</div>
             </div>
             <div class="timeline-center">
               <div class="timeline-circle"></div>
             </div>
             <div class="timeline-right">
-              <div class="margin-end_XL">
-                <div class="timeline-text">
-                  Après plus de 10 ans d'expérience dans le domaine de
-                  l'automobile, Pascal Bolle fonde la société Auto
-                  Bolle SA à Tolochenaz dans le but de proposer des
-                  véhicules à prix attractifs ainsi qu'un service de
-                  qualité.
-                </div>
+              <div class="margin-end_XL timeline-text">
+                {% for t in e.textes %}
+                <p>{{ t }}</p>
+                {% endfor %}
               </div>
-              {% themedImage
-              "./src/assets/images/hero-achat-light.png",
-              "./src/assets/images/hero-achat-dark.png", "Reprise de
-              véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
-              calc((50vw - 3rem) * 0.78), 376px", "lazy",
+              {% themedImage "./src/assets/images/" + e.img +
+              "-light.png", "./src/assets/images/" + e.img +
+              "-dark.png", e.alt, timelineSizes, "lazy",
               "timeline-img" %}
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <div class="timeline-date-text">Septembre 2006</div>
-            </div>
-            <div class="timeline-center">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-right">
-              <div class="margin-end_XL">
-                <div class="timeline-text">
-                  L'évolution du marché nous mène à la création de
-                  partenariats avec des leader du marché automobile
-                  mondial. L'entreprise s'agrandit et change de nom
-                  pour Auto Bolle Partner SA.
-                </div>
-              </div>
-              {% themedImage
-              "./src/assets/images/hero-achat-light.png",
-              "./src/assets/images/hero-achat-dark.png", "Reprise de
-              véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
-              calc((50vw - 3rem) * 0.78), 376px", "lazy",
-              "timeline-img" %}
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <div class="timeline-date-text">Janvier 2016</div>
-            </div>
-            <div class="timeline-center">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-right">
-              <div class="margin-end_XL">
-                <div class="timeline-text">
-                  L'évolution du marché nous mène à la création de
-                  partenariats avec des leader du marché automobile
-                  mondial. L'entreprise s'agrandit et change de nom
-                  pour Auto Bolle Partner SA.
-                </div>
-              </div>
-              {% themedImage
-              "./src/assets/images/hero-achat-light.png",
-              "./src/assets/images/hero-achat-dark.png", "Reprise de
-              véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
-              calc((50vw - 3rem) * 0.78), 376px", "lazy",
-              "timeline-img" %}
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <div class="timeline-date-text">Mai 2019</div>
-            </div>
-            <div class="timeline-center">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-right">
-              <div class="margin-end_XL">
-                <div class="timeline-text">
-                  L'évolution du marché nous mène à la création de
-                  partenariats avec des leader du marché automobile
-                  mondial. L'entreprise s'agrandit et change de nom
-                  pour Auto Bolle Partner SA.
-                </div>
-              </div>
-              {% themedImage
-              "./src/assets/images/hero-achat-light.png",
-              "./src/assets/images/hero-achat-dark.png", "Reprise de
-              véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
-              calc((50vw - 3rem) * 0.78), 376px", "lazy",
-              "timeline-img" %}
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <div class="timeline-date-text">Août 2026</div>
-            </div>
-            <div class="timeline-center">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-right">
-              <div class="margin-end_XL">
-                <div class="timeline-text">
-                  L'évolution du marché nous mène à la création de
-                  partenariats avec des leader du marché automobile
-                  mondial. L'entreprise s'agrandit et change de nom
-                  pour Auto Bolle Partner SA.
-                </div>
-              </div>
-              {% themedImage
-              "./src/assets/images/hero-achat-light.png",
-              "./src/assets/images/hero-achat-dark.png", "Reprise de
-              véhicule", "(max-width: 30em) 78vw, (max-width: 64em)
-              calc((50vw - 3rem) * 0.78), 376px", "lazy",
-              "timeline-img" %}
-            </div>
-          </div>
+          {% endfor %}
           <div class="overlay-fade-top"></div>
           <div class="overlay-fade-bottom"></div>
         </div>

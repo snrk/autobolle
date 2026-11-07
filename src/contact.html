@@ -22,8 +22,43 @@ permalink: /contact/
     </div>
   </section>
 
+  <section class="container contact-infos grid-2">
+    <div>
+      <h2>Rendez-vous en ligne</h2>
+      <p>
+        Prenez votre rendez-vous directement en ligne et nous vous
+        enverrons une confirmation par email.
+      </p>
+      <a
+        href="{{ contact.rendezVous }}"
+        target="_blank"
+        rel="noopener"
+        class="btn"
+      >
+        Rendez-vous
+      </a>
+    </div>
+    <div>
+      <h2>Notre adresse</h2>
+      <address class="contact-adresse">
+        {{ svgs.pin.icon | safe }}
+        <span>
+          {{ contact.adresse.nom }}<br />
+          {{ contact.adresse.rue }}<br />
+          {{ contact.adresse.localite }}
+        </span>
+      </address>
+    </div>
+  </section>
+
   <section class="container contact-form">
-    <form class="lead-form" id="demande-form" novalidate>
+    <form
+      class="lead-form"
+      id="demande-form"
+      novalidate
+      data-email="{{ contact.email }}"
+      data-whatsapp="{{ contact.whatsappNumero }}"
+    >
       <h2 class="lead-title">Écrivez-nous</h2>
       <div class="lead-body">
         <div class="lead-row">
@@ -82,7 +117,7 @@ permalink: /contact/
           Votre message s'ouvre dans votre messagerie ou dans
           WhatsApp, rien n'est envoyé depuis ce site.
         </p>
-        <div class="lead-actions">
+        <div class="lead-actions" role="status">
           <button type="submit" name="canal" value="email">
             {{ svgs.mail.icon | safe }}<span>Email</span>
           </button>
@@ -92,35 +127,10 @@ permalink: /contact/
         </div>
       </div>
     </form>
-  </section>
-
-  <section class="container contact-infos grid-2">
-    <div>
-      <h2>Rendez-vous en ligne</h2>
-      <p>
-        Prenez votre rendez-vous directement en ligne et nous vous
-        enverrons une confirmation par email.
-      </p>
-      <a
-        href="{{ contact.rendezVous }}"
-        target="_blank"
-        rel="noopener"
-        class="btn"
-      >
-        Rendez-vous
-      </a>
-    </div>
-    <div>
-      <h2>Notre adresse</h2>
-      <address class="contact-adresse">
-        {{ svgs.pin.icon | safe }}
-        <span>
-          {{ contact.adresse.nom }}<br />
-          {{ contact.adresse.rue }}<br />
-          {{ contact.adresse.localite }}
-        </span>
-      </address>
-    </div>
+    <script type="application/json" id="demandes-data">
+      {{ demandes | dump | safe }}
+    </script>
+    <script type="module" src="/js/demande-form.js"></script>
   </section>
 
   <section class="container contact-horaires">

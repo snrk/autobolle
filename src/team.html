@@ -26,10 +26,10 @@ title: Team
         </a>
       </div>
       <div class="hero-equipe-illu hero-img">
-        {% image "./src/assets/images/team-light.png", "Le garage
-        Autobolle actif depuis 1994 ", "(max-width: 30em) 78vw,
-        (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px",
-        "team-img" %}
+        {% themedImage "./src/assets/images/team-light.png",
+        "./src/assets/images/team-dark.png", "Le garage Autobolle
+        actif depuis 1994", "(max-width: 30em) 78vw, (max-width: 64em)
+        calc((50vw - 3rem) * 0.78), 376px", "eager", "team-img" %}
       </div>
     </div>
   </section>
@@ -38,13 +38,11 @@ title: Team
     <ul class="container grid-4 team-grid">
       {% for member in team %}
       <li class="team-card">
-        <div
-          class="team-card__img{% if not member.image %} is-placeholder{% endif %}"
-        >
+        <div class="team-card__img">
           {% if member.image %} {% image member.image, "",
           "(min-width: 54em) 25vw, (min-width: 40em) 50vw, 100vw",
           "lazy" %} {% else %} {% themedImage
-          "./src/assets/images/team/team-placeholder-dark.png",
+          "./src/assets/images/team/team-placeholder-light.png",
           "./src/assets/images/team/team-placeholder-dark.png", "",
           "(min-width: 54em) 25vw, (min-width: 40em) 50vw, 100vw",
           "lazy" %} {% endif %}

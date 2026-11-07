@@ -1,0 +1,124 @@
+---
+layout: layouts/_base
+title: Location
+---
+
+{% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
+%} {% set metaDescription = site.metaDescription %} {% set mediaSizes
+= "(max-width: 40em) 90vw, 448px" %}
+
+<main>
+  <div class="wrapper">
+    <section class="section-hero-achat">
+      <div class="container">
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">
+              Location et transport de véhicule
+            </p>
+            <h1>
+              Des solutions de mobilité adaptées
+              à&nbsp;vos&nbsp;besoins
+            </h1>
+            <p>
+              Pendant que nous réparons ou entretenons votre véhicule,
+              nous vous proposons une voiture de courtoisie. Nous
+              assurons également le transport de votre véhicule, que
+              ce soit pour une panne, une vente, un achat ou pour vos
+              sorties circuit.
+            </p>
+            <a href="{{ base }}/contact/?demande=location" class="btn"
+              >Réservez dès maintenant</a
+            >
+          </div>
+          <div class="av-media">
+            {% themedImage
+            "./src/assets/images/location-hero-light.png",
+            "./src/assets/images/location-hero-dark.png", "Voitures
+            alignées sur un parking", mediaSizes, "eager", "av-img" %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {# Voitures de courtoisie — fond blanc, image à droite #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row">
+      <div class="av-media">
+        {% themedImage "./src/assets/images/location-1-light.png",
+        "./src/assets/images/location-1-dark.png", "Voitures récentes
+        dans un showroom", mediaSizes, "lazy", "av-img" %}
+      </div>
+      <div class="av-content">
+        <h2>Voitures de courtoisie</h2>
+        <p>
+          Lors d'une réparation ou d'une immobilisation de votre
+          véhicule, nous pouvons mettre à votre disposition une
+          voiture de courtoisie.
+        </p>
+        <ul class="check-list check-list--plain">
+          <li>À disposition pendant vos réparations</li>
+          <li>Livrée avec le plein</li>
+          <li>Remise du véhicule lors de votre rendez-vous</li>
+        </ul>
+        <a href="{{ base }}/contact/?demande=courtoisie" class="btn"
+          >Demandez un devis</a
+        >
+      </div>
+    </div>
+  </section>
+
+  {# Transport sur plateau — fond gris, image à gauche #}
+  <section>
+    <div class="container grid-2 av-row av-row--media-left">
+      <div class="av-content">
+        <p class="pitch-label-hero">Transport de véhicule</p>
+        <h2>Transport sur plateau ou plateau fermé</h2>
+        <p>
+          Nous assurons le transport de votre véhicule en toute
+          sécurité, sur plateau ouvert ou fermé, selon vos besoins.
+          Que ce soit en cas de panne, d'achat, de vente ou de
+          déplacement, nous vous proposons un service fiable et
+          professionnel.
+        </p>
+        <a
+          href="{{ base }}/contact/?demande=transport-plateau"
+          class="btn"
+          >Demandez un devis</a
+        >
+      </div>
+      <div class="av-media">
+        {% themedImage "./src/assets/images/location-2-light.png",
+        "./src/assets/images/location-2-dark.png", "Camion de
+        transport chargé de voitures sur deux étages", mediaSizes,
+        "lazy", "av-img" %}
+      </div>
+    </div>
+  </section>
+
+  {# Transport circuit — fond blanc, liste à droite #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <p class="pitch-label-hero">Transport pour circuit</p>
+        <h2>Transport pour vos sorties circuit</h2>
+        <p>
+          Nous organisons le transport de votre véhicule pour vos
+          sorties circuit. Vous nous donnez l'heure, le lieu et la
+          date de livraison et votre véhicule sera prêt sur place.
+        </p>
+        <a
+          href="{{ base }}/contact/?demande=transport-circuit"
+          class="btn"
+          >Demandez un devis</a
+        >
+      </div>
+      <ul class="check-list check-list--plain">
+        <li>Lieu et heure de livraison selon vos besoins</li>
+        <li>Transport sécurisé sur plateau fermé disponible</li>
+        <li>Idéal pour vos journées circuit</li>
+      </ul>
+    </div>
+  </section>
+</main>

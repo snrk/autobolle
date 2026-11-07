@@ -1,104 +1,120 @@
 const TEAM_IMG = './src/assets/images/team/'
+const img = (slug) => TEAM_IMG + slug + '.png'
 
 export default [
+  // Direction
   {
     prenom: 'Pascal',
     nom: 'Bolle',
     secteur: 'Direction',
     fonction: 'Fondateur',
-    image: TEAM_IMG + 'pascal-bolle.jpg',
+    image: img('pascal-bolle'),
   },
   {
     prenom: 'David',
     nom: 'Bolle',
     secteur: 'Direction',
     fonction: 'Administrateur',
-    image: TEAM_IMG + 'david-bolle.jpg',
-  },
-  {
-    prenom: 'Kathy',
-    nom: 'Didier',
-    secteur: 'Administration',
-    fonction: 'Administration & Ressources humaines',
-    image: TEAM_IMG + 'kathy-didier.jpg',
-  },
-  {
-    prenom: 'Francis',
-    nom: 'Couleru',
-    secteur: 'Administration',
-    fonction: 'Responsable finances et comptabilité',
-    image: TEAM_IMG + 'francis-couleru.jpg',
+    image: img('david-bolle'),
   },
   {
     prenom: 'Julia',
     nom: 'Bolle',
-    secteur: 'Administration',
-    fonction: 'Administration & comptabilité',
-    image: TEAM_IMG + 'julia-bolle.jpg',
+    secteur: 'Direction',
+    fonction: 'Administration & ressources humaines',
+    image: img('julia-bolle'),
+  },
+
+  // Vente / Service après-vente
+  {
+    prenom: 'Thomas',
+    nom: 'Mouren',
+    secteur: 'Vente / Service après-vente',
+    fonction: 'Responsable accueil SAV & vente automobile',
+    image: img('thomas-mouren'),
   },
   {
-    prenom: 'Ricardo',
-    nom: 'Da Silva',
-    secteur: 'Exploitation',
-    fonction: "Chef d'atelier · Mécatronicien",
-    image: TEAM_IMG + 'ricardo-da-silva.jpg',
+    prenom: 'Joshua',
+    nom: 'Streckeisen',
+    secteur: 'Vente / Service après-vente',
+    fonction: 'Conseiller accueil SAV',
+    image: img('joshua-streckeisen'),
   },
-  {
-    prenom: 'Norman',
-    nom: 'Di Pippo',
-    secteur: 'Expérience client',
-    fonction: 'Conseiller clientèle',
-    image: TEAM_IMG + 'norman-di-pippo.jpg',
-  },
-  {
-    prenom: 'Jean-Pierre',
-    nom: 'Stabile',
-    secteur: 'Service vente',
-    fonction: 'Expert en automobiles de prestige',
-    image: TEAM_IMG + 'jp-stabile.jpg',
-  },
+
+  // Atelier
   {
     prenom: 'Luis',
-    nom: 'Oliveira',
+    nom: 'Teixeira',
     secteur: 'Atelier',
-    fonction:
-      'Technicien automobile · Spécialiste technique haute tension',
-    image: TEAM_IMG + 'luis-oliveira.jpg',
+    fonction: 'Technicien automobile',
+    image: null,
   },
   {
     prenom: 'Vasco',
     nom: 'Teixeira Silva',
     secteur: 'Atelier',
-    fonction:
-      'Mécanicien et préparateur automobile agréé · Spécialiste traitement céramique',
-    image: TEAM_IMG + 'vasco-teixeira-silva.jpg',
+    fonction: 'Technicien automobile',
+    image: img('vasco-teixeira-silva'),
   },
   {
-    prenom: 'Luna',
-    nom: 'Sechaud',
-    secteur: 'Apprentis',
-    fonction: 'Apprentie',
+    prenom: 'Arturo',
+    nom: 'Torres',
+    secteur: 'Atelier',
+    fonction: 'Technicien automobile',
     image: null,
   },
+
+  // Station-service
   {
     prenom: 'Barbara',
     nom: 'Guerra',
     secteur: 'Station-service',
     fonction: 'Responsable station-service',
-    image: TEAM_IMG + 'barbara-guerra.jpg',
-  },
-  {
-    prenom: 'Luis',
-    nom: 'Da Silva',
-    secteur: 'Station-service',
-    fonction: 'Station-service',
-    image: null,
+    image: img('barbara-guerra'),
   },
   {
     prenom: 'Alex',
     nom: 'Vicente Geraldo',
     secteur: 'Station-service',
-    fonction: 'Station-service',
-    image: TEAM_IMG + 'alex-vicente-geraldo.jpg',
+    fonction: 'Conseiller clientèle',
+    image: img('alex-vicente-geraldo'),
+  },
+  {
+    prenom: 'Luis',
+    nom: 'Da Silva',
+    secteur: 'Station-service',
+    fonction: 'Conseiller clientèle',
+    image: null,
+  },
+  {
+    prenom: 'Victor',
+    nom: 'Bolle',
+    secteur: 'Station-service',
+    fonction: 'Conseiller clientèle',
+    image: null,
+  },
+
+  // Apprentis
+  {
+    prenom: 'Luna',
+    nom: 'Sechaud',
+    secteur: 'Apprentis',
+    fonction: 'Apprentie employée de commerce',
+    image: null,
+  },
+  {
+    prenom: 'Erik',
+    nom: 'Muhja',
+    secteur: 'Apprentis',
+    fonction: 'Apprenti commerce de détail',
+    image: null,
+  },
+  {
+    prenom: 'Marc',
+    nom: 'Cabaret',
+    secteur: 'Apprentis',
+    fonction:
+      'Stage de 6 mois · École des métiers, CFC mécatronicien',
+    image: null,
   },
 ]
