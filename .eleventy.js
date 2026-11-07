@@ -153,7 +153,7 @@ export default function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV === 'liveTest') {
     base = '/ab'
   }
-
+  eleventyConfig.addGlobalData('base', base === '/' ? '' : base)
   //   eleventyConfig.addPlugin(EleventyVitePlugin, {
   //     // defaults are shown
   //     viteOptions: {

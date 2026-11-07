@@ -81,3 +81,20 @@
     gap: 0;
   }
 }
+
+.lead-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.lead-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0;
+}
+.lead-actions svg {
+  width: 1.2em;
+  height: 1.2em;
+}

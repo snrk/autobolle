@@ -1,9 +1,6 @@
-{% if env !== 'liveTest' %}{% set urlPrefix = "" %}{% else %}{% set
-urlPrefix = "/ab" %}{% endif %}
-
 <header class="primary-header">
   <div>
-    <a class="logo" href="{{ urlPrefix }}/">{% svg "logo" %}</a>
+    <a class="logo" href="{{ base }}/">{% svg "logo" %}</a>
   </div>
 
   <nav>
@@ -31,7 +28,7 @@ urlPrefix = "/ab" %}{% endif %}
           <li
             class="dropdown-link {% if page.url == sub.url %}active{% endif %}"
           >
-            <a href="{{ urlPrefix }}{{ sub.url }}">
+            <a href="{{ base }}{{ sub.url }}">
               {% if sub.icon %}
               <span class="dropdown-link-icon"
                 >{{ sub.icon | safe }}</span
@@ -53,7 +50,7 @@ urlPrefix = "/ab" %}{% endif %}
         </ul>
         {% else %}
         <a
-          href="{{ urlPrefix }}{{ item.url }}"
+          href="{{ base }}{{ item.url }}"
           class="{{ activeClass }} menu-item-link"
         >
           {{ item.title }}
@@ -65,6 +62,6 @@ urlPrefix = "/ab" %}{% endif %}
   </nav>
 
   <div>
-    <a class="button-small" href="{{ urlPrefix }}/">Rendez-vous</a>
+    <a class="button-small" href="{{ base }}/">Rendez-vous</a>
   </div>
 </header>

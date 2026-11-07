@@ -17,16 +17,12 @@ title: Garage Carroserie Autobolle
           depuis&nbsp;1994
         </h1>
 
-        <a
-          href="{% if env !== 'liveTest' %}/vehicules-occasion{% else %}/ab/vehicules-occasion{% endif %}"
-          class="btn"
+        <a href="{{ base }}/vehicules-occasion" class="btn"
           >Nos véhicules</a
         >
       </div>
     </div>
   </section>
-  {% if env !== 'liveTest' %}{% set urlPrefix = "" %}{% else %}{% set
-  urlPrefix = "/ab" %}{% endif %}
   <section class="section-pitch cest-nous">
     <div class="container grid-2 intro-grid">
       <div>
@@ -51,7 +47,7 @@ title: Garage Carroserie Autobolle
       <ul class="service-chips">
         {% for s in services %}
         <li>
-          <a class="contact-btn" href="{{ urlPrefix }}{{ s.url }}">
+          <a class="contact-btn" href="{{ base }}{{ s.url }}">
             {{ svgs[s.icon].icon | safe }}
             <span>{{ s.label }}</span>
           </a>
@@ -63,11 +59,7 @@ title: Garage Carroserie Autobolle
   <section class="home-occasions container">
     <h2>Nos véhicules d'occasion</h2>
     <div id="home-cars" class="cars-grid"></div>
-    <a
-      href="{% if env !== 'liveTest' %}/vehicules-occasion{% else %}/ab/vehicules-occasion{% endif %}"
-      class="btn"
-      >Voir tout</a
-    >
+    <a href="{{ base }}/vehicules-occasion" class="btn">Voir tout</a>
   </section>
   <section class="section-pitch">
     <div class="container newsletter-grid">
@@ -81,9 +73,7 @@ title: Garage Carroserie Autobolle
           et nos conseils d'entretien, directement dans votre boîte
           mail. Désinscription possible à tout moment.
         </p>
-        <a href="{{ urlPrefix }}/newsletter" class="btn"
-          >Newsletter</a
-        >
+        <a href="{{ base }}/newsletter" class="btn">Newsletter</a>
       </div>
 
       <div class="newsletter-illu hero-img">

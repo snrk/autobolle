@@ -4,70 +4,338 @@ title: Achat vente
 ---
 
 {% set metaImage = site.metaImage %} {% set metaTitle = site.metaTitle
-%} {% set metaDescription = site.metaDescription %}
+%} {% set metaDescription = site.metaDescription %} {% set mediaSizes
+= "(max-width: 40em) 90vw, 448px" %}
 <main>
-
   <div class="wrapper">
-   <section class="section-hero-achat">
-    <div class="container">
-      <div class="grid-2 hero-achat">
-        <div class="hero-achat-content">
-          <p class="pitch-label-hero">Achat-vente</p>
-          <h1>Nous rachetons votre voiture au&nbsp;meilleur&nbsp;prix</h1>
-          <p>Notre expert évaluera votre véhicule rapidement et en toute transparence.</p>
-          <a   href="{% if env !== 'liveTest' %}/contact{% else %}/ab/contact{% endif %}" class="btn">Contactez-nous</a>
-        </div>
-        <div class="hero-achat-media">
-          {% image "./src/assets/images/hero-achat-light.png", "Reprise de véhicule", "(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px", "hero-achat-img" %}
-          {# {% themedImage "./src/assets/images/hero-achat-light.png", "./src/assets/images/hero-achat-light.png",  "Reprise de véhicule", "(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px", "lazy", "hero-achat-img" %} #}
+    <section class="section-hero-achat">
+      <div class="container">
+        <div class="grid-2 hero-achat">
+          <div class="hero-achat-content">
+            <p class="pitch-label-hero">Achat</p>
+            <h1>
+              Nous rachetons votre voiture au&nbsp;meilleur&nbsp;prix
+            </h1>
+            <p>
+              Nous évaluons votre véhicule rapidement et en toute
+              transparence.
+            </p>
+          </div>
+          <div class="av-media">
+            {% themedImage "./src/assets/images/hero-achat-light.png",
+            "./src/assets/images/hero-achat-dark.png", "Voitures
+            alignées sur un parking de concession", mediaSizes,
+            "eager", "av-img" %}
+          </div>
         </div>
       </div>
-    </div>
-   </section>
+    </section>
 
-  <section class="section-steps">
-    <div class="container">
-      <h2 class="section-title">Comment ça fonctionne ?</h2>
-      <div class="grid-4">
-        <div class="step">
-          <h3>Contactez-nous</h3>
-          <p>Appelez-nous, envoyez un email ou utilisez notre formulaire pour une première estimation.</p>
-        </div>
-        <div class="step">
-          <h3>Prenez rendez-vous</h3>
-          <p>Passez dans notre garage pour une inspection rapide de votre véhicule.</p>
-        </div>
-        <div class="step">
-          <h3>Recevez votre offre</h3>
-          <p>Nous vous proposons une offre personnalisée, un prix juste et compétitif.</p>
-        </div>
-        <div class="step">
-          <h3>Finalisez la vente</h3>
-          <p>Acceptez l'offre, signez les documents nécessaires, et recevez votre paiement immédiatement.</p>
-        </div>
+    <section class="section-steps">
+      <div class="container">
+        <h2 class="section-title">Comment ça fonctionne&nbsp;?</h2>
+        <ol class="grid-4 av-steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Contactez-nous</h3>
+            <p>
+              Appelez-nous, envoyez un email ou utilisez notre
+              formulaire pour une première estimation.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Prenez rendez-vous</h3>
+            <p>
+              Passez dans notre garage pour une inspection rapide de
+              votre véhicule.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Recevez votre offre</h3>
+            <p>
+              Nous vous proposons une offre personnalisée, un prix
+              juste et compétitif.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>Finalisez la vente</h3>
+            <p>
+              Acceptez l'offre, signez les documents nécessaires, et
+              recevez votre paiement immédiatement.
+            </p>
+          </li>
+        </ol>
       </div>
     </section>
   </div>
 
-<section class="section-pitch">
-  <div class="container">
-    <div class="grid-2">
-      <div class="pitch-content">
-        <p class="pitch-label">Vous souhaitez vendre votre voiture ?</p>
-        <h2>Le garage Auto Bolle vous propose une solution simple, rapide et équitable.</h2>
-        <p>Grâce à notre expertise, nous garantissons une évaluation transparente avec un paiement immédiat.</p>
-        <ul class="text-list">
-          <li>Évaluation professionnelle</li>
-          <li>Processus rapide et sans stress</li>
-          <li>Reprise directe pour un nouvel achat</li>
-        </ul>
-        <a href="/contact" class="btn">En savoir plus</a>
+  {# 1 — Neuf & occasion (fond blanc, image à gauche) #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row av-row--media-left">
+      <div class="av-media">
+        {% themedImage "./src/assets/images/achat-vente-1-light.png",
+        "./src/assets/images/achat-vente-1-dark.png", "Le garage Auto
+        Bolle et son parc de véhicules", mediaSizes, "lazy", "av-img"
+        %}
       </div>
-
-       <div class="review-achat-media">
-          {% themedImage "./src/assets/images/achat-client-light.png", "./src/assets/images/achat-client-dark.png",  "Reprise de véhicule", "(max-width: 30em) 78vw, (max-width: 64em) calc((50vw - 3rem) * 0.78), 376px", "lazy", "achat-client-img" %}
-        </div>
+      <div class="av-content">
+        <p class="pitch-label-hero">
+          Vente véhicules neufs et occasion
+        </p>
+        <h2>Découvrez nos voitures neuves et d'occasion</h2>
+        <p>
+          Un large choix de véhicules soigneusement sélectionnés, à
+          des prix compétitifs, avec des garanties adaptées et un
+          accompagnement personnalisé.
+        </p>
+        <a href="{{ base }}/vehicules-occasion" class="btn"
+          >Découvrir nos véhicules</a
+        >
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  {# 2 — Financement (fond gris, image à droite) #}
+  <section>
+    <div class="container grid-2 av-row">
+      <div class="av-content">
+        <p class="pitch-label-hero">
+          Financement, leasing &amp; reprise
+        </p>
+        <h2>Achetez votre voiture en toute simplicité</h2>
+        <p>
+          Nous vous proposons des solutions de financement et de
+          leasing adaptées à vos besoins, avec la possibilité de
+          reprise de votre ancien véhicule aux meilleures conditions.
+          Paiement possible cash ou par virement.
+        </p>
+        <ul class="text-list">
+          <li>Financement sur mesure</li>
+          <li>Leasing avantageux</li>
+          <li>Reprise de votre ancien véhicule</li>
+          <li>Paiement cash ou par virement</li>
+        </ul>
+        <button
+          type="button"
+          class="show-more show-more--chevron"
+          data-modal="financement-modal"
+        >
+          En savoir plus
+        </button>
+
+        <dialog id="financement-modal" class="modal">
+          <button
+            type="button"
+            class="modal__close"
+            aria-label="Fermer"
+          >
+            ✕
+          </button>
+          <h2>Financement et leasing</h2>
+          <div class="modal__body">
+            <p>
+              Nous facilitons l'achat de votre voiture grâce à des
+              solutions de financement et de leasing adaptées à vos
+              besoins. Que vous optiez pour un véhicule neuf ou
+              d'occasion, nous vous accompagnons pour trouver la
+              solution la plus avantageuse.
+            </p>
+            <ol class="modal-list">
+              <li>
+                <h3>Des solutions sur mesure</h3>
+                <ul class="text-list">
+                  <li>
+                    <strong>Financement flexible&nbsp;:</strong>
+                    étalez le coût de votre voiture avec des
+                    mensualités adaptées à votre budget.
+                  </li>
+                  <li>
+                    <strong>Leasing avantageux&nbsp;:</strong>
+                    profitez d'un loyer mensuel compétitif avec la
+                    possibilité de renouveler régulièrement votre
+                    véhicule.
+                  </li>
+                  <li>Options pour particuliers et entreprises.</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Rapidité et simplicité</h3>
+                <ul class="text-list">
+                  <li>
+                    Une prise en charge complète des démarches
+                    administratives.
+                  </li>
+                  <li>
+                    Réponse rapide pour l'approbation de votre
+                    dossier.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <h3>Contactez-nous pour en savoir plus</h3>
+            <p>
+              Que vous envisagiez un leasing flexible ou un
+              financement classique, notre équipe est là pour répondre
+              à vos questions et trouver la solution parfaite pour
+              vous. Rendez-vous à Tolochenaz ou contactez-nous dès
+              aujourd'hui.
+            </p>
+            <a href="{{ base }}/contact" class="btn"
+              >Contactez-nous</a
+            >
+          </div>
+        </dialog>
+      </div>
+      <div class="av-media">
+        {% themedImage "./src/assets/images/achat-vente-2-light.png",
+        "./src/assets/images/achat-vente-2-dark.png", "Client souriant
+        à côté de sa nouvelle voiture", mediaSizes, "lazy", "av-img"
+        %}
+      </div>
+    </div>
+  </section>
+
+  {# 3 — Particuliers (fond blanc, image à gauche) #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-row av-row--media-left">
+      <div class="av-media">
+        {% themedImage "./src/assets/images/achat-vente-3-light.png",
+        "./src/assets/images/achat-vente-3-dark.png", "Voitures de
+        sport dans le showroom", mediaSizes, "lazy", "av-img" %}
+      </div>
+      <div class="av-content">
+        <p class="pitch-label-hero">
+          Achat ou vente entre particuliers
+        </p>
+        <h2>
+          Un particulier&nbsp;? Nous facilitons votre achat ou votre
+          vente.
+        </h2>
+        <p>
+          Que vous souhaitiez acheter une voiture à un particulier ou
+          vendre la vôtre, nous nous occupons de tout pour une
+          transaction simple, rapide et sécurisée.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {# 4 — Vendeur / acheteur + transaction (fond gris) #}
+  <section>
+    <div class="container grid-2 av-duo">
+      <div>
+        <h2 class="av-duo-title">Vous êtes vendeur&nbsp;?</h2>
+        <p class="av-duo-sub">
+          Vendez votre véhicule en toute sérénité.
+        </p>
+        <ul class="check-list">
+          <li>
+            <h3>Transaction sécurisée</h3>
+            <p>Un processus clair et encadré.</p>
+          </li>
+          <li>
+            <h3>Transfert de leasing en cours</h3>
+            <p>
+              Nous gérons les démarches avec l'organisme de leasing.
+            </p>
+          </li>
+          <li>
+            <h3>Évaluation du dossier</h3>
+            <p>Conseil personnalisé pour la meilleure solution.</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="av-duo-title">Vous êtes acheteur&nbsp;?</h2>
+        <p class="av-duo-sub">
+          Achetez votre véhicule en toute confiance.
+        </p>
+        <ul class="check-list">
+          <li>
+            <h3>Contrôle du véhicule</h3>
+            <p>Une inspection complète avant l'achat.</p>
+          </li>
+          <li>
+            <h3>Financement possible</h3>
+            <p>Des solutions rapides et adaptées.</p>
+          </li>
+          <li>
+            <h3>Une vente en bonne forme</h3>
+            <p>Contrat clair et conforme.</p>
+          </li>
+          <li>
+            <h3>Garantie incluse</h3>
+            <p>Pour rouler l'esprit tranquille.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="container grid-2 av-row av-row--media-left av-transaction"
+    >
+      <div class="av-media">
+        {% themedImage "./src/assets/images/achat-vente-4-light.png",
+        "./src/assets/images/achat-vente-4-dark.png", "Remise des clés
+        d'une voiture", mediaSizes, "lazy", "av-img" %}
+      </div>
+      <div class="av-content">
+        <h2>Nous organisons la transaction</h2>
+        <p>
+          Rédaction et gestion du contrat d'achat et de vente,
+          coordination avec les parties, prise en charge des démarches
+          administratives et immatriculation.
+        </p>
+        <a href="{{ base }}/contact" class="btn">Demandez un devis</a>
+      </div>
+    </div>
+  </section>
+
+  {# 5 — Garantie / perle rare (fond blanc) #}
+  <section class="section-pitch">
+    <div class="container grid-2 av-duo">
+      <div>
+        <h2>Minimum 12 mois de garantie sur nos voitures</h2>
+        <p>
+          Nous vous garantissons un minimum de 12 mois de garantie sur
+          chaque véhicule vendu, avec notre partenaire NSA Garantie.
+        </p>
+        {# TODO URL NSA Garantie #}
+        <a href="#" class="btn" target="_blank" rel="noopener"
+          >Nos garanties proposées&nbsp;↗</a
+        >
+      </div>
+      <div>
+        <h2>Vous recherchez la perle rare&nbsp;?</h2>
+        <p>
+          Nous savons que l'achat d'une voiture est une étape
+          importante, et nous mettons tout en œuvre pour vous aider à
+          trouver la perle rare qui répondra parfaitement à vos
+          attentes.
+        </p>
+        <a href="{{ base }}/contact" class="btn">Demandez un devis</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('click', (e) => {
+      const opener = e.target.closest('[data-modal]')
+      if (opener) {
+        const dlg = document.getElementById(opener.dataset.modal)
+        dlg?.showModal()
+        dlg
+          ?.querySelector('.modal__close')
+          ?.focus({ preventScroll: true })
+        return
+      }
+      if (e.target.closest('.modal__close')) {
+        e.target.closest('dialog')?.close()
+        return
+      }
+      if (e.target.matches('dialog.modal')) e.target.close()
+    })
+  </script>
 </main>

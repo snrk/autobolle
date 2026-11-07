@@ -1,0 +1,128 @@
+/* ---------- Achat-vente ---------- */
+
+/* visuels Illustrator */
+.av-media {
+  max-width: 28rem;
+  width: 100%;
+  justify-self: center;
+}
+.av-media picture {
+  display: block;
+}
+.av-img {
+  height: auto;
+  object-fit: contain;
+}
+
+/* lignes texte / image */
+.grid-2.av-row {
+  gap: var(--gap);
+}
+.av-content {
+  max-width: 34rem;
+}
+.av-content .btn {
+  margin-bottom: 0;
+}
+
+@media (max-width: 40em) {
+  .av-row--media-left .av-media {
+    order: 2;
+  }
+}
+
+/* étapes numérotées */
+.grid-4.av-steps {
+  padding: 0;
+  align-items: start;
+}
+.step-num {
+  display: block;
+  font-size: clamp(2rem, 1.6rem + 1.5vw, 2.75rem);
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.step p {
+  padding-top: 0.5rem;
+}
+
+/* deux colonnes (vendeur/acheteur, garantie/perle rare) */
+.grid-2.av-duo {
+  align-items: start;
+  gap: 2rem var(--gap);
+}
+.av-duo-title {
+  margin-bottom: 0;
+}
+.av-duo-sub {
+  padding-top: 0.25rem;
+}
+
+/* espace entre vendeur/acheteur et « Nous organisons la transaction » */
+.container.av-transaction {
+  margin-top: 6rem;
+}
+
+/* liste avec coche ronde */
+.check-list {
+  padding: 0;
+}
+.check-list li {
+  position: relative;
+  padding-left: 2.6rem;
+  margin-top: 1.1rem;
+}
+.check-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -0.05rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: currentColor;
+  -webkit-mask: var(--check-icon) center / contain no-repeat;
+  mask: var(--check-icon) center / contain no-repeat;
+  --check-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10.6'/%3E%3Cpath d='M8.6 12.6 10.9 15.6 15.2 8.2'/%3E%3C/svg%3E");
+}
+.check-list h3 {
+  font-size: 1.05rem;
+}
+.check-list p {
+  padding: 0.15rem 0 0;
+}
+
+/* bouton « En savoir plus » avec chevron */
+.show-more--chevron {
+  margin-top: 1.5rem;
+}
+.show-more--chevron::before {
+  content: '';
+  width: 0.45em;
+  height: 0.45em;
+  margin-right: 0.3em;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: translateY(-25%) rotate(45deg);
+}
+
+/* contenu de la modale */
+.modal-list {
+  padding-left: 1.2rem;
+  list-style: decimal;
+}
+.modal-list > li {
+  margin-top: 1rem;
+}
+.modal-list > li::marker {
+  font-size: 1.1rem;
+}
+.modal__body > h3 {
+  margin-top: 1.5rem;
+}
+.modal__body .text-list {
+  padding-left: 1.5rem;
+}
+.modal__body .text-list li {
+  margin-top: 0.4rem;
+}
