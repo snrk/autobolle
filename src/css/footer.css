@@ -268,6 +268,7 @@ div.horaires-grid {
   padding: 1.5rem;
   border: 1px solid var(--text-main);
   border-radius: var(--big-radius);
+  margin-top: 1rem;
 }
 .horaire-card__titre {
   display: flex;
@@ -292,4 +293,13 @@ div.horaires-grid {
 }
 .horaire-card__plages dd:last-child {
   margin-bottom: 0;
+}
+.contact-form.grid-2 {
+  align-items: start;
+  gap: 2rem 4rem;
+}
+.horaires-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

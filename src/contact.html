@@ -51,109 +51,205 @@ permalink: /contact/
     </div>
   </section>
 
-  <section class="container contact-form">
-    <form
-      class="lead-form"
-      id="demande-form"
-      novalidate
-      data-email="{{ contact.email }}"
-      data-whatsapp="{{ contact.whatsappNumero }}"
-    >
-      <h2 class="lead-title">Écrivez-nous</h2>
-      <div class="lead-body">
-        <div class="lead-row">
+  <section class="container contact-form grid-2">
+    <div>
+      <form
+        class="lead-form"
+        id="demande-form"
+        novalidate
+        data-email="{{ contact.email }}"
+        data-whatsapp="{{ contact.whatsappNumero }}"
+      >
+        <h2 class="lead-title">Écrivez-nous</h2>
+        <div class="lead-body">
+          <div class="lead-row">
+            <label class="lead-field">
+              <input
+                name="firstName"
+                placeholder="Prénom*"
+                autocomplete="given-name"
+                required
+              />
+              <span class="lead-error"></span>
+            </label>
+            <label class="lead-field">
+              <input
+                name="lastName"
+                placeholder="Nom*"
+                autocomplete="family-name"
+                required
+              />
+              <span class="lead-error"></span>
+            </label>
+          </div>
+          <div class="lead-row">
+            <label class="lead-field">
+              <input
+                name="email"
+                type="email"
+                placeholder="Email*"
+                autocomplete="email"
+                required
+              />
+              <span class="lead-error"></span>
+            </label>
+            <label class="lead-field">
+              <input
+                name="phone"
+                type="tel"
+                placeholder="Téléphone*"
+                autocomplete="tel"
+                required
+                pattern="[0-9+ ]{7,}"
+              />
+              <span class="lead-error"></span>
+            </label>
+          </div>
           <label class="lead-field">
-            <input
-              name="firstName"
-              placeholder="Prénom*"
-              autocomplete="given-name"
+            <textarea
+              name="message"
+              placeholder="Message*"
+              maxlength="1500"
               required
-            />
+            ></textarea>
             <span class="lead-error"></span>
           </label>
-          <label class="lead-field">
-            <input
-              name="lastName"
-              placeholder="Nom*"
-              autocomplete="family-name"
-              required
-            />
-            <span class="lead-error"></span>
+          <p class="lead-note">*Champ obligatoire</p>
+          <p class="lead-note">
+            Votre message s'ouvre dans votre messagerie ou dans
+            WhatsApp.
+          </p>
+          <label class="lead-check">
+            <input type="checkbox" name="newsletter" />
+            <span
+              >Je souhaite recevoir la newsletter mensuelle d'Auto
+              Bolle (désinscription possible à tout moment,
+              <a
+                class="link-underline"
+                href="{{ base }}/confidentialite/"
+                >confidentialité</a
+              >).</span
+            >
           </label>
+          <div class="lead-actions">
+            <button type="submit" name="canal" value="email">
+              {{ svgs.mail.icon | safe }}<span>Email</span>
+            </button>
+            <button type="submit" name="canal" value="whatsapp">
+              {{ svgs.whatsapp.icon | safe }}<span>WhatsApp</span>
+            </button>
+          </div>
+          <p class="lead-form__status" role="status"></p>
         </div>
-        <div class="lead-row">
-          <label class="lead-field">
-            <input
-              name="email"
-              type="email"
-              placeholder="Email*"
-              autocomplete="email"
-              required
-            />
-            <span class="lead-error"></span>
-          </label>
-          <label class="lead-field">
-            <input
-              name="phone"
-              type="tel"
-              placeholder="Téléphone*"
-              autocomplete="tel"
-              required
-              pattern="[0-9+ ]{7,}"
-            />
-            <span class="lead-error"></span>
-          </label>
-        </div>
-        <label class="lead-field">
-          <textarea
-            name="message"
-            placeholder="Message*"
-            required
-          ></textarea>
-          <span class="lead-error"></span>
-        </label>
-        <p class="lead-note">*Champ obligatoire</p>
-        <p class="lead-note">
-          Votre message s'ouvre dans votre messagerie ou dans
-          WhatsApp, rien n'est envoyé depuis ce site.
-        </p>
-        <div class="lead-actions" role="status">
-          <button type="submit" name="canal" value="email">
-            {{ svgs.mail.icon | safe }}<span>Email</span>
-          </button>
-          <button type="submit" name="canal" value="whatsapp">
-            {{ svgs.whatsapp.icon | safe }}<span>WhatsApp</span>
-          </button>
-        </div>
-      </div>
-    </form>
-    <script type="application/json" id="demandes-data">
-      {{ demandes | dump | safe }}
-    </script>
-    <script type="module" src="/js/demande-form.js"></script>
-  </section>
+      </form>
 
-  <section class="container contact-horaires">
-    <h2>Horaires d'ouverture</h2>
-    <div class="grid-2 horaires-grid">
-      {% for h in contact.horaires %}
-      <article class="horaire-card">
-        <h3 class="horaire-card__titre">
-          {{ svgs[h.icone].icon | safe }}
-          <span>{{ h.titre }}</span>
-        </h3>
-        <dl class="horaire-card__plages">
-          {% for plage in h.plages %}
-          <dt>{{ plage.jours }}</dt>
-          <dd>
-            {% for heure in plage.heures %}
-            <span>{{ heure }}</span>
+      <div class="sr-only" aria-hidden="true">
+        <form
+          id="nl-form"
+          method="post"
+          action="https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26962/submit"
+          class="inf-form"
+        >
+          <input
+            type="text"
+            name="inf_email_check"
+            autocomplete="off"
+            tabindex="-1"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="website"
+            autocomplete="off"
+            tabindex="-1"
+          />
+          <input
+            type="hidden"
+            name="key"
+            value="eyJpdiI6IkZmSUUrakk5U1lOQmlpSmNxVVp4ZHpTNlJtcE5ockptbE5pVWpLSU5KZEE9IiwibWFjIjoiZTdmOTZhOTBlZmMyYTVjODk3OThlYWNhZjI2OWQzMzM4ZWUxZTIyMjVmMTE1ZjJlYjc4MjdlYTgxZmFmOTUzZSIsInZhbHVlIjoiNHZBbWhhanRKbW5ZdUl4R0JOeVNIbEJvNmh6dExoZGdNWitiN3BWY2xBcz0ifQ=="
+          />
+          <input type="hidden" name="webform_id" value="26962" />
+          <div class="inf-main_a6334341d81fb047fb5dedb10148891a">
+            <div class="inf-success" style="display: none"></div>
+            <div class="inf-content">
+              <div class="inf-input inf-input-text">
+                <input
+                  type="email"
+                  name="inf[1]"
+                  data-inf-meta="1"
+                  data-inf-error=""
+                  tabindex="-1"
+                />
+              </div>
+              <div class="inf-input inf-input-text">
+                <input
+                  type="text"
+                  name="inf[2]"
+                  data-inf-meta="2"
+                  data-inf-error=""
+                  tabindex="-1"
+                />
+              </div>
+              <div class="inf-input inf-input-text">
+                <input
+                  type="text"
+                  name="inf[3]"
+                  data-inf-meta="3"
+                  data-inf-error=""
+                  tabindex="-1"
+                />
+              </div>
+              <script
+                src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v=1794142800"
+                type="module"
+              ></script>
+              <altcha-widget
+                hidelogo
+                hidefooter
+                floating
+                challengeurl="https://newsletter.infomaniak.com/v3/altcha-challenge"
+              ></altcha-widget>
+              <script
+                src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v=1794142800"
+                defer
+              ></script>
+              <script src="https://newsletter.infomaniak.com/v3/static/webform_index.js?v=1794142800"></script>
+              <div class="inf-submit">
+                <input type="submit" value="Valider" tabindex="-1" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <script type="application/json" id="demandes-data">
+        {{ demandes | dump | safe }}
+      </script>
+      <script type="module" src="/js/demande-form.js"></script>
+    </div>
+
+    <div class="contact-horaires">
+      <h2>Horaires d'ouverture</h2>
+      <div class="horaires-stack">
+        {% for h in contact.horaires %}
+        <article class="horaire-card">
+          <h3 class="horaire-card__titre">
+            {{ svgs[h.icone].icon | safe }}
+            <span>{{ h.titre }}</span>
+          </h3>
+          <dl class="horaire-card__plages">
+            {% for plage in h.plages %}
+            <dt>{{ plage.jours }}</dt>
+            <dd>
+              {% for heure in plage.heures %}
+              <span>{{ heure }}</span>
+              {% endfor %}
+            </dd>
             {% endfor %}
-          </dd>
-          {% endfor %}
-        </dl>
-      </article>
-      {% endfor %}
+          </dl>
+        </article>
+        {% endfor %}
+      </div>
     </div>
   </section>
 </main>

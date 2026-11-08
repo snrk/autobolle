@@ -98,3 +98,44 @@
   width: 1.2em;
   height: 1.2em;
 }
+
+.lead-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0.5rem 0 2.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.lead-check input {
+  appearance: none;
+  flex: none;
+  display: grid;
+  place-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.05rem;
+  border: 1px solid var(--text-main);
+  border-radius: 0.25rem;
+  background: transparent;
+  cursor: pointer;
+}
+.lead-check input::after {
+  content: '';
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid var(--bg-main);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translate(-1px, -1px);
+  opacity: 0;
+}
+.lead-check input:checked {
+  background: var(--text-main);
+}
+.lead-check input:checked::after {
+  opacity: 1;
+}
+.lead-check input:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}

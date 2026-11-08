@@ -36,7 +36,11 @@ if (form) {
     return false
   }
 
-  const inputs = [...form.querySelectorAll('input, textarea')]
+  const inputs = [
+    ...form.querySelectorAll(
+      '.lead-field input, .lead-field textarea',
+    ),
+  ]
   inputs.forEach((input) => {
     input.addEventListener('blur', () => showError(input))
     input.addEventListener('input', () => {
@@ -59,7 +63,16 @@ if (form) {
       `Email : ${f.email.value.trim()}`,
     ].join(nl)
   }
-
+  // --- Inscription newsletter via le webform Infomaniak caché ---
+  const nlForm = document.getElementById('nl-form')
+  const subscribeNewsletter = () => {
+    if (!nlForm || !form.elements.newsletter?.checked) return
+    const f = form.elements
+    nlForm.elements['inf[1]'].value = f.email.value.trim()
+    nlForm.elements['inf[2]'].value = f.firstName.value.trim()
+    nlForm.elements['inf[3]'].value = f.lastName.value.trim()
+    nlForm.querySelector('.inf-submit input').click()
+  }
   // --- Envoi ---
   form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -71,6 +84,7 @@ if (form) {
 
     const canal = e.submitter?.value ?? 'email'
 
+    subscribeNewsletter()
     if (canal === 'whatsapp') {
       const text = encodeURIComponent(buildBody('\n'))
       window.open(

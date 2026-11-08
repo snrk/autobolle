@@ -643,3 +643,78 @@ img {
 .cest-nous {
   padding-block: 6rem 4rem;
 }
+@media print {
+  .primary-header,
+  .primary-footer {
+    display: none;
+  }
+
+  :root {
+    color-scheme: light;
+  }
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+  .legal {
+    max-width: none;
+    padding: 0;
+  }
+  .legal-callout {
+    background: none;
+    border: 1px solid #000;
+  }
+  .legal th,
+  .legal td {
+    border-bottom-color: #999;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  table,
+  .legal-callout {
+    break-inside: avoid;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@page {
+  margin: 2cm;
+}
+
+.link-underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) no-repeat
+    right bottom / 100% 1px;
+}
+.link-underline:hover {
+  animation: underline-swap 0.5s ease forwards;
+}
+@keyframes underline-swap {
+  0% {
+    background-size: 100% 1px;
+    background-position: right bottom;
+  }
+  50% {
+    background-size: 0 1px;
+    background-position: right bottom;
+  }
+  50.01% {
+    background-position: left bottom;
+  }
+  100% {
+    background-size: 100% 1px;
+    background-position: left bottom;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .link-underline:hover {
+    animation: none;
+  }
+}
