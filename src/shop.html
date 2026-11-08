@@ -22,8 +22,10 @@ title: Shop
               votre service, dans une ambiance conviviale où l'on se
               sent comme chez soi.
             </p>
-            <a href="tel:{{ contact.telephone.lien }}" class="btn"
-              >{{ contact.telephone.affichage }}</a
+            <a
+              href="tel:{{ contact.telephoneStation.lien }}"
+              class="btn"
+              >{{ contact.telephoneStation.affichage }}</a
             >
           </div>
           <div class="av-media">
@@ -113,21 +115,26 @@ title: Shop
       <div>
         <h2>Horaires de la station service</h2>
         {% for h in contact.horaires %} {% if h.icone == 'shop' %}
-        <dl class="horaire-card__plages">
-          {% for plage in h.plages %}
-          <dt>{{ plage.jours }}</dt>
-          <dd>
-            {% for heure in plage.heures %}<span>{{ heure }}</span>{%
-            endfor %}
-          </dd>
-          {% endfor %}
-        </dl>
+        <article class="horaire-card">
+          <h3 class="horaire-card__titre">
+            {{ svgs[h.icone].icon | safe }}
+          </h3>
+          <dl class="horaire-card__plages">
+            {% for plage in h.plages %}
+            <dt>{{ plage.jours }}</dt>
+            <dd>
+              {% for heure in plage.heures %}<span>{{ heure }}</span
+              >{% endfor %}
+            </dd>
+            {% endfor %}
+          </dl>
+        </article>
         {% endif %} {% endfor %}
       </div>
       <div>
         <h2>
-          <a href="tel:{{ contact.telephone.lien }}"
-            >{{ contact.telephone.affichage }}</a
+          <a href="tel:{{ contact.telephoneStation.lien }}"
+            >{{ contact.telephoneStation.affichage }}</a
           >
         </h2>
         <p>

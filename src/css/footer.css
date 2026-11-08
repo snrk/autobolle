@@ -39,6 +39,8 @@
   display: flex;
   gap: 1.6rem;
   overflow: visible;
+  margin-left: auto;
+  margin-right: 0;
 }
 .primary-footer nav a {
   display: inline-flex;
@@ -130,8 +132,6 @@
 
   /* le nav passe au-dessus du logo */
   .footer-top nav {
-    /* order: -1; */
-    justify-content: flex-end; /* icônes collées à droite */
     margin-bottom: 1.5rem;
     gap: 0;
   }
@@ -144,7 +144,6 @@
 
 /* ---- Bandeau ---- */
 .footer-banner {
-  /* full-bleed : même principe que ton ::before, sans pseudo-élément */
   width: 100vw;
   margin-inline: calc(50% - 50vw);
   background: var(--brand-light);

@@ -61,15 +61,18 @@
     </div>
 
     <div>
-      <h3>Rendez-vous en ligne</h3>
-      <a
-        href="{{ contact.rendezVous }}"
-        target="_blank"
-        rel="noopener"
-        class="contact-btn"
-      >
-        Rendez-vous
-      </a>
+      <h3>Accès rapides</h3>
+      <div class="contact-btns">
+        <a
+          href="{{ contact.rendezVous }}"
+          target="_blank"
+          rel="noopener"
+          class="contact-btn"
+        >
+          Rendez-vous
+        </a>
+        <a href="/newsletter/" class="contact-btn">Newsletter</a>
+      </div>
     </div>
     {% for h in contact.horaires %} {% if h.icone == 'shop' %}
     <div>

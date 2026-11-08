@@ -9,5 +9,14 @@
   <body>
     {% include "partials/_header.html" %} {{content | safe}} {%
     include "partials/_footer.html" %}
+    <button
+      type="button"
+      class="scroll-cue to-top"
+      aria-label="Retour en haut de page"
+    >
+      <span class="scroll-cue__circle" aria-hidden="true">
+        <span class="scroll-cue__arrow"></span>
+      </span>
+    </button>
   </body>
 </html>

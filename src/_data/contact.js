@@ -1,6 +1,10 @@
 export default {
   email: 'info@autobolle.ch',
   telephone: { affichage: '021 802 22 22', lien: '+41218022222' },
+  telephoneStation: {
+    affichage: '021 802 22 13',
+    lien: '+41218022213',
+  },
   whatsapp: 'https://wa.me/message/GG23IMBJYI5GI1',
   whatsappNumero: '41218022222',
   rendezVous: 'https://autobolle.sopl.ch/fr/#loginSection',

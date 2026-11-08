@@ -255,46 +255,40 @@ section.home {
   object-fit: cover;
   object-position: 40% center;
 }
-
-/* halo blanc derrière le texte */
-.hero-video::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse 32% 20% at 66% 36%,
-    rgb(255 255 255 / 0.85) 0%,
-    rgb(255 255 255 / 0.5) 45%,
-    transparent 100%
-  );
-}
-
 @media (max-width: 40em) {
-  .hero-video::after {
-    background: radial-gradient(
-      ellipse 70% 30% at 35% 25%,
-      rgb(255 255 255 / 0.85) 0%,
-      rgb(255 255 255 / 0.5) 45%,
-      transparent 100%
-    );
+  .hero-video img {
+    object-position: -3.7rem center;
   }
 }
 
 .hero-content {
   z-index: 1;
-}
-
-.hero-content {
   position: absolute;
-  top: 2rem;
+  top: 0;
   left: 0;
   right: 0;
   max-width: 1024px;
   margin: 0 auto;
-  padding: max(9vh, 3rem) 0 0
-    clamp(1rem, calc(0.6667rem + 1.4815vw), 2rem);
+  padding: 6rem var(--respPad) 0 0;
 }
+/* halo blanc derrière le texte */
+.hero-video::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 70% 46% at 65% 43%,
+    rgb(255 255 255 / 0.85) 0%,
+    rgb(255 255 255 / 0.2) 45%,
+    transparent 100%
+  );
+}
+.hero-video[data-loading]::after {
+  opacity: 0;
+}
+
 @media (min-width: 40.0625em) {
   .hero-content {
     top: 0;
@@ -308,6 +302,26 @@ section.home {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+  .br-mobile {
+    display: none;
+  }
+}
+@media (max-width: 40em) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: clamp(1rem, calc(0.6667rem + 1.4815vw), 2rem);
+  }
+  .hero-video::after {
+    background: radial-gradient(
+      ellipse 76% 40% at 76% 37%,
+      rgb(255 255 255 / 0.85) 0%,
+      rgb(255 255 255 / 0.2) 45%,
+      transparent 100%
+    );
   }
 }
 
@@ -717,4 +731,32 @@ img {
   .link-underline:hover {
     animation: none;
   }
+}
+
+/* HomePage */
+.to-top {
+  position: fixed;
+  right: var(--respPad);
+  bottom: 1.5rem;
+  z-index: 10;
+  padding: 0;
+  border: 0;
+  border-radius: 100%;
+  background: var(--bg-1);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.to-top .scroll-cue__circle {
+  transform: rotate(180deg);
+}
+.to-top:hover .scroll-cue__circle {
+  transform: translateY(-0.25rem) rotate(180deg);
 }
