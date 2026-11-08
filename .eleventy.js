@@ -150,7 +150,7 @@ export default function (eleventyConfig) {
 
   let base = '/' // Valeur par défaut pour le mode de build
 
-  if (process.env.ELEVENTY_ENV === 'liveTest') {
+  if (['liveTest', 'liveAb'].includes(process.env.ELEVENTY_ENV)) {
     base = '/ab'
   }
   eleventyConfig.addGlobalData('base', base === '/' ? '' : base)

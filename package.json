@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run clean && npx eleventy --serve",
     "liveTest": "ELEVENTY_ENV=liveTest npx eleventy",
+    "liveAb": "ELEVENTY_ENV=liveAb npx eleventy",
     "build": "ELEVENTY_ENV=production npx eleventy",
     "clean": "rm -rf _site"
   },

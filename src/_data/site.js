@@ -1,14 +1,30 @@
-const isProduction = process.env.ELEVENTY_ENV === 'production'
-const isLiveTest = process.env.ELEVENTY_ENV === 'liveTest'
+const env = process.env.ELEVENTY_ENV || 'development'
+
+const urls = {
+  production: {
+    url: 'https://autobolle.ch',
+    apiUrl: 'https://autobolle.ch/getCars.php',
+  },
+  liveAb: {
+    url: 'https://autobolle.ch/ab',
+    apiUrl: 'https://autobolle.ch/ab/getCars.php',
+  },
+  liveTest: {
+    url: 'https://gabrielbuser.ch/ab',
+    apiUrl: 'https://gabrielbuser.ch/ab/getCars.php',
+  },
+  development: {
+    url: 'http://localhost:8080',
+    apiUrl: '/dummy-cars.json',
+  },
+}
+
+const { url, apiUrl } = urls[env] ?? urls.development
 
 export default {
   type: 'website',
   buildTime: new Date(),
-  url: isProduction
-    ? 'https://autobolle.ch'
-    : isLiveTest
-      ? 'https://gabrielbuser.ch/ab'
-      : 'http://localhost:8080',
+  url,
   name: 'Garage Carrosserie Autobolle',
   twitter: '',
   metaTitle: 'Votre garagiste à Tolochenaz, sortie Morges-Ouest',
@@ -16,10 +32,6 @@ export default {
     "Achat et vente de véhicules neufs et d'occasions. Atelier mécanique agréé multimarques avec service de gardiennage.",
   metaImage: './src/assets/images/ab_logo.jpg',
   metaImageDescription: 'Logo Garage carrosserie Autobolle',
-  apiUrl: isProduction
-    ? 'https://autobolle.ch/getCars.php'
-    : isLiveTest
-      ? 'https://gabrielbuser.ch/ab/getCars.php'
-      : '/dummy-cars.json',
+  apiUrl,
   annee: new Date().getFullYear(),
 }
