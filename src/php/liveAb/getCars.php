@@ -1,6 +1,5 @@
 <?php
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: https://gabrielbuser.ch');
 
 require __DIR__ . '/as24-auth.php';
 $token    = getAs24Token();
