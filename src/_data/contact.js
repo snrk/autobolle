@@ -10,7 +10,7 @@ export default {
   rendezVous: 'https://autobolle.sopl.ch/fr/#loginSection',
 
   adresse: {
-    nom: 'Garage Autobolle',
+    nom: 'Garage Auto Bolle',
     rue: 'Route de Genève 14',
     localite: '1131 Tolochenaz',
   },

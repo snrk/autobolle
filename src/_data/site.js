@@ -25,13 +25,13 @@ export default {
   type: 'website',
   buildTime: new Date(),
   url,
-  name: 'Garage Carrosserie Autobolle',
+  name: 'Garage Carrosserie Auto Bolle',
   twitter: '',
   metaTitle: 'Votre garagiste à Tolochenaz, sortie Morges-Ouest',
   metaDescription:
     "Achat et vente de véhicules neufs et d'occasions. Atelier mécanique agréé multimarques avec service de gardiennage.",
   metaImage: './src/assets/images/ab_logo.jpg',
-  metaImageDescription: 'Logo Garage carrosserie Autobolle',
+  metaImageDescription: 'Logo Garage carrosserie Auto Bolle',
   apiUrl,
   annee: new Date().getFullYear(),
 }

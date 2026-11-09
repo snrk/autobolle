@@ -136,9 +136,13 @@
 .scroll-cue__arrow::after {
   transform: rotate(-45deg);
 }
-
-.scroll-cue:hover .scroll-cue__circle {
-  transform: translateY(0.25rem);
+@media (hover: hover) {
+  .scroll-cue:hover .scroll-cue__circle {
+    transform: translateY(0.25rem);
+  }
+  .scroll-cue--back {
+    margin-top: 1.5rem;
+  }
 }
 
 .team-card__img.is-placeholder {
@@ -158,7 +162,4 @@
 }
 .scroll-cue--back:hover .scroll-cue__circle {
   transform: translateX(-0.25rem) rotate(90deg);
-}
-.scroll-cue--back {
-  margin-top: 1.5rem;
 }

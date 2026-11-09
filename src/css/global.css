@@ -737,7 +737,7 @@ img {
 .to-top {
   position: fixed;
   right: var(--respPad);
-  bottom: 1.5rem;
+  bottom: 3.3rem;
   z-index: 10;
   padding: 0;
   border: 0;
@@ -757,6 +757,8 @@ img {
 .to-top .scroll-cue__circle {
   transform: rotate(180deg);
 }
-.to-top:hover .scroll-cue__circle {
-  transform: translateY(-0.25rem) rotate(180deg);
+@media (hover: hover) {
+  .to-top:hover .scroll-cue__circle {
+    transform: translateY(-0.25rem) rotate(180deg);
+  }
 }

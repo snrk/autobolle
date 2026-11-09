@@ -5,7 +5,9 @@ import path from 'node:path'
 
 const IMG_OPTIONS = {
   widths: [248, 496, 992, 'auto'],
-  formats: ['avif', 'webp', 'jpeg'],
+  formats: process.env.ELEVENTY_ENV
+    ? ['avif', 'webp', 'jpeg']
+    : ['webp', 'jpeg'],
   outputDir: '_site/assets/images',
   urlPath: '/assets/images/',
 }
@@ -127,8 +129,11 @@ export default function (eleventyConfig) {
   }
   //   eleventyConfig.addPassthroughCopy('src/.htaccess')
 
+  // eleventyConfig.addPassthroughCopy({
+  //   'src/assets/images': 'assets/images',
+  // })
   eleventyConfig.addPassthroughCopy({
-    'src/assets/images': 'assets/images',
+    'src/assets/images/*.svg': 'assets/images',
   })
 
   eleventyConfig.addShortcode('svg', function (filename) {
@@ -154,29 +159,6 @@ export default function (eleventyConfig) {
     base = '/ab'
   }
   eleventyConfig.addGlobalData('base', base === '/' ? '' : base)
-  //   eleventyConfig.addPlugin(EleventyVitePlugin, {
-  //     // defaults are shown
-  //     viteOptions: {
-  //       publicDir: 'public',
-  //       clearScreen: false,
-  //       server: {
-  //         mode: 'development',
-  //         host: '192.168.1.71',
-  //         middlewareMode: true,
-  //       },
-  //       appType: 'custom',
-  //       assetsInclude: ['**/*.xml', '**/*.txt', '**/.htaccess.*'],
-  //       build: {
-  //         mode: 'production',
-  //         rolldownOptions: {
-  //           output: {
-  //             assetFileNames: 'assets/[name].[hash].[ext]',
-  //           },
-  //         },
-  //       },
-  //       base: base,
-  //     },
-  //   })
   eleventyConfig.setServerOptions({
     // Affiche les IP locales (ex: 192.168.1.71) dans le terminal au démarrage
     showAllHosts: true,
@@ -193,12 +175,6 @@ export default function (eleventyConfig) {
         host: '0.0.0.0',
         port: 8080,
       },
-      //   resolve: {
-      //     alias: {
-      //       // Cette ligne permet au navigateur de trouver qrcode
-      //       '/node_modules': path.resolve('.', 'node_modules'),
-      //     },
-      //   },
       appType: 'custom',
     },
   })

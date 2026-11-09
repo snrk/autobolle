@@ -5,6 +5,9 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+  ascent-override: 95%;
+  descent-override: 28.6%;
+  line-gap-override: 0%;
 }
 @font-face {
   font-family: 'CitizenGrotesk';
@@ -13,6 +16,9 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  ascent-override: 95%;
+  descent-override: 28.6%;
+  line-gap-override: 0%;
 }
 @font-face {
   font-family: 'CitizenGrotesk';
@@ -21,6 +27,9 @@
   font-weight: 400;
   font-style: italic;
   font-display: swap;
+  ascent-override: 95%;
+  descent-override: 28.6%;
+  line-gap-override: 0%;
 }
 @font-face {
   font-family: 'CitizenGrotesk';
@@ -29,4 +38,7 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  ascent-override: 95%;
+  descent-override: 28.6%;
+  line-gap-override: 0%;
 }
