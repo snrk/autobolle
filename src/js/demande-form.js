@@ -14,6 +14,9 @@ if (form) {
   if (demande) {
     textarea.value = demande.message
     form.scrollIntoView({ block: 'start' })
+    if (matchMedia('(pointer: fine)').matches) {
+      form.elements.lastName.focus({ preventScroll: true })
+    }
   }
 
   // --- Validation (même logique que le formulaire véhicule) ---

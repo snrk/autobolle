@@ -115,6 +115,28 @@ button {
   padding: 0.27em 0;
 }
 
+.btn-ext {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-ext::after {
+  content: '';
+  flex: 0 0 auto;
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 0.5em;
+  background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23000' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 9.5 9.5 2.5M4.5 2.5h5v5'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  transition: transform 0.25s ease;
+  transform: translateY(0.05em);
+}
+@media (hover: hover) {
+  .btn-ext:hover::after {
+    transform: translate(0.05em, -0.05em);
+  }
+}
+
 a {
   text-decoration: none;
 }

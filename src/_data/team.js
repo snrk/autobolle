@@ -44,10 +44,10 @@ export default [
   // Atelier
   {
     prenom: 'Luis',
-    nom: 'Teixeira',
+    nom: 'Teixeira Oliveira',
     secteur: 'Atelier',
     fonction: 'Technicien automobile',
-    image: null,
+    image: img('luis-teixeira-oliveira'),
   },
   {
     prenom: 'Vasco',
@@ -60,8 +60,8 @@ export default [
     prenom: 'Arturo',
     nom: 'Torres',
     secteur: 'Atelier',
-    fonction: 'Technicien automobile',
-    image: null,
+    fonction: 'Plate-forme logistique',
+    image: img('arturo-torres'),
   },
 
   // Station-service
@@ -71,6 +71,13 @@ export default [
     secteur: 'Station-service',
     fonction: 'Responsable station-service',
     image: img('barbara-guerra'),
+  },
+  {
+    prenom: 'Melissa',
+    nom: 'Schafter',
+    secteur: 'Station-service',
+    fonction: 'Conseillère clientèle',
+    image: img('melissa-schafter'),
   },
   {
     prenom: 'Alex',
@@ -84,14 +91,14 @@ export default [
     nom: 'Da Silva',
     secteur: 'Station-service',
     fonction: 'Conseiller clientèle',
-    image: null,
+    image: img('luis-da-silva'),
   },
   {
     prenom: 'Victor',
     nom: 'Bolle',
     secteur: 'Station-service',
     fonction: 'Conseiller clientèle',
-    image: null,
+    image: img('victor-bolle'),
   },
 
   // Apprentis
@@ -99,22 +106,7 @@ export default [
     prenom: 'Luna',
     nom: 'Sechaud',
     secteur: 'Apprentis',
-    fonction: 'Apprentie employée de commerce',
-    image: null,
-  },
-  {
-    prenom: 'Erik',
-    nom: 'Muhja',
-    secteur: 'Apprentis',
-    fonction: 'Apprenti commerce de détail',
-    image: null,
-  },
-  {
-    prenom: 'Marc',
-    nom: 'Cabaret',
-    secteur: 'Apprentis',
-    fonction:
-      'Stage de 6 mois · École des métiers, CFC mécatronicien',
-    image: null,
+    fonction: 'Administration',
+    image: img('luna-sechaud'),
   },
 ]

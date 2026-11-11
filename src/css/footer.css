@@ -98,14 +98,12 @@
   margin-left: -10px;
 }
 
-/* Boutons du footer : version contour sur fond sombre */
 .primary-footer .button-small {
   background: transparent;
   border: 1px solid var(--color-light-2);
   display: inline-block;
 }
 
-/* Rangée 3 : trait + bas légal */
 .footer-legal {
   display: flex;
   justify-content: space-between;
@@ -126,11 +124,9 @@
 
 @media (max-width: 40em) {
   .footer-top {
-    /* flex-direction: column; */
-    align-items: stretch; /* pour que le nav puisse se caler à droite */
+    align-items: stretch;
   }
 
-  /* le nav passe au-dessus du logo */
   .footer-top nav {
     margin-bottom: 1.5rem;
     gap: 0;
@@ -167,10 +163,12 @@
 }
 
 .footer-banner h4 {
-  font-size: clamp(1.2rem, 3vw, 1.3rem);
+  font-size: clamp(1.5rem, calc(1.3333rem + 0.7407vw), 2rem);
+  line-height: 120%;
+  font-weight: 400;
+  margin-bottom: 0rem;
 }
 
-/* La rangée logo/réseaux reprend l'espacement haut */
 .footer-top {
   padding-top: 3rem;
 }
@@ -206,6 +204,9 @@
   white-space: nowrap;
   transition: background 0.2s ease;
 }
+.contact-btn.btn-ext {
+  gap: 0;
+}
 
 .contact-btn svg {
   width: 1.15em;
@@ -217,11 +218,9 @@
   background: color-mix(in srgb, currentColor 12%, transparent);
 }
 
-/* variante négative — footer */
 .primary-footer .contact-btn {
   color: var(--color-light-1);
 }
-/* le plan : échappe au img { height:100%; object-fit:cover } global */
 .contact-map img {
   height: auto;
   object-fit: contain;
@@ -234,13 +233,11 @@
   padding: 1rem 0 2rem 0;
 }
 
-/* les 3 boutons passent en ligne ici (colonne dans le footer) */
 .contact-hero .contact-btns {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* .grid-2 est en align-items:center — on veut le haut ici */
 .contact-infos.grid-2,
 div.horaires-grid {
   align-items: start;
@@ -297,8 +294,19 @@ div.horaires-grid {
   align-items: start;
   gap: 2rem 4rem;
 }
+.contact-form {
+  --form-pad: clamp(0.6rem, 4vw, 1.6rem);
+}
+.contact-form .lead-form {
+  background: var(--bg-2);
+  border-radius: var(--big-radius);
+  padding: var(--form-pad);
+}
 .horaires-stack {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+.contact-horaires {
+  padding-top: var(--form-pad);
 }

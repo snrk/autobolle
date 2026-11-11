@@ -83,7 +83,6 @@ title: Shop
     </div>
   </section>
 
-  {# Terrasse + horaires — fond blanc #}
   <section class="section-pitch">
     <div class="container grid-2 av-row">
       <div class="av-content">
@@ -110,14 +109,25 @@ title: Shop
         café Nespresso au shop", mediaSizes, "lazy", "av-img" %}
       </div>
     </div>
-
+  </section>
+  <section>
     <div class="container grid-2 av-duo shop-infos">
       <div>
-        <h2>Horaires de la station service</h2>
+        <h2>Une question&nbsp;?</h2>
+        <p>
+          Notre équipe de la station se tient à votre disposition.
+        </p>
+        <a href="tel:{{ contact.telephoneStation.lien }}" class="btn">
+          {{ contact.telephoneStation.affichage }}
+        </a>
+      </div>
+      <div>
+        <h2>Horaires d'ouverture</h2>
         {% for h in contact.horaires %} {% if h.icone == 'shop' %}
         <article class="horaire-card">
           <h3 class="horaire-card__titre">
             {{ svgs[h.icone].icon | safe }}
+            <span>{{ h.titre }}</span>
           </h3>
           <dl class="horaire-card__plages">
             {% for plage in h.plages %}
@@ -130,17 +140,6 @@ title: Shop
           </dl>
         </article>
         {% endif %} {% endfor %}
-      </div>
-      <div>
-        <h2>
-          <a href="tel:{{ contact.telephoneStation.lien }}"
-            >{{ contact.telephoneStation.affichage }}</a
-          >
-        </h2>
-        <p>
-          Notre équipe se tient à votre disposition pour toute
-          question.
-        </p>
       </div>
     </div>
   </section>

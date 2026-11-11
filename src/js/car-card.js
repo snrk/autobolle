@@ -35,7 +35,9 @@ export function renderCard(car) {
                 ${specItem('fuel', fuels[car.fuelType] ?? cap(car.fuelType))}
                 ${specItem('power', `${car.kiloWatts} kW (${ch} ch)`)}
             </ul>
-            <span class="car-card__arrow">${icons.arrow.icon}</span>
+            <span class="car-card__arrow" aria-hidden="true">
+              <span class="scroll-cue__circle"><span class="scroll-cue__arrow"></span></span>
+            </span>
         </div>
       </div>
     </a>`
